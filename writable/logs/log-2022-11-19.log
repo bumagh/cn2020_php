@@ -1,0 +1,500 @@
+CRITICAL - 2022-11-19 08:15:25 --> 您没有WAP支付权限
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/ThirdParty/wechatdeveloper/WeChat/Pay.php(41): WePay\Order->create([...])
+ 3 APPPATH/Controllers/Api/Recharge.php(83): WeChat\Pay->createOrder([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 08:23:53 --> Undefined index: prepay_id
+in APPPATH/Controllers/Api/Recharge.php on line 139.
+ 1 APPPATH/Controllers/Api/Recharge.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prepay_id', 'APPPATH/Controllers/Api/Recharge.php', 139, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 08:58:33 --> Class 'We' not found
+in APPPATH/Controllers/Api/Recharge.php on line 121.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 08:59:01 --> Class 'We' not found
+in APPPATH/Controllers/Api/Recharge.php on line 121.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 09:08:15 --> Call to undefined method WePay\Order::createOrder()
+in APPPATH/Controllers/Api/Recharge.php on line 186.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 09:09:16 --> Call to undefined method WePay\Order::createOrder()
+in APPPATH/Controllers/Api/Recharge.php on line 187.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 09:10:04 --> 输入源“/body/xml/notify_url”映射到字段“通知地址”必填性规则校验失败，此字段为必填项
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/Controllers/Api/Recharge.php(187): WePay\Order->create([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 09:10:27 --> 商户号该产品权限未开通，请前往商户平台>产品中心检查后重试
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/Controllers/Api/Recharge.php(187): WePay\Order->create([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 09:43:34 --> 商户号该产品权限未开通，请前往商户平台>产品中心检查后重试
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/Controllers/Api/Recharge.php(189): WePay\Order->create([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 10:32:38 --> 您没有WAP支付权限
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/ThirdParty/wechatdeveloper/WeChat/Pay.php(41): WePay\Order->create([...])
+ 3 APPPATH/Controllers/Api/Recharge.php(84): WeChat\Pay->createOrder([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 10:35:15 --> 您没有WAP支付权限
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/ThirdParty/wechatdeveloper/WeChat/Pay.php(41): WePay\Order->create([...])
+ 3 APPPATH/Controllers/Api/Recharge.php(84): WeChat\Pay->createOrder([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 10:35:54 --> 您没有WAP支付权限
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/ThirdParty/wechatdeveloper/WeChat/Pay.php(41): WePay\Order->create([...])
+ 3 APPPATH/Controllers/Api/Recharge.php(84): WeChat\Pay->createOrder([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 10:48:58 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 67.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 10:53:13 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 45.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 10:54:15 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:00:13 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:37:56 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:38:02 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:46:31 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 117.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:47:10 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 118.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:49:22 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 117.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:49:34 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 116.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:52:48 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 118.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:52:50 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 118.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:53:51 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 120.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:54:00 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 120.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:54:01 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 120.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:54:24 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 117.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:54:25 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 117.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:57:03 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 117.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 11:57:04 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 117.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:07:17 --> syntax error, unexpected '/'
+in APPPATH/Controllers/Api/Recharge.php on line 109.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/recharge/h5pay')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/recharge/h5pay')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/recharge/h5pay')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:07:31 --> 输入源“/body/xml/trade_type”映射到值字段“交易类型”字符串规则校验失败，字节数 2，小于最小值 3
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/ThirdParty/wechatdeveloper/WeChat/Pay.php(41): WePay\Order->create([...])
+ 3 APPPATH/Controllers/Api/Recharge.php(128): WeChat\Pay->createOrder([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:07:53 --> 输入源“/body/xml/trade_type”映射到值字段“交易类型”字符串规则校验失败，字节数 2，小于最小值 3
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/ThirdParty/wechatdeveloper/WeChat/Pay.php(41): WePay\Order->create([...])
+ 3 APPPATH/Controllers/Api/Recharge.php(128): WeChat\Pay->createOrder([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:09:15 --> trade_type参数格式错误
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/ThirdParty/wechatdeveloper/WeChat/Pay.php(41): WePay\Order->create([...])
+ 3 APPPATH/Controllers/Api/Recharge.php(128): WeChat\Pay->createOrder([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:45:44 --> Undefined offset: 0
+in APPPATH/Filters/AuthAdmin.php on line 52.
+ 1 APPPATH/Filters/AuthAdmin.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Filters/AuthAdmin.php', 52, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('/', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:46:09 --> Undefined offset: 0
+in APPPATH/Filters/AuthAdmin.php on line 52.
+ 1 APPPATH/Filters/AuthAdmin.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Filters/AuthAdmin.php', 52, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('/', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 14:31:11 --> 商户号该产品权限未开通，请前往商户平台>产品中心检查后重试
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/Controllers/Api/Recharge.php(263): WePay\Order->create([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 14:33:13 --> Undefined index: prepay_id
+in APPPATH/Controllers/Api/Recharge.php on line 216.
+ 1 APPPATH/Controllers/Api/Recharge.php(216): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prepay_id', 'APPPATH/Controllers/Api/Recharge.php', 216, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 14:33:46 --> 商户号该产品权限未开通，请前往商户平台>产品中心检查后重试
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/Controllers/Api/Recharge.php(264): WePay\Order->create([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 14:34:30 --> 商户号该产品权限未开通，请前往商户平台>产品中心检查后重试
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/Controllers/Api/Recharge.php(264): WePay\Order->create([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 14:35:22 --> 商户号该产品权限未开通，请前往商户平台>产品中心检查后重试
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 203.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 2 APPPATH/Controllers/Api/Recharge.php(264): WePay\Order->create([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 14:35:56 --> Call to undefined method WePay\Order::createParamsForJsApi()
+in APPPATH/Controllers/Api/Recharge.php on line 272.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 14:37:10 --> Call to undefined method WePay\Order::createOrder()
+in APPPATH/Controllers/Api/Recharge.php on line 265.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 14:37:52 --> Call to undefined method WePay\Order::createParamsForJsApi()
+in APPPATH/Controllers/Api/Recharge.php on line 272.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wepay()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 15:09:29 --> Undefined variable: request
+in APPPATH/Controllers/Api/Recharge.php on line 109.
+ 1 APPPATH/Controllers/Api/Recharge.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: request', 'APPPATH/Controllers/Api/Recharge.php', 109, [])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 15:43:24 --> Undefined index: prepay_id
+in APPPATH/Controllers/Api/Recharge.php on line 229.
+ 1 APPPATH/Controllers/Api/Recharge.php(229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prepay_id', 'APPPATH/Controllers/Api/Recharge.php', 229, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 15:53:20 --> Array to string conversion
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 127.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php', 127, [...])
+ 2 APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php(200): WeChat\Contracts\BasicWePay->getPaySign([...], 'MD5')
+ 3 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 4 APPPATH/ThirdParty/wechatdeveloper/WeChat/Pay.php(41): WePay\Order->create([...])
+ 5 APPPATH/Controllers/Api/Recharge.php(142): WeChat\Pay->createOrder([...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 15:57:47 --> Array to string conversion
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 127.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php', 127, [...])
+ 2 APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php(200): WeChat\Contracts\BasicWePay->getPaySign([...], 'MD5')
+ 3 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 4 APPPATH/ThirdParty/wechatdeveloper/WeChat/Pay.php(41): WePay\Order->create([...])
+ 5 APPPATH/Controllers/Api/Recharge.php(150): WeChat\Pay->createOrder([...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 15:59:36 --> Array to string conversion
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 127.
+ 1 APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php', 127, [...])
+ 2 APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php(200): WeChat\Contracts\BasicWePay->getPaySign([...], 'MD5')
+ 3 APPPATH/ThirdParty/wechatdeveloper/WePay/Order.php(38): WeChat\Contracts\BasicWePay->callPostApi('https://api.mch.weixin.qq.com/pay/unifiedorder', [...], false, 'MD5')
+ 4 APPPATH/ThirdParty/wechatdeveloper/WeChat/Pay.php(41): WePay\Order->create([...])
+ 5 APPPATH/Controllers/Api/Recharge.php(150): WeChat\Pay->createOrder([...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5pay()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 16:01:40 --> Cannot use empty array elements in arrays
+in APPPATH/Controllers/Api/Recharge.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-19 16:02:11 --> Cannot use empty array elements in arrays
+in APPPATH/Controllers/Api/Recharge.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-19 16:02:51 --> Cannot use empty array elements in arrays
+in APPPATH/Controllers/Api/Recharge.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-19 16:03:27 --> Cannot use empty array elements in arrays
+in APPPATH/Controllers/Api/Recharge.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-19 16:03:39 --> syntax error, unexpected '{'
+in APPPATH/Controllers/Api/Recharge.php on line 146.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/recharge/h5pay')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/recharge/h5pay')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/recharge/h5pay')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 16:03:59 --> Cannot use empty array elements in arrays
+in APPPATH/Controllers/Api/Recharge.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-19 16:04:10 --> Cannot use empty array elements in arrays
+in APPPATH/Controllers/Api/Recharge.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-19 16:04:26 --> Cannot use empty array elements in arrays
+in APPPATH/Controllers/Api/Recharge.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-19 16:05:38 --> Cannot use empty array elements in arrays
+in APPPATH/Controllers/Api/Recharge.php on line 141.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-19 16:18:43 --> Undefined index: prepay_id
+in APPPATH/Controllers/Api/Recharge.php on line 242.
+ 1 APPPATH/Controllers/Api/Recharge.php(242): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prepay_id', 'APPPATH/Controllers/Api/Recharge.php', 242, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 16:26:14 --> Undefined index: prepay_id
+in APPPATH/Controllers/Api/Recharge.php on line 242.
+ 1 APPPATH/Controllers/Api/Recharge.php(242): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prepay_id', 'APPPATH/Controllers/Api/Recharge.php', 242, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 16:26:21 --> Undefined index: prepay_id
+in APPPATH/Controllers/Api/Recharge.php on line 242.
+ 1 APPPATH/Controllers/Api/Recharge.php(242): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prepay_id', 'APPPATH/Controllers/Api/Recharge.php', 242, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 16:36:16 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 171.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5payV3()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 16:36:34 --> Class 'WePayV3\Order' not found
+in APPPATH/Controllers/Api/Recharge.php on line 170.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->h5payV3()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 16:48:40 --> Undefined index: prepay_id
+in APPPATH/Controllers/Api/Recharge.php on line 158.
+ 1 APPPATH/Controllers/Api/Recharge.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prepay_id', 'APPPATH/Controllers/Api/Recharge.php', 158, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 16:52:58 --> Undefined index: prepay_id
+in APPPATH/Controllers/Api/Recharge.php on line 158.
+ 1 APPPATH/Controllers/Api/Recharge.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prepay_id', 'APPPATH/Controllers/Api/Recharge.php', 158, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 20:22:12 --> Undefined index: value
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 APPPATH/Controllers/Api/Member.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: value', 'APPPATH/Controllers/Api/Member.php', 124, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 20:22:25 --> Undefined index: value
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 APPPATH/Controllers/Api/Member.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: value', 'APPPATH/Controllers/Api/Member.php', 124, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 20:22:41 --> Undefined variable: _t
+in APPPATH/Controllers/Api/Recharge.php on line 116.
+ 1 APPPATH/Controllers/Api/Recharge.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: _t', 'APPPATH/Controllers/Api/Recharge.php', 116, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 20:22:51 --> Undefined index: value
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 APPPATH/Controllers/Api/Member.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: value', 'APPPATH/Controllers/Api/Member.php', 124, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 20:23:30 --> Undefined variable: _t
+in APPPATH/Controllers/Api/Recharge.php on line 116.
+ 1 APPPATH/Controllers/Api/Recharge.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: _t', 'APPPATH/Controllers/Api/Recharge.php', 116, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 20:23:45 --> Undefined index: value
+in APPPATH/Controllers/Api/Member.php on line 127.
+ 1 APPPATH/Controllers/Api/Member.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: value', 'APPPATH/Controllers/Api/Member.php', 127, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 20:31:10 --> Undefined variable: _t
+in APPPATH/Controllers/Api/Recharge.php on line 116.
+ 1 APPPATH/Controllers/Api/Recharge.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: _t', 'APPPATH/Controllers/Api/Recharge.php', 116, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->wxpay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 20:38:10 --> Call to undefined method App\Models\PocketModel::getConfig
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Api/Pocket.php(44): CodeIgniter\Model->__call('getConfig', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setInitPocket()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 20:39:12 --> Call to undefined method App\Models\PocketModel::getConfig
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Api/Pocket.php(45): CodeIgniter\Model->__call('getConfig', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setInitPocket()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

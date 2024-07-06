@@ -1,0 +1,56 @@
+CRITICAL - 2023-01-11 09:44:48 --> Creating default object from empty value
+in APPPATH/Controllers/Webadmin/Sysattach.php on line 23.
+ 1 APPPATH/Controllers/Webadmin/Sysattach.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH/Controllers/Webadmin/Sysattach.php', 23, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysattach->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysattach))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 09:45:03 --> Creating default object from empty value
+in APPPATH/Controllers/Webadmin/Sysattach.php on line 23.
+ 1 APPPATH/Controllers/Webadmin/Sysattach.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH/Controllers/Webadmin/Sysattach.php', 23, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysattach->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysattach))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 09:56:32 --> Call to a member function insert() on null
+in APPPATH/Controllers/Webadmin/Attach.php on line 126.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->upimage()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 10:01:04 --> Call to a member function insert() on null
+in APPPATH/Controllers/Webadmin/Attach.php on line 126.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->upimage()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:49:13 --> syntax error, unexpected 'print_r' (T_STRING), expecting ';' or ','
+in APPPATH/Controllers/Api/Friend.php on line 32.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/friend/getdata')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/friend/getdata')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/friend/getdata')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:49:24 --> Call to a member function getServer() on null
+in APPPATH/Controllers/ApiController.php on line 70.
+ 1 APPPATH/Controllers/Api/Friend.php(13): App\Controllers\ApiController->checkLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Api\Friend->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:53:23 --> syntax error, unexpected '"' OR fid='"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+in APPPATH/Controllers/Api/Friend.php on line 30.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/friend/getdata')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/friend/getdata')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/friend/getdata')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 15:03:55 --> Call to a member function getServer() on null
+in APPPATH/Controllers/ApiController.php on line 70.
+ 1 APPPATH/Controllers/Api/Friend.php(13): App\Controllers\ApiController->checkLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Api\Friend->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

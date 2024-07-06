@@ -1,0 +1,138 @@
+CRITICAL - 2023-01-13 08:31:41 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Friend.php on line 74.
+ 1 APPPATH/Controllers/Api/Friend.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Friend.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Friend->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Friend))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 08:32:05 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Friend.php on line 74.
+ 1 APPPATH/Controllers/Api/Friend.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Friend.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Friend->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Friend))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 08:33:12 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Friend.php on line 74.
+ 1 APPPATH/Controllers/Api/Friend.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Friend.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Friend->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Friend))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 08:34:38 --> syntax error, unexpected ')'
+in APPPATH/Controllers/Api/Friend.php on line 82.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/friend/add')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/friend/add')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/friend/add')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 08:35:49 --> Undefined index: friendadd
+in APPPATH/Controllers/Api/Message.php on line 75.
+ 1 APPPATH/Controllers/Api/Message.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: friendadd', 'APPPATH/Controllers/Api/Message.php', 75, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Message->getmine()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Message))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 08:36:13 --> Undefined index: friendadd
+in APPPATH/Controllers/Api/Message.php on line 75.
+ 1 APPPATH/Controllers/Api/Message.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: friendadd', 'APPPATH/Controllers/Api/Message.php', 75, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Message->getmine()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Message))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 11:59:17 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(171): mysqli->real_connect(NULL, 'root', 'root', 'project_ey56_xu', NULL, '/Applications/M...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `r...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get(15)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(51): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(209): App\Controllers\Api\Chat->getGroupChat(Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `r...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get(15)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(51): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(209): App\Controllers\Api\Chat->getGroupChat(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-13 11:59:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `rid`, `uid`, `content`, `tag`, `status`, `created_at`
+FROM `chat_group_content`
+WHERE `rid` = :rid:
+ORDER BY `id` DESC
+ LIMIT 15', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get(15)
+ 4 APPPATH/Controllers/Api/Chat.php(51): CodeIgniter\Model->__call('get', [...])
+ 5 APPPATH/Controllers/Api/Chat.php(209): App\Controllers\Api\Chat->getGroupChat([...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 17:00:39 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(171): mysqli->real_connect(NULL, 'root', 'root', 'project_ey56_xu', NULL, '/Applications/M...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `r...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get(15)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(51): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(208): App\Controllers\Api\Chat->getGroupChat(Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `r...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get(15)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(51): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(208): App\Controllers\Api\Chat->getGroupChat(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-13 17:00:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `rid`, `uid`, `content`, `tag`, `status`, `created_at`
+FROM `chat_group_content`
+WHERE `rid` = :rid:
+ORDER BY `id` DESC
+ LIMIT 15', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get(15)
+ 4 APPPATH/Controllers/Api/Chat.php(51): CodeIgniter\Model->__call('get', [...])
+ 5 APPPATH/Controllers/Api/Chat.php(208): App\Controllers\Api\Chat->getGroupChat([...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 17:28:09 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 381.
+ 1 APPPATH/Controllers/Api/Member.php(381): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 381, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

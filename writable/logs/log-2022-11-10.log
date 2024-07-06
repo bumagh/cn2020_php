@@ -1,0 +1,151 @@
+ERROR - 2022-11-10 13:32:41 --> mysqli_sql_exception: Table 'project_ey56_xu.section_ext' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(25): CodeIgniter\BaseModel->findAll()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/View/Cell.php(111): App\Entities\Extbase::getRenderFields(Array)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Common.php(1158): CodeIgniter\View\Cell->render('\\App\\entities\\E...', Array, 0, 'AppentitiesExtb...')
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Views/webadmin/section/detail.php(40): view_cell('\\App\\entities\\E...', Array)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/View/View.php(213): include('/Users/mac/Desk...')
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Common.php(1142): CodeIgniter\View\View->render('webadmin/sectio...', Array, true)
+#13 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Section.php(75): view('webadmin/sectio...', Array)
+#14 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Section->edit(4)
+#15 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Section))
+#16 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 {main}
+CRITICAL - 2022-11-10 13:32:41 --> Table 'project_ey56_xu.section_ext' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `section_ext`
+WHERE `fid` IN (\'27\')
+AND `relid` = \'4\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `section_ext`
+WHERE `fid` IN (\'27\')
+AND `relid` = \'4\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `section_ext`
+WHERE `fid` IN (\'27\')
+AND `relid` = \'4\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `section_ext`
+WHERE `fid` IN :fid:
+AND `relid` = :relid:', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Entities/Extbase.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/View/Cell.php(111): App\Entities\Extbase::getRenderFields([...])
+ 9 SYSTEMPATH/Common.php(1158): CodeIgniter\View\Cell->render('\\App\\entities\\Extbase::getRenderFields', [...], 0, 'AppentitiesExtbasegetRenderFields7229f18c8fab912f4a5db8ed6361d2df')
+10 APPPATH/Views/webadmin/section/detail.php(40): view_cell('\\App\\entities\\Extbase::getRenderFields', [...])
+11 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/section/detail.php')
+12 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/section/detail', [], true)
+14 APPPATH/Controllers/Webadmin/Section.php(75): view('webadmin/section/detail', [...])
+15 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Section->edit(4)
+16 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Section))
+17 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 13:33:11 --> mysqli_sql_exception: Table 'project_ey56_xu.section_ext' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(25): CodeIgniter\BaseModel->findAll()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/View/Cell.php(111): App\Entities\Extbase::getRenderFields(Array)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Common.php(1158): CodeIgniter\View\Cell->render('\\App\\entities\\E...', Array, 0, 'AppentitiesExtb...')
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Views/webadmin/section/detail.php(40): view_cell('\\App\\entities\\E...', Array)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/View/View.php(213): include('/Users/mac/Desk...')
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Common.php(1142): CodeIgniter\View\View->render('webadmin/sectio...', Array, true)
+#13 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Section.php(75): view('webadmin/sectio...', Array)
+#14 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Section->edit(3)
+#15 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Section))
+#16 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 {main}
+CRITICAL - 2022-11-10 13:33:11 --> Table 'project_ey56_xu.section_ext' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `section_ext`
+WHERE `fid` IN (\'27\')
+AND `relid` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `section_ext`
+WHERE `fid` IN (\'27\')
+AND `relid` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `section_ext`
+WHERE `fid` IN (\'27\')
+AND `relid` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `section_ext`
+WHERE `fid` IN :fid:
+AND `relid` = :relid:', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Entities/Extbase.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/View/Cell.php(111): App\Entities\Extbase::getRenderFields([...])
+ 9 SYSTEMPATH/Common.php(1158): CodeIgniter\View\Cell->render('\\App\\entities\\Extbase::getRenderFields', [...], 0, 'AppentitiesExtbasegetRenderFields32f72018fc19889133ae90fc49dc4af1')
+10 APPPATH/Views/webadmin/section/detail.php(40): view_cell('\\App\\entities\\Extbase::getRenderFields', [...])
+11 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/section/detail.php')
+12 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/section/detail', [], true)
+14 APPPATH/Controllers/Webadmin/Section.php(75): view('webadmin/section/detail', [...])
+15 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Section->edit(3)
+16 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Section))
+17 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 13:44:38 --> Class name must be a valid object or a string
+in APPPATH/Controllers/AdminController.php on line 336.
+ 1 APPPATH/Controllers/Webadmin/Section.php(29): App\Controllers\AdminController->getSearchData(Object(App\Models\SectionModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Section->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Section))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 13:46:24 --> Class name must be a valid object or a string
+in APPPATH/Controllers/AdminController.php on line 336.
+ 1 APPPATH/Controllers/Webadmin/Section.php(29): App\Controllers\AdminController->getSearchData(Object(App\Models\SectionModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Section->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Section))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 14:19:28 --> array_keys() expects parameter 1 to be array, null given
+in APPPATH/Entities/Extbase.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_keys() expects parameter 1 to be array, null given', 'APPPATH/Entities/Extbase.php', 278, [...])
+ 2 APPPATH/Entities/Extbase.php(278): array_keys(null)
+ 3 APPPATH/Controllers/Webadmin/Section.php(73): App\Entities\Extbase->setRulesExt(Object(App\Models\SectionModel), null)
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Section->edit(7)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Section))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 19:44:33 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 261.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(261): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Webadmin/Section.php(122): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/images/section/section-1668080673_b95e03be938a1f6d6cd9.png.png')
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Section->upimage()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Section))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 21:04:36 --> Undefined variable: sdModel
+in APPPATH/Controllers/Webadmin/Attach.php on line 23.
+ 1 APPPATH/Controllers/Webadmin/Attach.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sdModel', 'APPPATH/Controllers/Webadmin/Attach.php', 23, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 21:42:44 --> Undefined index: module
+in APPPATH/Controllers/Webadmin/Attach.php on line 33.
+ 1 APPPATH/Controllers/Webadmin/Attach.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: module', 'APPPATH/Controllers/Webadmin/Attach.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->upimage()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

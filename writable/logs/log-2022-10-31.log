@@ -1,0 +1,36 @@
+CRITICAL - 2022-10-31 08:11:20 --> The route for "h5/" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('h5/')
+ 2 SYSTEMPATH/Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(11): redirect('h5/')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-31 08:11:32 --> The route for "H5/" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('H5/')
+ 2 SYSTEMPATH/Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(11): redirect('H5/')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-31 08:13:18 --> Invalid file: h5/welcome_message.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('h5/welcome_message.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('h5/welcome_message', [], true)
+ 3 APPPATH/Controllers/H5/Home.php(11): view('h5/welcome_message')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-31 08:13:19 --> Invalid file: h5/welcome_message.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('h5/welcome_message.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('h5/welcome_message', [], true)
+ 3 APPPATH/Controllers/H5/Home.php(11): view('h5/welcome_message')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

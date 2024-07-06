@@ -1,0 +1,54 @@
+CRITICAL - 2022-12-01 08:38:36 --> Undefined variable: sdata
+in APPPATH/Controllers/Api/Pocket.php on line 145.
+ 1 APPPATH/Controllers/Api/Pocket.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sdata', 'APPPATH/Controllers/Api/Pocket.php', 145, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:13:08 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Pocket.php on line 127.
+ 1 APPPATH/Controllers/Api/Pocket.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Pocket.php', 127, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 10:34:43 --> 22 : The requested URL returned error: 504 Gateway Time-out
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 504 Gateway Time-out')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.5:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.5:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 10:34:43 --> 22 : The requested URL returned error: 504 Gateway Time-out
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 504 Gateway Time-out')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.5:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.5:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 10:34:43 --> 22 : The requested URL returned error: 504 Gateway Time-out
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 504 Gateway Time-out')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.5:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.5:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 10:34:43 --> 22 : The requested URL returned error: 504 Gateway Time-out
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 504 Gateway Time-out')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.5:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.5:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,956 @@
+CRITICAL - 2022-11-05 07:54:18 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 7 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 07:54:58 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 07:55:49 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 08:07:11 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:07:05 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:11:30 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:26:26 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:26:42 --> Undefined variable: module
+in APPPATH/Controllers/AdminController.php on line 76.
+ 1 APPPATH/Controllers/AdminController.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: module', 'APPPATH/Controllers/AdminController.php', 76, [...])
+ 2 APPPATH/Controllers/AdminController.php(232): App\Controllers\AdminController->act2Cond([...])
+ 3 APPPATH/Controllers/Webadmin/Sysuser.php(91): App\Controllers\AdminController->getSearchData(Object(App\Models\SysUserModel), [...], Object(App\Entities\Extbase))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:26:58 --> Undefined variable: module
+in APPPATH/Controllers/AdminController.php on line 76.
+ 1 APPPATH/Controllers/AdminController.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: module', 'APPPATH/Controllers/AdminController.php', 76, [...])
+ 2 APPPATH/Controllers/AdminController.php(232): App\Controllers\AdminController->act2Cond([...])
+ 3 APPPATH/Controllers/Webadmin/Sysuser.php(91): App\Controllers\AdminController->getSearchData(Object(App\Models\SysUserModel), [...], Object(App\Entities\Extbase))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:28:43 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:31:17 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 09:31:30 --> mysqli_sql_exception: Unknown column 'adduid' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`i...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/SysLogModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(306): App\Models\SysLogModel->count(Array, '', '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Syslog.php(17): App\Controllers\AdminController->getSearchData(Object(App\Models\SysLogModel), NULL)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-05 09:31:30 --> Unknown column 'adduid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`id`) AS `id`
+FROM `sys_log`
+WHERE `adduid` = \'13\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`id`) AS `id`
+FROM `sys_log`
+WHERE `adduid` = \'13\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`id`) AS `id`
+FROM `sys_log`
+WHERE `adduid` = \'13\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `sys_log`
+WHERE `adduid` = :adduid:', [...], false)
+ 5 APPPATH/Models/SysLogModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(306): App\Models\SysLogModel->count([...], 'ROOTPATH/public', 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Syslog.php(17): App\Controllers\AdminController->getSearchData(Object(App\Models\SysLogModel), null)
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:39:45 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:43:50 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:49:40 --> Undefined index: rid
+in APPPATH/Views/webadmin/member/detail.php on line 13.
+ 1 APPPATH/Views/webadmin/member/detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: rid', 'APPPATH/Views/webadmin/member/detail.php', 13, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/member/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/member/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Member.php(159): view('webadmin/member/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->edit('48')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:52:00 --> Undefined index: lvl
+in APPPATH/Views/webadmin/member/detail.php on line 54.
+ 1 APPPATH/Views/webadmin/member/detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: lvl', 'APPPATH/Views/webadmin/member/detail.php', 54, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/member/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/member/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Member.php(159): view('webadmin/member/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->edit('53')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 09:58:57 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 7 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:02:05 --> Undefined index: lvl
+in APPPATH/Views/webadmin/member/detail.php on line 54.
+ 1 APPPATH/Views/webadmin/member/detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: lvl', 'APPPATH/Views/webadmin/member/detail.php', 54, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/member/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/member/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Member.php(170): view('webadmin/member/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->edit('55')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:32:13 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 10:38:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(50): CodeIgniter\Database\BaseConnection->fieldExists('test', '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(132): App\Controllers\Webadmin\Sysdict->checkHasFields('', 'test')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(17)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-05 10:38:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM ')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM ')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('ROOTPATH/public')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(50): CodeIgniter\Database\BaseConnection->fieldExists('test', 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Sysdict.php(132): App\Controllers\Webadmin\Sysdict->checkHasFields('ROOTPATH/public', 'test')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(17)
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 10:40:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(50): CodeIgniter\Database\BaseConnection->fieldExists('alises', '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(132): App\Controllers\Webadmin\Sysdict->checkHasFields('', 'alises')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(5)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-05 10:40:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM ')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM ')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('ROOTPATH/public')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(50): CodeIgniter\Database\BaseConnection->fieldExists('alises', 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Sysdict.php(132): App\Controllers\Webadmin\Sysdict->checkHasFields('ROOTPATH/public', 'alises')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(5)
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 10:40:41 --> mysqli_sql_exception: Table 'project_ey56_xu.pocket' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('pocket')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(50): CodeIgniter\Database\BaseConnection->fieldExists('alises', 'pocket')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(132): App\Controllers\Webadmin\Sysdict->checkHasFields('pocket', 'alises')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(5)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-05 10:40:41 --> Table 'project_ey56_xu.pocket' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM `pocket`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM `pocket`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM `pocket`')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM `pocket`')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('pocket')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(50): CodeIgniter\Database\BaseConnection->fieldExists('alises', 'pocket')
+ 7 APPPATH/Controllers/Webadmin/Sysdict.php(132): App\Controllers\Webadmin\Sysdict->checkHasFields('pocket', 'alises')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(5)
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 10:41:36 --> mysqli_sql_exception: Table 'project_ey56_xu.member_ext' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(162): CodeIgniter\BaseModel->findAll()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(311): App\Entities\Extbase::getExtValue('member', Array)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(21): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Array, Object(App\Entities\Extbase))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-05 10:41:36 --> Table 'project_ey56_xu.member_ext' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `member_ext`
+WHERE `fid` IN (\'5\')
+AND `relid` IN (\'55\',\'53\',\'52\',\'48\',\'45\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `member_ext`
+WHERE `fid` IN (\'5\')
+AND `relid` IN (\'55\',\'53\',\'52\',\'48\',\'45\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `member_ext`
+WHERE `fid` IN (\'5\')
+AND `relid` IN (\'55\',\'53\',\'52\',\'48\',\'45\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `member_ext`
+WHERE `fid` IN :fid:
+AND `relid` IN :relid:', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Entities/Extbase.php(162): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/AdminController.php(311): App\Entities\Extbase::getExtValue('member', [...])
+ 9 APPPATH/Controllers/Webadmin/Member.php(21): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), [...], Object(App\Entities\Extbase))
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 12:06:45 --> mysqli_sql_exception: Table 'project_ey56_xu.member_ext' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(162): CodeIgniter\BaseModel->findAll()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(311): App\Entities\Extbase::getExtValue('member', Array)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(21): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Array, Object(App\Entities\Extbase))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-05 12:06:45 --> Table 'project_ey56_xu.member_ext' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `member_ext`
+WHERE `fid` IN (\'5\')
+AND `relid` IN (\'55\',\'53\',\'52\',\'48\',\'45\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `member_ext`
+WHERE `fid` IN (\'5\')
+AND `relid` IN (\'55\',\'53\',\'52\',\'48\',\'45\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `member_ext`
+WHERE `fid` IN (\'5\')
+AND `relid` IN (\'55\',\'53\',\'52\',\'48\',\'45\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `member_ext`
+WHERE `fid` IN :fid:
+AND `relid` IN :relid:', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Entities/Extbase.php(162): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/AdminController.php(311): App\Entities\Extbase::getExtValue('member', [...])
+ 9 APPPATH/Controllers/Webadmin/Member.php(21): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), [...], Object(App\Entities\Extbase))
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 13:56:57 --> syntax error, unexpected '$init' (T_VARIABLE)
+in APPPATH/Views/webadmin/syslog/index.php on line 3.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/syslog/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Syslog.php(21): view('webadmin/syslog/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 14:03:50 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 14:04:18 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('home')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('home')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 15:15:58 --> Undefined index: force
+in APPPATH/Controllers/AdminController.php on line 202.
+ 1 APPPATH/Controllers/AdminController.php(202): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: force', 'APPPATH/Controllers/AdminController.php', 202, [...])
+ 2 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysDictkeyModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 15:18:49 --> mysqli_sql_exception: Unknown column 'validate' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `fid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `fid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/SysDictkeyModel.php(108): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(307): App\Models\SysDictkeyModel->getData(Array, '5', 0, '', '', 'created_at', 'desc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\SysDictkeyModel), Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-05 15:18:49 --> Unknown column 'validate' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `fid`, `tname`, `name`, `code`, `type`, `info`, `validate`, `adduid`, `created_at`, `updated_at`
+FROM `sys_dict`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fid`, `tname`, `name`, `code`, `type`, `info`, `validate`, `adduid`, `created_at`, `updated_at`
+FROM `sys_dict`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fid`, `tname`, `name`, `code`, `type`, `info`, `validate`, `adduid`, `created_at`, `updated_at`
+FROM `sys_dict`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `fid`, `tname`, `name`, `code`, `type`, `info`, `validate`, `adduid`, `created_at`, `updated_at`
+FROM `sys_dict`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH/Models/SysDictkeyModel.php(108): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(307): App\Models\SysDictkeyModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 7 APPPATH/Controllers/Webadmin/Sysdict.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\SysDictkeyModel), [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:11:28 --> Access to undeclared static property: App\Models\SysDictkeyModel::$searchFields
+in APPPATH/Models/SysDictkeyModel.php on line 74.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:12:56 --> Undefined property: App\Models\SysDictkeyModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysDictkeyModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Model->__get('searchFields')
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 5 APPPATH/Controllers/AdminController.php(198): CodeIgniter\Model->__get('searchFields')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysDictkeyModel))
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:12:57 --> Undefined property: App\Models\SysDictkeyModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysDictkeyModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Model->__get('searchFields')
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 5 APPPATH/Controllers/AdminController.php(198): CodeIgniter\Model->__get('searchFields')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysDictkeyModel))
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:13:58 --> Using $this when not in object context
+in APPPATH/Models/SysDictkeyModel.php on line 74.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:15:00 --> Non-static method CodeIgniter\Model::__get() cannot be called statically
+in APPPATH/Models/SysDictkeyModel.php on line 74.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:16:40 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH/Models/SysDictkeyModel.php on line 74.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/SysDictkeyModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SysDictkeyModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SysDictkeyModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\SysDictkeyModel')
+ 5 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\SysDictkeyModel')
+ 6 SYSTEMPATH/Config/Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\SysDictkeyModel')
+ 7 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH/Common.php(817): CodeIgniter\Config\Factories::models('App\\Models\\SysDictkeyModel', [...], null)
+ 9 APPPATH/Controllers/Webadmin/Sysdict.php(12): model('App\\Models\\SysDictkeyModel')
+10 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Webadmin\Sysdict->__construct()
+11 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:17:30 --> Non-static method App\Models\SysDictkeyModel::getTable() should not be called statically
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 160.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Models\\SysDictkeyModel::getTable() should not be called statically', 'APPPATH/Controllers/Webadmin/Sysdict.php', 160, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(12)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:17:34 --> Non-static method App\Models\SysDictkeyModel::getTable() should not be called statically
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 160.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Models\\SysDictkeyModel::getTable() should not be called statically', 'APPPATH/Controllers/Webadmin/Sysdict.php', 160, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(12)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:18:19 --> Using $this when not in object context
+in APPPATH/Models/SysDictkeyModel.php on line 74.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:18:28 --> Non-static method CodeIgniter\Model::__get() cannot be called statically
+in APPPATH/Models/SysDictkeyModel.php on line 73.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:19:48 --> Non-static method CodeIgniter\Model::__get() cannot be called statically
+in APPPATH/Models/SysDictkeyModel.php on line 73.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:20:03 --> Using $this when not in object context
+in APPPATH/Models/SysDictkeyModel.php on line 74.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:21:35 --> Undefined property: App\Models\SysDictkeyModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysDictkeyModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Model->__get('searchFields')
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 5 APPPATH/Controllers/AdminController.php(198): CodeIgniter\Model->__get('searchFields')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysDictkeyModel))
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:21:37 --> Undefined property: App\Models\SysDictkeyModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysDictkeyModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Model->__get('searchFields')
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 5 APPPATH/Controllers/AdminController.php(198): CodeIgniter\Model->__get('searchFields')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysDictkeyModel))
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:23:56 --> Undefined property: App\Models\SysDictkeyModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysDictkeyModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 APPPATH/Controllers/AdminController.php(199): CodeIgniter\Model->__get('searchFields')
+ 4 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysDictkeyModel))
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:24:06 --> Undefined class constant 'searchFields'
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysDictkeyModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:30:27 --> Using $this when not in object context
+in APPPATH/Models/SysDictkeyModel.php on line 74.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:30:52 --> Access to undeclared static property: App\Models\SysDictkeyModel::$searchFields
+in APPPATH/Models/SysDictkeyModel.php on line 75.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:31:33 --> Using $this when not in object context
+in APPPATH/Models/SysDictkeyModel.php on line 74.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:33:26 --> Undefined class constant 'searchFields'
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(24): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysDictkeyModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:33:45 --> Undefined property: App\Models\SysDictkeyModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysDictkeyModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Model->__get('searchFields')
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 5 APPPATH/Controllers/Webadmin/Sysdict.php(19): CodeIgniter\Model->__get('searchFields')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 16:35:03 --> Non-static method App\Models\SysDictkeyModel::getTable() should not be called statically
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 161.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(161): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Models\\SysDictkeyModel::getTable() should not be called statically', 'APPPATH/Controllers/Webadmin/Sysdict.php', 161, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 16:35:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(54): CodeIgniter\Database\BaseConnection->fieldExists('agent', '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(136): App\Controllers\Webadmin\Sysdict->checkHasFields('', 'agent')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-05 16:35:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM ')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM ')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('ROOTPATH/public')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(54): CodeIgniter\Database\BaseConnection->fieldExists('agent', 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Sysdict.php(136): App\Controllers\Webadmin\Sysdict->checkHasFields('ROOTPATH/public', 'agent')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 16:36:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(54): CodeIgniter\Database\BaseConnection->fieldExists('agent', '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(136): App\Controllers\Webadmin\Sysdict->checkHasFields('', 'agent')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-05 16:36:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM ')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM ')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('ROOTPATH/public')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(54): CodeIgniter\Database\BaseConnection->fieldExists('agent', 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Sysdict.php(136): App\Controllers\Webadmin\Sysdict->checkHasFields('ROOTPATH/public', 'agent')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 16:36:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(54): CodeIgniter\Database\BaseConnection->fieldExists('agent', '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(136): App\Controllers\Webadmin\Sysdict->checkHasFields('', 'agent')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-05 16:36:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM ')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM ')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('ROOTPATH/public')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(54): CodeIgniter\Database\BaseConnection->fieldExists('agent', 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Sysdict.php(136): App\Controllers\Webadmin\Sysdict->checkHasFields('ROOTPATH/public', 'agent')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 16:40:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(54): CodeIgniter\Database\BaseConnection->fieldExists('agent', '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(136): App\Controllers\Webadmin\Sysdict->checkHasFields('', 'agent')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-05 16:40:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM ')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM ')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('ROOTPATH/public')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(54): CodeIgniter\Database\BaseConnection->fieldExists('agent', 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Sysdict.php(136): App\Controllers\Webadmin\Sysdict->checkHasFields('ROOTPATH/public', 'agent')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-05 16:40:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(54): CodeIgniter\Database\BaseConnection->fieldExists('agent', '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(136): App\Controllers\Webadmin\Sysdict->checkHasFields('', 'agent')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-05 16:40:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM ')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM ')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('ROOTPATH/public')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(54): CodeIgniter\Database\BaseConnection->fieldExists('agent', 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Sysdict.php(136): App\Controllers\Webadmin\Sysdict->checkHasFields('ROOTPATH/public', 'agent')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(11)
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:48:40 --> Cannot access protected property App\Models\SysRoleModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Sysrole.php(51): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysRoleModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:48:41 --> Access to undeclared static property: App\Models\SysLogModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Syslog.php(20): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysLogModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:48:42 --> Cannot access protected property App\Models\SysRoleModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Sysrole.php(51): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysRoleModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:48:43 --> Cannot access protected property App\Models\SysUserModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Sysuser.php(95): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysUserModel), Object(App\Entities\Extbase))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:49:50 --> Cannot access protected property App\Models\SysRoleModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Sysrole.php(51): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysRoleModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:49:51 --> Access to undeclared static property: App\Models\SysLogModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Syslog.php(20): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysLogModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:49:52 --> Cannot access protected property App\Models\SysRoleModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Sysrole.php(51): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysRoleModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:51:45 --> Cannot access protected property App\Models\SysUserModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Sysuser.php(95): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysUserModel), Object(App\Entities\Extbase))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:52:58 --> Undefined property: App\Models\SysUserModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysUserModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Model->__get('searchFields')
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 5 APPPATH/Controllers/Webadmin/Sysuser.php(90): CodeIgniter\Model->__get('searchFields')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:54:29 --> Cannot access protected property App\Models\SysRoleModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Sysrole.php(51): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysRoleModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:55:39 --> Access to undeclared static property: App\Models\SysLogModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Syslog.php(20): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysLogModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 18:57:14 --> Cannot access protected property App\Models\LevelModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Level.php(30): App\Controllers\AdminController->setIndexInitData(Object(App\Models\LevelModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Level->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Level))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 19:01:24 --> Access to undeclared static property: App\Models\SysLogModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Syslog.php(20): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysLogModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 19:02:42 --> Access to undeclared static property: App\Models\SysLogModel::$searchFields
+in APPPATH/Controllers/AdminController.php on line 199.
+ 1 APPPATH/Controllers/Webadmin/Syslog.php(20): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysLogModel))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 19:30:23 --> syntax error, unexpected ''type'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH/Models/SysDictkeyModel.php on line 50.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/SysDictkeyModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SysDictkeyModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SysDictkeyModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\SysDictkeyModel')
+ 5 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\SysDictkeyModel')
+ 6 SYSTEMPATH/Config/Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\SysDictkeyModel')
+ 7 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH/Common.php(817): CodeIgniter\Config\Factories::models('App\\Models\\SysDictkeyModel', [...], null)
+ 9 APPPATH/Controllers/Webadmin/Sysdict.php(12): model('App\\Models\\SysDictkeyModel')
+10 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Webadmin\Sysdict->__construct()
+11 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 19:30:50 --> Cannot use empty array elements in arrays
+in APPPATH/Models/SysDictkeyModel.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-05 19:51:04 --> Undefined index: rid
+in APPPATH/Controllers/AdminController.php on line 203.
+ 1 APPPATH/Controllers/AdminController.php(203): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: rid', 'APPPATH/Controllers/AdminController.php', 203, [...])
+ 2 APPPATH/Controllers/Webadmin/Sysuser.php(96): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysUserModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 20:44:28 --> syntax error, unexpected 'module' (T_STRING), expecting ')'
+in APPPATH/Views/webadmin/sysdict/index.php on line 25.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysdict/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Sysdict.php(36): view('webadmin/sysdict/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 20:44:55 --> Call to undefined function array_key()
+in APPPATH/Views/webadmin/sysdict/index.php on line 25.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysdict/index', [], true)
+ 4 APPPATH/Controllers/Webadmin/Sysdict.php(36): view('webadmin/sysdict/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 20:45:15 --> Illegal string offset 'fullfields'
+in APPPATH/Views/webadmin/sysdict/index.php on line 25.
+ 1 APPPATH/Views/webadmin/sysdict/index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'fullfields\'', 'APPPATH/Views/webadmin/sysdict/index.php', 25, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysdict/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysdict/index', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysdict.php(36): view('webadmin/sysdict/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 20:46:19 --> array_keys() expects parameter 1 to be array, string given
+in APPPATH/Views/webadmin/sysdict/index.php on line 25.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_keys() expects parameter 1 to be array, string given', 'APPPATH/Views/webadmin/sysdict/index.php', 25, [...])
+ 2 APPPATH/Views/webadmin/sysdict/index.php(25): array_keys('{"numeric":"\\u7eaf\\u6570\\u5b57","valid_url":"URL\\u5730\\u5740","valid_email":"\\u7535\\u5b50\\u90ae\\u4ef6","valid_emails":"\\u7535\\u5b50\\u90ae\\u4ef6\\u7ec4","numeric|min_length[11]|max_length[13]":"\\u624b\\u673a\\u53f7","valid_cc_number":"\\u4fe1\\u7528\\u5361\\u53f7","valid_ip[ipv4]":"IP4\\u5730\\u5740","valid_ip[ipv6]":"IP6\\u5730\\u5740","valid_json":"JSON\\u4e32"}')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysdict/index.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysdict/index', [], true)
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(36): view('webadmin/sysdict/index', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 20:57:11 --> Cannot use empty array elements in arrays
+in APPPATH/Models/SysDictkeyModel.php on line 28.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-05 20:57:40 --> Non-static method App\Models\SysDictkeyModel::getTable() should not be called statically
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 123.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Models\\SysDictkeyModel::getTable() should not be called statically', 'APPPATH/Controllers/Webadmin/Sysdict.php', 123, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,199 @@
+CRITICAL - 2022-09-28 10:18:02 --> syntax error, unexpected ':'
+in APPPATH/Controllers/Api/User.php on line 137.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/user/login')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/user/login')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/user/login')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 10:18:50 --> syntax error, unexpected '$ret' (T_VARIABLE), expecting ']'
+in APPPATH/Controllers/Api/User.php on line 147.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/user/login')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/user/login')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/user/login')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 10:19:21 --> Access to undeclared static property: App\Controllers\ApiController::$cfg
+in APPPATH/Controllers/Api/User.php on line 127.
+ 1 [internal function]: App\Controllers\Api\User->Douyin()
+ 2 APPPATH/Controllers/Api/User.php(161): call_user_func([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 10:51:48 --> syntax error, unexpected ''' (T_CONSTANT_ENCAPSED_STRING)
+in APPPATH/Controllers/Api/User.php on line 140.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/user/login')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/user/login')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/user/login')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 11:07:16 --> syntax error, unexpected ']', expecting ')'
+in APPPATH/Controllers/Api/User.php on line 187.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/user/login')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/user/login')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/user/login')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 11:07:31 --> Call to undefined method App\Controllers\Api\User::_buildHttpData()
+in APPPATH/Controllers/Api/User.php on line 138.
+ 1 APPPATH/Controllers/Api/User.php(187): App\Controllers\Api\User::doRequest('POST', 'https://developer.toutiao.com/api/apps/v2/jscode2session', [...])
+ 2 [internal function]: App\Controllers\Api\User->Douyin()
+ 3 APPPATH/Controllers/Api/User.php(203): call_user_func([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 11:08:13 --> Undefined index: data
+in APPPATH/Controllers/Api/User.php on line 138.
+ 1 APPPATH/Controllers/Api/User.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: data', 'APPPATH/Controllers/Api/User.php', 138, [...])
+ 2 APPPATH/Controllers/Api/User.php(187): App\Controllers\Api\User::doRequest('POST', 'https://developer.toutiao.com/api/apps/v2/jscode2session', [...])
+ 3 [internal function]: App\Controllers\Api\User->Douyin()
+ 4 APPPATH/Controllers/Api/User.php(203): call_user_func([...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 11:08:13 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-28 11:09:02 --> Undefined index: data
+in APPPATH/Controllers/Api/User.php on line 169.
+ 1 APPPATH/Controllers/Api/User.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: data', 'APPPATH/Controllers/Api/User.php', 169, [...])
+ 2 APPPATH/Controllers/Api/User.php(218): App\Controllers\Api\User::doRequest('POST', 'https://developer.toutiao.com/api/apps/v2/jscode2session', [...])
+ 3 [internal function]: App\Controllers\Api\User->Douyin()
+ 4 APPPATH/Controllers/Api/User.php(234): call_user_func([...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 11:09:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-28 11:52:14 --> Undefined index: data
+in APPPATH/Controllers/Api/User.php on line 169.
+ 1 APPPATH/Controllers/Api/User.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: data', 'APPPATH/Controllers/Api/User.php', 169, [...])
+ 2 APPPATH/Controllers/Api/User.php(218): App\Controllers\Api\User::doRequest('POST', 'https://developer.toutiao.com/api/apps/v2/jscode2session', [...])
+ 3 [internal function]: App\Controllers\Api\User->Douyin()
+ 4 APPPATH/Controllers/Api/User.php(234): call_user_func([...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 11:52:14 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-28 11:56:40 --> Undefined index: data
+in APPPATH/Controllers/Api/User.php on line 140.
+ 1 APPPATH/Controllers/Api/User.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: data', 'APPPATH/Controllers/Api/User.php', 140, [...])
+ 2 APPPATH/Controllers/Api/User.php(197): App\Controllers\Api\User::doRequest('POST', 'https://developer.toutiao.com/api/apps/v2/jscode2session', [...])
+ 3 [internal function]: App\Controllers\Api\User->Douyin()
+ 4 APPPATH/Controllers/Api/User.php(213): call_user_func([...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 11:56:40 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-28 11:56:57 --> Undefined index: data
+in APPPATH/Controllers/Api/User.php on line 140.
+ 1 APPPATH/Controllers/Api/User.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: data', 'APPPATH/Controllers/Api/User.php', 140, [...])
+ 2 APPPATH/Controllers/Api/User.php(197): App\Controllers\Api\User::doRequest('POST', 'https://developer.toutiao.com/api/apps/v2/jscode2session', [...])
+ 3 [internal function]: App\Controllers\Api\User->Douyin()
+ 4 APPPATH/Controllers/Api/User.php(213): call_user_func([...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 11:56:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-28 12:00:41 --> Argument 3 passed to CodeIgniter\HTTP\CURLRequest::request() must be of the type array, string given, called in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/User.php on line 193
+in SYSTEMPATH/HTTP/CURLRequest.php on line 128.
+ 1 APPPATH/Controllers/Api/User.php(193): CodeIgniter\HTTP\CURLRequest->request('POST', 'https://developer.toutiao.com/api/apps/v2/jscode2session', '{"body":{"appid":"ttb521c39c2a1fe85a01","secret":"5c80900d950f6669bed84d097792777427c23ec1","code":"fM6uQ1oej7_jOqCa6CU3O5DpPoRQCGvdzLyn3ryfs7G18Ymo-NpefcHmvimhYJYMVapO6AxnpLtCLtKzvboFQUeKgejDo40-7JdyRLskAjC4JCHZehXbNzkKkQ8","anonymous_code":"Gll5o25cDFlvUGx3OseHbMrukc3Dqo9dHQqJCeUwImX7Zbd7KQuQ1SakIO61aQFbhsJVUfMWmdIAtlE1tzx_TuxvkBihtBGP4wNdZA"},"Content-type":"application\\/json"}')
+ 2 [internal function]: App\Controllers\Api\User->Douyin()
+ 3 APPPATH/Controllers/Api/User.php(211): call_user_func([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 13:06:50 --> Illegal string offset 'err_tips'
+in APPPATH/Controllers/Api/User.php on line 147.
+ 1 APPPATH/Controllers/Api/User.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'err_tips\'', 'APPPATH/Controllers/Api/User.php', 147, [...])
+ 2 [internal function]: App\Controllers\Api\User->Douyin()
+ 3 APPPATH/Controllers/Api/User.php(163): call_user_func([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 13:07:24 --> Illegal string offset 'err_tips'
+in APPPATH/Controllers/Api/User.php on line 147.
+ 1 APPPATH/Controllers/Api/User.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'err_tips\'', 'APPPATH/Controllers/Api/User.php', 147, [...])
+ 2 [internal function]: App\Controllers\Api\User->Douyin()
+ 3 APPPATH/Controllers/Api/User.php(163): call_user_func([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 13:09:31 --> Illegal string offset 'err_tips'
+in APPPATH/Controllers/Api/User.php on line 146.
+ 1 APPPATH/Controllers/Api/User.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'err_tips\'', 'APPPATH/Controllers/Api/User.php', 146, [...])
+ 2 [internal function]: App\Controllers\Api\User->Douyin()
+ 3 APPPATH/Controllers/Api/User.php(165): call_user_func([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-28 13:09:44 --> Trying to get property 'err_tips' of non-object
+in APPPATH/Controllers/Api/User.php on line 146.
+ 1 APPPATH/Controllers/Api/User.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'err_tips\' of non-object', 'APPPATH/Controllers/Api/User.php', 146, [...])
+ 2 [internal function]: App\Controllers\Api\User->Douyin()
+ 3 APPPATH/Controllers/Api/User.php(165): call_user_func([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\User->Login()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

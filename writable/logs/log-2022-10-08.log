@@ -1,0 +1,438 @@
+CRITICAL - 2022-10-08 12:06:01 --> 22 : The requested URL returned error: 404 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://qn.cdn.yuyaoit.cn/calorie/doing/1_40.jpg')
+ 4 APPPATH/Controllers/Admin/Caiji.php(321): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://qn.cdn.yuyaoit.cn/calorie/doing/1_40.jpg')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:06:50 --> 22 : The requested URL returned error: 404 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://qn.cdn.yuyaoit.cn/calorie/doing/1_40.jpg')
+ 4 APPPATH/Controllers/Admin/Caiji.php(321): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://qn.cdn.yuyaoit.cn/calorie/doing/1_40.jpg')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:08:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+in APPPATH/Controllers/Admin/Caiji.php on line 318.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:11:52 --> 22 : The requested URL returned error: 404 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://qn.cdn.yuyaoit.cn/calorie/doing/1_40.jpg')
+ 4 APPPATH/Controllers/Admin/Caiji.php(321): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://qn.cdn.yuyaoit.cn/calorie/doing/1_40.jpg')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:18:19 --> 22 : The requested URL returned error: 404 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/1_40.jpg')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/1_40.jpg', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(326): CodeIgniter\HTTP\CURLRequest->get('calorie/doing/1_40.jpg')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:20:55 --> 22 : The requested URL returned error: 404 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/1_40.jpg')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/1_40.jpg', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(326): CodeIgniter\HTTP\CURLRequest->get('calorie/doing/1_40.jpg')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:29:53 --> curl_getinfo(): supplied resource is not a valid cURL handle resource
+in APPPATH/Controllers/Admin/Caiji.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'curl_getinfo(): supplied resource is not a valid cURL handle resource', 'APPPATH/Controllers/Admin/Caiji.php', 76, [...])
+ 2 APPPATH/Controllers/Admin/Caiji.php(76): curl_getinfo(NULL, 2097154)
+ 3 APPPATH/Controllers/Admin/Caiji.php(343): App\Controllers\Admin\Caiji::getUrlCode('https://qn.cdn.yuyaoit.cn/calorie/doing/1_1.jpg')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:34:06 --> 22 : The requested URL returned error: 404 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/2_820.jpg')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/2_820.jpg', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(345): CodeIgniter\HTTP\CURLRequest->get('calorie/doing/2_820.jpg')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:34:25 --> 22 : The requested URL returned error: 404 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/2_8202222.jpg')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/2_8202222.jpg', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(345): CodeIgniter\HTTP\CURLRequest->get('calorie/doing/2_8202222.jpg')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:34:28 --> 22 : The requested URL returned error: 404 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/2_8202222.jpg')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/2_8202222.jpg', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(345): CodeIgniter\HTTP\CURLRequest->get('calorie/doing/2_8202222.jpg')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:38:29 --> 22 : The requested URL returned error: 404 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/2_820.jpg')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'https://qn.cdn.yuyaoit.cn/calorie/doing/2_820.jpg', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(346): CodeIgniter\HTTP\CURLRequest->get('calorie/doing/2_820.jpg')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 12:53:28 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH/Controllers/Admin/Caiji.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-08 13:06:48 --> syntax error, unexpected 'str_pad' (T_STRING)
+in APPPATH/Controllers/Admin/Caiji.php on line 338.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/caiji/updateDoingImages')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/caiji/updateDoingImages')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('admin/caiji/updateDoingImages')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:11:52 --> syntax error, unexpected '　　echo' (T_STRING)
+in APPPATH/Controllers/Admin/Caiji.php on line 341.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/caiji/updateDoingImages')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/caiji/updateDoingImages')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('admin/caiji/updateDoingImages')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:12:14 --> syntax error, unexpected '　　echo' (T_STRING)
+in APPPATH/Controllers/Admin/Caiji.php on line 341.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/caiji/updateDoingImages')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/caiji/updateDoingImages')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('admin/caiji/updateDoingImages')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:12:29 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH/Controllers/Admin/Caiji.php on line 340.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/caiji/updateDoingImages')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/caiji/updateDoingImages')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('admin/caiji/updateDoingImages')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:12:50 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH/Controllers/Admin/Caiji.php on line 340.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/caiji/updateDoingImages')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/caiji/updateDoingImages')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('admin/caiji/updateDoingImages')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:13:11 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH/Controllers/Admin/Caiji.php on line 337.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/caiji/updateDoingImages')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/caiji/updateDoingImages')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('admin/caiji/updateDoingImages')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:14:04 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH/Controllers/Admin/Caiji.php on line 339.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/caiji/updateDoingImages')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/caiji/updateDoingImages')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('admin/caiji/updateDoingImages')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:14:36 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH/Controllers/Admin/Caiji.php on line 339.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/caiji/updateDoingImages')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/caiji/updateDoingImages')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('admin/caiji/updateDoingImages')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:15:03 --> Call to undefined function App\Controllers\Admin\　　ob_implicit_flush()
+in APPPATH/Controllers/Admin/Caiji.php on line 334.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:15:45 --> ob_flush(): failed to flush buffer. No buffer to flush
+in APPPATH/Controllers/Admin/Caiji.php on line 342.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'ob_flush(): failed to flush buffer. No buffer to flush', 'APPPATH/Controllers/Admin/Caiji.php', 342, [...])
+ 2 APPPATH/Controllers/Admin/Caiji.php(342): ob_flush()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:25:17 --> Cannot access protected property CodeIgniter\HTTP\CLIRequest::$uri
+in APPPATH/Filters/Auth.php on line 13.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\CLIRequest), null)
+ 2 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/caiji', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 13:46:50 --> Cannot access protected property CodeIgniter\HTTP\CLIRequest::$uri
+in APPPATH/Filters/Auth.php on line 13.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\CLIRequest), null)
+ 2 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/caiji', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-08 13:47:46 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'ey_calorie', 3306, '', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-08 13:47:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `cateid`, `thumb`
+FROM `calorie_doing_url`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-08 13:48:44 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'ey_calorie', 3306, '', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-08 13:48:44 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `cateid`, `thumb`
+FROM `calorie_doing_url`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-08 13:52:07 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'ey_miniservice', 3306, '', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-08 13:52:07 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `cateid`, `thumb`
+FROM `calorie_doing_url`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-08 13:52:41 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'root', 'ey_miniservice', 3306, '', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-08 13:52:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `cateid`, `thumb`
+FROM `calorie_doing_url`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-08 13:56:52 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'root', 'ey_miniservice', 3306, '', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-08 13:56:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `cateid`, `thumb`
+FROM `calorie_doing_url`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-08 13:57:01 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'root', 'ey_miniservice', 3306, '', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-08 13:57:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `cateid`, `thumb`
+FROM `calorie_doing_url`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Admin/Caiji.php(352): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateDoingImages()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

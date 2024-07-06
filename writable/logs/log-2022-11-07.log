@@ -1,0 +1,1102 @@
+CRITICAL - 2022-11-07 07:22:35 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 7 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 07:22:38 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 7 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 07:31:46 --> Undefined index: module
+in APPPATH/Controllers/AdminController.php on line 204.
+ 1 APPPATH/Controllers/AdminController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: module', 'APPPATH/Controllers/AdminController.php', 204, [...])
+ 2 APPPATH/Controllers/Webadmin/Syslog.php(20): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysLogModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 07:31:51 --> Undefined index: module
+in APPPATH/Controllers/AdminController.php on line 204.
+ 1 APPPATH/Controllers/AdminController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: module', 'APPPATH/Controllers/AdminController.php', 204, [...])
+ 2 APPPATH/Controllers/Webadmin/Syslog.php(20): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysLogModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 07:33:39 --> Undefined index: module
+in APPPATH/Controllers/AdminController.php on line 204.
+ 1 APPPATH/Controllers/AdminController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: module', 'APPPATH/Controllers/AdminController.php', 204, [...])
+ 2 APPPATH/Controllers/Webadmin/Syslog.php(20): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysLogModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 07:34:43 --> Undefined property: App\Models\SysLogModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysLogModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Model->__get('searchFields')
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 5 APPPATH/Controllers/Webadmin/Syslog.php(16): CodeIgniter\Model->__get('searchFields')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 07:58:20 --> Undefined index: type
+in APPPATH/Controllers/AdminController.php on line 142.
+ 1 APPPATH/Controllers/AdminController.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: type', 'APPPATH/Controllers/AdminController.php', 142, [...])
+ 2 APPPATH/Controllers/Webadmin/Member.php(33): App\Controllers\AdminController::getRenderSearch([...], 'member', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 07:59:59 --> Undefined index: type
+in APPPATH/Controllers/AdminController.php on line 142.
+ 1 APPPATH/Controllers/AdminController.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: type', 'APPPATH/Controllers/AdminController.php', 142, [...])
+ 2 APPPATH/Controllers/Webadmin/Member.php(33): App\Controllers\AdminController::getRenderSearch([...], 'member', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:01:17 --> Undefined index: rule
+in APPPATH/Views/webadmin/sysdict/index.php on line 25.
+ 1 APPPATH/Views/webadmin/sysdict/index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: rule', 'APPPATH/Views/webadmin/sysdict/index.php', 25, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysdict/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysdict/index', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysdict.php(36): view('webadmin/sysdict/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:02:10 --> Undefined variable: searchFields
+in APPPATH/Controllers/AdminController.php on line 200.
+ 1 APPPATH/Controllers/AdminController.php(200): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: searchFields', 'APPPATH/Controllers/AdminController.php', 200, [...])
+ 2 APPPATH/Controllers/Webadmin/Sysdict.php(25): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysDictkeyModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:03:16 --> Access to undeclared static property: App\Models\SysDictkeyModel::$searchFields
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:07:34 --> Access to undeclared static property: App\Models\SysDictkeyModel::$searchFields
+in APPPATH/Models/SysDictkeyModel.php on line 76.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(167): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(24)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:07:38 --> Access to undeclared static property: App\Models\SysDictkeyModel::$searchFields
+in APPPATH/Models/SysDictkeyModel.php on line 76.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(167): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(25)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:07:46 --> Access to undeclared static property: App\Models\SysDictkeyModel::$searchFields
+in APPPATH/Models/SysDictkeyModel.php on line 76.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(167): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(25)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:08:16 --> Using $this when not in object context
+in APPPATH/Models/SysDictkeyModel.php on line 75.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(167): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(25)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:09:12 --> Access to undeclared static property: App\Models\SysDictkeyModel::$searchFields
+in APPPATH/Models/SysDictkeyModel.php on line 76.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(167): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(24)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:11:01 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH/Models/SysDictkeyModel.php on line 77.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/SysDictkeyModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SysDictkeyModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SysDictkeyModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\SysDictkeyModel')
+ 5 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\SysDictkeyModel')
+ 6 SYSTEMPATH/Config/Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\SysDictkeyModel')
+ 7 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH/Common.php(817): CodeIgniter\Config\Factories::models('App\\Models\\SysDictkeyModel', [...], null)
+ 9 APPPATH/Controllers/Webadmin/Sysdict.php(12): model('App\\Models\\SysDictkeyModel')
+10 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Webadmin\Sysdict->__construct()
+11 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:11:12 --> Undefined constant 'App\Models\SysDictkeyModel\searchFields'
+in APPPATH/Models/SysDictkeyModel.php on line 77.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(167): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(25)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:12:05 --> Undefined constant 'SysDictkeyModel\searchFields'
+in APPPATH/Models/SysDictkeyModel.php on line 77.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(167): App\Models\SysDictkeyModel::getTable()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(24)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:13:26 --> Access to undeclared static property: App\Models\SysDictkeyModel::$searchFields
+in APPPATH/Models/SysDictkeyModel.php on line 85.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(168): App\Models\SysDictkeyModel::getType()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(24)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:13:53 --> Undefined index: tname
+in APPPATH/Views/webadmin/sysdict/detail.php on line 8.
+ 1 APPPATH/Views/webadmin/sysdict/detail.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tname', 'APPPATH/Views/webadmin/sysdict/detail.php', 8, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysdict/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysdict/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysdict.php(180): view('webadmin/sysdict/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(24)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:15:01 --> Undefined index: tname
+in APPPATH/Views/webadmin/sysdict/detail.php on line 8.
+ 1 APPPATH/Views/webadmin/sysdict/detail.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tname', 'APPPATH/Views/webadmin/sysdict/detail.php', 8, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysdict/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysdict/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysdict.php(180): view('webadmin/sysdict/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(24)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:18:21 --> Undefined property: App\Models\SysUserModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysUserModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 APPPATH/Controllers/AdminController.php(200): CodeIgniter\Model->__get('searchFields')
+ 4 APPPATH/Controllers/Webadmin/Sysuser.php(96): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysUserModel), Object(App\Entities\Extbase))
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:22:56 --> Undefined property: App\Models\SysUserModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysUserModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 APPPATH/Controllers/Webadmin/Sysuser.php(101): CodeIgniter\Model->__get('searchFields')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:38:07 --> Undefined property: App\Models\SysRoleModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysRoleModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 APPPATH/Controllers/AdminController.php(200): CodeIgniter\Model->__get('searchFields')
+ 4 APPPATH/Controllers/Webadmin/Sysrole.php(51): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysRoleModel))
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:39:33 --> Undefined property: App\Models\SysRoleModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysRoleModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 APPPATH/Controllers/AdminController.php(200): CodeIgniter\Model->__get('searchFields')
+ 4 APPPATH/Controllers/Webadmin/Sysrole.php(49): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysRoleModel))
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:41:16 --> Undefined property: App\Models\SysLogModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\SysLogModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 APPPATH/Controllers/AdminController.php(200): CodeIgniter\Model->__get('searchFields')
+ 4 APPPATH/Controllers/Webadmin/Syslog.php(20): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysLogModel))
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:41:32 --> Access to undeclared static property: App\Models\SysLogModel::$searchFields
+in APPPATH/Controllers/Webadmin/Syslog.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:47:12 --> Undefined property: App\Models\MemberModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\MemberModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 APPPATH/Controllers/AdminController.php(200): CodeIgniter\Model->__get('searchFields')
+ 4 APPPATH/Controllers/Webadmin/Member.php(25): App\Controllers\AdminController->setIndexInitData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:49:05 --> Undefined property: App\Models\MemberModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\MemberModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 APPPATH/Controllers/Webadmin/Member.php(26): CodeIgniter\Model->__get('searchFields')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:58:03 --> Undefined property: App\Models\LevelModel::$searchFields
+in SYSTEMPATH/BaseModel.php on line 1612.
+ 1 SYSTEMPATH/BaseModel.php(1612): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Models\\LevelModel::$searchFields', 'SYSTEMPATH/BaseModel.php', 1612, [...])
+ 2 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->__get('searchFields')
+ 3 APPPATH/Controllers/AdminController.php(200): CodeIgniter\Model->__get('searchFields')
+ 4 APPPATH/Controllers/Webadmin/Level.php(30): App\Controllers\AdminController->setIndexInitData(Object(App\Models\LevelModel))
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Level->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Level))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 09:14:46 --> Invalid file: webadmin/pocket/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(30): view('webadmin/pocket/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 09:14:48 --> Invalid file: webadmin/pocket/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(30): view('webadmin/pocket/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 09:14:51 --> Invalid file: webadmin/pocket/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(30): view('webadmin/pocket/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 09:16:37 --> Invalid file: webadmin/pocket/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(30): view('webadmin/pocket/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 09:22:49 --> Invalid file: webadmin/pocket/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(30): view('webadmin/pocket/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 09:22:52 --> Invalid file: webadmin/pocket/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(30): view('webadmin/pocket/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 09:54:30 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PocketModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(310): App\Models\PocketModel->getData(Array, '5', 0, '', '', 'created_at', 'desc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Pocket.php(29): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 09:54:30 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH/Models/PocketModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(310): App\Models\PocketModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 7 APPPATH/Controllers/Webadmin/Pocket.php(29): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 09:54:39 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(54): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->add()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 09:56:27 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PocketModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(310): App\Models\PocketModel->getData(Array, '5', 0, '', '', 'created_at', 'desc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Pocket.php(29): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 09:56:27 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH/Models/PocketModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(310): App\Models\PocketModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 7 APPPATH/Controllers/Webadmin/Pocket.php(29): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 10:00:43 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PocketModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(310): App\Models\PocketModel->getData(Array, '5', 0, '', '', 'created_at', 'desc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Pocket.php(31): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 10:00:43 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `name`, `numbmin`, `numbmax`, `policy`, `status`, `created_at`, `updated_at`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH/Models/PocketModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(310): App\Models\PocketModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 7 APPPATH/Controllers/Webadmin/Pocket.php(31): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:35:36 --> Undefined index: extfields
+in APPPATH/Views/webadmin/pocket/index.php on line 55.
+ 1 APPPATH/Views/webadmin/pocket/index.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: extfields', 'APPPATH/Views/webadmin/pocket/index.php', 55, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/index', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(39): view('webadmin/pocket/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:40:19 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(59): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->add()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:42:20 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(80): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->edit(52)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:42:27 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(59): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->add()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:55:57 --> Undefined index: extfields
+in APPPATH/Views/webadmin/pocket/index.php on line 56.
+ 1 APPPATH/Views/webadmin/pocket/index.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: extfields', 'APPPATH/Views/webadmin/pocket/index.php', 56, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/index', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(39): view('webadmin/pocket/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:56:00 --> Undefined index: extfields
+in APPPATH/Views/webadmin/pocket/index.php on line 56.
+ 1 APPPATH/Views/webadmin/pocket/index.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: extfields', 'APPPATH/Views/webadmin/pocket/index.php', 56, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/index', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(39): view('webadmin/pocket/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:56:44 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(59): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->add()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:56:51 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(59): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->add()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:56:57 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(59): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->add()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 11:51:13 --> get_class() expects parameter 1 to be object, string given
+in APPPATH/Controllers/AdminController.php on line 126.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'get_class() expects parameter 1 to be object, string given', 'APPPATH/Controllers/AdminController.php', 126, [...])
+ 2 APPPATH/Controllers/AdminController.php(126): get_class('level')
+ 3 APPPATH/Controllers/AdminController.php(215): App\Controllers\AdminController::getRenderAdd([...], 'level', '添加')
+ 4 APPPATH/Controllers/Webadmin/Level.php(29): App\Controllers\AdminController->setIndexInitData(Object(App\Models\LevelModel))
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Level->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Level))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 11:51:14 --> get_class() expects parameter 1 to be object, string given
+in APPPATH/Controllers/AdminController.php on line 126.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'get_class() expects parameter 1 to be object, string given', 'APPPATH/Controllers/AdminController.php', 126, [...])
+ 2 APPPATH/Controllers/AdminController.php(126): get_class('member')
+ 3 APPPATH/Controllers/AdminController.php(215): App\Controllers\AdminController::getRenderAdd([...], 'member', '添加')
+ 4 APPPATH/Controllers/Webadmin/Member.php(28): App\Controllers\AdminController->setIndexInitData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 11:53:52 --> Use of undefined constant self - assumed 'self' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/AdminController.php on line 126.
+ 1 APPPATH/Controllers/AdminController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant self - assumed \'self\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/AdminController.php', 126, [...])
+ 2 APPPATH/Controllers/AdminController.php(214): App\Controllers\AdminController::getRenderAdd([...], 'level', '添加')
+ 3 APPPATH/Controllers/Webadmin/Level.php(29): App\Controllers\AdminController->setIndexInitData(Object(App\Models\LevelModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Level->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Level))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 11:53:53 --> Use of undefined constant self - assumed 'self' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/AdminController.php on line 126.
+ 1 APPPATH/Controllers/AdminController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant self - assumed \'self\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/AdminController.php', 126, [...])
+ 2 APPPATH/Controllers/AdminController.php(214): App\Controllers\AdminController::getRenderAdd([...], 'pocket', '添加')
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(38): App\Controllers\AdminController->setIndexInitData(Object(App\Models\PocketModel), Object(App\Entities\Extbase))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 11:54:08 --> Using $this when not in object context
+in APPPATH/Controllers/AdminController.php on line 126.
+ 1 APPPATH/Controllers/AdminController.php(214): App\Controllers\AdminController::getRenderAdd([...], 'member', '添加')
+ 2 APPPATH/Controllers/Webadmin/Member.php(28): App\Controllers\AdminController->setIndexInitData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 11:56:16 --> Using $this when not in object context
+in APPPATH/Controllers/AdminController.php on line 126.
+ 1 APPPATH/Controllers/AdminController.php(214): App\Controllers\AdminController::getRenderAdd([...], 'syslog', '添加')
+ 2 APPPATH/Controllers/Webadmin/Syslog.php(19): App\Controllers\AdminController->setIndexInitData(Object(App\Models\SysLogModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Syslog->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Syslog))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 11:56:19 --> Using $this when not in object context
+in APPPATH/Controllers/AdminController.php on line 126.
+ 1 APPPATH/Controllers/AdminController.php(214): App\Controllers\AdminController::getRenderAdd([...], 'member', '添加')
+ 2 APPPATH/Controllers/Webadmin/Member.php(28): App\Controllers\AdminController->setIndexInitData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 11:56:20 --> Using $this when not in object context
+in APPPATH/Controllers/AdminController.php on line 126.
+ 1 APPPATH/Controllers/AdminController.php(214): App\Controllers\AdminController::getRenderAdd([...], 'level', '添加')
+ 2 APPPATH/Controllers/Webadmin/Level.php(29): App\Controllers\AdminController->setIndexInitData(Object(App\Models\LevelModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Level->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Level))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 13:28:06 --> Using $this when not in object context
+in APPPATH/Controllers/AdminController.php on line 126.
+ 1 APPPATH/Controllers/AdminController.php(214): App\Controllers\AdminController::getRenderAdd([...], 'member', '添加')
+ 2 APPPATH/Controllers/Webadmin/Member.php(28): App\Controllers\AdminController->setIndexInitData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 13:33:10 --> Using $this when not in object context
+in APPPATH/Controllers/AdminController.php on line 125.
+ 1 APPPATH/Controllers/AdminController.php(214): App\Controllers\AdminController::getRenderAdd([...], 'member', '添加')
+ 2 APPPATH/Controllers/Webadmin/Member.php(28): App\Controllers\AdminController->setIndexInitData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 13:48:26 --> Use of undefined constant self - assumed 'self' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/AdminController.php on line 126.
+ 1 APPPATH/Controllers/AdminController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant self - assumed \'self\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/AdminController.php', 126, [...])
+ 2 APPPATH/Controllers/AdminController.php(215): App\Controllers\AdminController->getRenderAdd([...], 'member', '添加')
+ 3 APPPATH/Controllers/Webadmin/Member.php(28): App\Controllers\AdminController->setIndexInitData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 13:52:34 --> syntax error, unexpected '}', expecting ';'
+in APPPATH/Controllers/AdminController.php on line 128.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/AdminController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 APPPATH/Controllers/Webadmin/Home.php(5): spl_autoload_call('App\\Controllers\\AdminController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Webadmin/Home.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 15:09:01 --> Undefined offset: 24
+in APPPATH/Entities/Extbase.php on line 33.
+ 1 APPPATH/Entities/Extbase.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 24', 'APPPATH/Entities/Extbase.php', 33, [...])
+ 2 SYSTEMPATH/View/Cell.php(111): App\Entities\Extbase::getRenderFields([...])
+ 3 SYSTEMPATH/Common.php(1158): CodeIgniter\View\Cell->render('\\App\\entities\\Extbase::getRenderFields', [...], 0, 'AppentitiesExtbasegetRenderFields43e7b0dca402a4f31487f33202604279')
+ 4 APPPATH/Views/webadmin/member/detail.php(69): view_cell('\\App\\entities\\Extbase::getRenderFields', [...])
+ 5 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/member/detail.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/member/detail', [], true)
+ 8 APPPATH/Controllers/Webadmin/Member.php(83): view('webadmin/member/detail', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->add()
+10 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 15:21:03 --> Non-static method App\Models\SysDictkeyModel::getType() should not be called statically
+in APPPATH/Entities/Extbase.php on line 191.
+ 1 APPPATH/Entities/Extbase.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Models\\SysDictkeyModel::getType() should not be called statically', 'APPPATH/Entities/Extbase.php', 191, [...])
+ 2 APPPATH/Controllers/AdminController.php(98): App\Entities\Extbase::setExtValue('member', 48, [...], '1')
+ 3 APPPATH/Controllers/Webadmin/Member.php(100): App\Controllers\AdminController->setDetailPostExt(Object(App\Models\MemberModel), Object(App\Entities\Extbase), 48)
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->edit('48')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 15:43:00 --> Illegal offset type
+in APPPATH/Entities/Extbase.php on line 182.
+ 1 APPPATH/Entities/Extbase.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset type', 'APPPATH/Entities/Extbase.php', 182, [...])
+ 2 APPPATH/Controllers/AdminController.php(321): App\Entities\Extbase::getExtValue('member', [...])
+ 3 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 15:54:50 --> Call to undefined function App\Entities\split()
+in APPPATH/Entities/Extbase.php on line 182.
+ 1 APPPATH/Controllers/AdminController.php(321): App\Entities\Extbase::getExtValue('member', [...])
+ 2 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 15:55:03 --> Call to undefined function App\Entities\split()
+in APPPATH/Entities/Extbase.php on line 182.
+ 1 APPPATH/Controllers/AdminController.php(321): App\Entities\Extbase::getExtValue('member', [...])
+ 2 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 19:17:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("{$searchval}",val) <> 0:
+AND `fid` = '26'' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`r...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`r...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`r...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`r...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', Array, '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 19:17:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("{$searchval}",val) <> 0:
+AND `fid` = '26'' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("{$searchval}",val)<>0 :FIND_IN_SET("{$searchval}",val) <> 0:
+AND `fid` = \'26\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("{$searchval}",val)<>0 :FIND_IN_SET("{$searchval}",val) <> 0:
+AND `fid` = \'26\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("{$searchval}",val)<>0 :FIND_IN_SET("{$searchval}",val) <> 0:
+AND `fid` = \'26\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("{$searchval}",val)<>0 :FIND_IN_SET("{$searchval}",val) <> 0:
+AND `fid` = :fid:', [...], false)
+ 5 APPPATH/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', [...], 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 19:17:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("",val) <> 0:
+AND `fid` = '26'' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`r...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`r...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`r...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`r...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', Array, '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 19:17:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("",val) <> 0:
+AND `fid` = '26'' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("",val)<>0 :FIND_IN_SET("",val) <> 0:
+AND `fid` = \'26\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("",val)<>0 :FIND_IN_SET("",val) <> 0:
+AND `fid` = \'26\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("",val)<>0 :FIND_IN_SET("",val) <> 0:
+AND `fid` = \'26\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("",val)<>0 :FIND_IN_SET("",val) <> 0:
+AND `fid` = :fid:', [...], false)
+ 5 APPPATH/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', [...], 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 19:17:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("",val) <> 0:
+AND `fid` = '26'' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`r...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`r...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`r...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`r...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', Array, '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 19:17:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("",val) <> 0:
+AND `fid` = '26'' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("",val)<>0 :FIND_IN_SET("",val) <> 0:
+AND `fid` = \'26\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("",val)<>0 :FIND_IN_SET("",val) <> 0:
+AND `fid` = \'26\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("",val)<>0 :FIND_IN_SET("",val) <> 0:
+AND `fid` = \'26\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("",val)<>0 :FIND_IN_SET("",val) <> 0:
+AND `fid` = :fid:', [...], false)
+ 5 APPPATH/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', [...], 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 19:18:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("b",val) <> 0:
+AND `fid` = '26'' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`r...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`r...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`r...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`r...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', Array, '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 19:18:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("b",val) <> 0:
+AND `fid` = '26'' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)<>0 :FIND_IN_SET("b",val) <> 0:
+AND `fid` = \'26\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)<>0 :FIND_IN_SET("b",val) <> 0:
+AND `fid` = \'26\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)<>0 :FIND_IN_SET("b",val) <> 0:
+AND `fid` = \'26\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)<>0 :FIND_IN_SET("b",val) <> 0:
+AND `fid` = :fid:', [...], false)
+ 5 APPPATH/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', [...], 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 19:22:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getLastQuery()
+in APPPATH/Entities/Extbase.php on line 143.
+ 1 APPPATH/Controllers/AdminController.php(339): App\Entities\Extbase::searchValue('member', [...], '5', 0, 'ROOTPATH/public', 'created_at', 'desc')
+ 2 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 19:24:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("b",val) > 0:
+AND `fid` = '26'' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`r...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`r...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`r...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`r...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', Array, '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 19:24:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("b",val) > 0:
+AND `fid` = '26'' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = \'26\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = \'26\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = \'26\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = :fid:', [...], false)
+ 5 APPPATH/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', [...], 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 19:25:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND `fid` = :fid:' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`r...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`r...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`r...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`r...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', Array, '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 19:25:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND `fid` = :fid:' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE 0 = :0:
+AND `fid` = :fid:', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE 0 = :0:
+AND `fid` = :fid:')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE 0 = :0:
+AND `fid` = :fid:')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE 0 = :0:
+AND `fid` = :fid:', [...], false)
+ 5 APPPATH/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', [...], 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 19:26:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("b",val) > 0:
+AND `fid` = '26'' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`r...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`r...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`r...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`r...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', Array, '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 19:26:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("b",val) > 0:
+AND `fid` = '26'' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = \'26\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = \'26\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = \'26\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = :fid:', [...], false)
+ 5 APPPATH/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', [...], 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 19:26:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("b",val) > 0:
+AND `fid` = '26'' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`r...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`r...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`r...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`r...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', Array, '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-07 19:26:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':FIND_IN_SET("b",val) > 0:
+AND `fid` = '26'' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = \'26\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = \'26\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = \'26\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`relid`) AS `relid`
+FROM `member_ext`
+WHERE FIND_IN_SET("b",val)>0 :FIND_IN_SET("b",val) > 0:
+AND `fid` = :fid:', [...], false)
+ 5 APPPATH/Entities/Extbase.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(337): App\Entities\Extbase::searchCount('member', [...], 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 20:36:05 --> Undefined variable: rule
+in APPPATH/Entities/Extbase.php on line 278.
+ 1 APPPATH/Entities/Extbase.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: rule', 'APPPATH/Entities/Extbase.php', 278, [...])
+ 2 APPPATH/Controllers/Webadmin/Member.php(71): App\Entities\Extbase->getValidRules([...], Object(App\Models\MemberModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->add()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 21:14:45 --> Undefined index: messages
+in APPPATH/Controllers/Webadmin/Member.php on line 74.
+ 1 APPPATH/Controllers/Webadmin/Member.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: messages', 'APPPATH/Controllers/Webadmin/Member.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 21:15:52 --> Undefined index: messages
+in APPPATH/Controllers/Webadmin/Member.php on line 75.
+ 1 APPPATH/Controllers/Webadmin/Member.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: messages', 'APPPATH/Controllers/Webadmin/Member.php', 75, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 21:17:03 --> Argument 2 passed to CodeIgniter\BaseModel::setValidationMessage() must be of the type array, string given, called in /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php on line 76
+in SYSTEMPATH/BaseModel.php on line 1268.
+ 1 APPPATH/Controllers/Webadmin/Member.php(76): CodeIgniter\BaseModel->setValidationMessage('信用卡号', '请检查该字段的正确性')
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 21:17:55 --> Undefined index: required
+in APPPATH/Controllers/Webadmin/Member.php on line 76.
+ 1 APPPATH/Controllers/Webadmin/Member.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: required', 'APPPATH/Controllers/Webadmin/Member.php', 76, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 21:25:30 --> Undefined index: checkbox
+in APPPATH/Entities/Extbase.php on line 283.
+ 1 APPPATH/Entities/Extbase.php(283): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: checkbox', 'APPPATH/Entities/Extbase.php', 283, [...])
+ 2 APPPATH/Controllers/Webadmin/Member.php(71): App\Entities\Extbase->getRules([...], Object(App\Models\MemberModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->add()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 21:29:55 --> Argument 2 passed to CodeIgniter\Validation\CreditCardRules::valid_cc_number() must be of the type string, null given, called in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Validation/Validation.php on line 314
+in SYSTEMPATH/Validation/CreditCardRules.php on line 173.
+ 1 SYSTEMPATH/Validation/Validation.php(314): CodeIgniter\Validation\CreditCardRules->valid_cc_number('123', null)
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('ext[text][test]', 'ext[text][test]', '123', [...], [...])
+ 3 SYSTEMPATH/BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH/BaseModel.php(707): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Webadmin/Member.php(76): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->add()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

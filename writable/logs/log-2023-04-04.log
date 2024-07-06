@@ -1,0 +1,109 @@
+ERROR - 2023-04-04 13:34:38 --> mysqli_sql_exception: Unknown column 'statu' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT COUNT(`i...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/GameModulesSaleModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(166): App\Models\GameModulesSaleModel->count(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getSaleModules()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-04 13:34:38 --> Unknown column 'statu' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `game_modules_sale`
+WHERE `deleted_at` IS NULL
+AND `statu` = :statu:', [...], false)
+ 2 APPPATH/Models/GameModulesSaleModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Api/Game.php(166): App\Models\GameModulesSaleModel->count([...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getSaleModules()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-04 13:36:46 --> mysqli_sql_exception: Unknown column 'statu' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT COUNT(`i...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/GameModulesSaleModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(166): App\Models\GameModulesSaleModel->count(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getSaleModules()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-04 13:36:46 --> Unknown column 'statu' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `game_modules_sale`
+WHERE `deleted_at` IS NULL
+AND `statu` = :statu:', [...], false)
+ 2 APPPATH/Models/GameModulesSaleModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Api/Game.php(166): App\Models\GameModulesSaleModel->count([...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getSaleModules()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 13:37:23 --> Invalid argument supplied for foreach()
+in SYSTEMPATH/Database/BaseBuilder.php on line 411.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'SYSTEMPATH/Database/BaseBuilder.php', 411, [...])
+ 2 APPPATH/Models/GameModulesSaleModel.php(34): CodeIgniter\Database\BaseBuilder->select(15)
+ 3 APPPATH/Controllers/Api/Game.php(174): App\Models\GameModulesSaleModel->getData([...], 15, 0)
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getSaleModules()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 14:41:35 --> syntax error, unexpected '{'
+in APPPATH/Controllers/Api/Game.php on line 222.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/getModulesBase')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/getModulesBase')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/getModulesBase')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 14:41:37 --> syntax error, unexpected '{'
+in APPPATH/Controllers/Api/Game.php on line 222.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/getSaleModules')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/getSaleModules')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/getSaleModules')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 14:42:08 --> syntax error, unexpected '{'
+in APPPATH/Controllers/Api/Game.php on line 222.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/test')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/test')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 14:42:22 --> Call to undefined method App\Entities\Game::moduleClone()
+in APPPATH/Controllers/Api/Game.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 14:44:15 --> Undefined index: uid
+in APPPATH/Controllers/Api/Game.php on line 211.
+ 1 APPPATH/Controllers/Api/Game.php(211): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Controllers/Api/Game.php', 211, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->byModule()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 14:44:44 --> Undefined index: uid
+in APPPATH/Controllers/Api/Game.php on line 211.
+ 1 APPPATH/Controllers/Api/Game.php(211): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Controllers/Api/Game.php', 211, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->byModule()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 15:11:19 --> Call to undefined method App\Entities\Game::moduleClone()
+in APPPATH/Controllers/Api/Game.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

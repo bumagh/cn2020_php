@@ -1,0 +1,207 @@
+ERROR - 2023-04-02 10:22:03 --> mysqli_sql_exception: Unknown column 'b.numb' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(67): App\Controllers\Api\Game->getModulesConf('60')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 10:22:03 --> Unknown column 'b.numb' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.name,a.avatar,b.uid,b.mid,b.lvl,b.numb from game_modules as a 
+				left join (select * from game_modules_conf where uid=60) as b
+				on a.id=b.mid
+				order by a.sort,a.id asc')
+ 2 APPPATH/Controllers/Api/Game.php(67): App\Controllers\Api\Game->getModulesConf('60')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 19:42:51 --> mysqli_sql_exception: Unknown column 'b.numb' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 19:42:51 --> Unknown column 'b.numb' in 'order clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.name,a.avatar,b.uid,b.mid,b.lvl from game_modules as a 
+				left join (select * from game_modules_conf where uid=60) as b
+				on a.id=b.mid
+				order by a.sort,a.id asc,b.numb desc')
+ 2 APPPATH/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 19:45:03 --> mysqli_sql_exception: Unknown column 'b.numb' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 19:45:03 --> Unknown column 'b.numb' in 'order clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.name,a.avatar,b.uid,b.mid,b.lvl from game_modules as a 
+				left join (select * from game_modules_conf where uid=60) as b
+				on a.id=b.mid
+				order by a.sort,a.id asc,b.numb desc')
+ 2 APPPATH/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 20:30:37 --> mysqli_sql_exception: Unknown column 'b.numb' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 20:30:37 --> Unknown column 'b.numb' in 'order clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.name,a.avatar,b.uid,b.mid,b.lvl from game_modules as a 
+				left join (select * from game_modules_conf where uid=60) as b
+				on a.id=b.mid
+				order by a.sort,a.id asc,b.numb desc')
+ 2 APPPATH/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 20:31:08 --> mysqli_sql_exception: Unknown column 'b.numb' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 20:31:08 --> Unknown column 'b.numb' in 'order clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.name,a.avatar,b.uid,b.mid,b.lvl from game_modules as a 
+				left join (select * from game_modules_conf where uid=60) as b
+				on a.id=b.mid
+				order by a.sort,a.id asc,b.numb desc')
+ 2 APPPATH/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 20:31:16 --> mysqli_sql_exception: Unknown column 'b.numb' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 20:31:16 --> Unknown column 'b.numb' in 'order clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.name,a.avatar,b.uid,b.mid,b.lvl from game_modules as a 
+				left join (select * from game_modules_conf where uid=60) as b
+				on a.id=b.mid
+				order by a.sort,a.id asc,b.numb desc')
+ 2 APPPATH/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 20:31:22 --> mysqli_sql_exception: Unknown column 'b.numb' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 20:31:22 --> Unknown column 'b.numb' in 'order clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.name,a.avatar,b.uid,b.mid,b.lvl from game_modules as a 
+				left join (select * from game_modules_conf where uid=60) as b
+				on a.id=b.mid
+				order by a.sort,a.id asc,b.numb desc')
+ 2 APPPATH/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 20:31:45 --> mysqli_sql_exception: Unknown column 'b.numb' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 20:31:45 --> Unknown column 'b.numb' in 'order clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.name,a.avatar,b.uid,b.mid,b.lvl from game_modules as a 
+				left join (select * from game_modules_conf where uid=60) as b
+				on a.id=b.mid
+				order by a.sort,a.id asc,b.numb desc')
+ 2 APPPATH/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 20:32:28 --> mysqli_sql_exception: Unknown column 'b.numb' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.n...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.n...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.n...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 20:32:28 --> Unknown column 'b.numb' in 'order clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(59): CodeIgniter\Database\BaseConnection->query('select a.id,a.name,a.avatar,b.uid,b.mid,b.lvl from game_modules as a 
+				left join (select * from game_modules_conf where uid=60) as b
+				on a.id=b.mid
+				order by a.sort,a.id asc,b.numb desc')
+ 2 APPPATH/Controllers/Api/Game.php(82): App\Controllers\Api\Game->getModulesConf('60')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

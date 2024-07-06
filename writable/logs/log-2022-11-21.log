@@ -1,0 +1,277 @@
+CRITICAL - 2022-11-21 07:39:25 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH/Controllers/Api/Recharge.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Recharge->asyncLog()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Recharge))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 07:53:24 --> syntax error, unexpected ';'
+in APPPATH/Controllers/Api/Weixin.php on line 103.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/weixin/paynotice')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/weixin/paynotice')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/weixin/paynotice')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 07:53:35 --> Invalid Notify.
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 102.
+ 1 APPPATH/Controllers/Api/Weixin.php(98): WeChat\Contracts\BasicWePay->getNotify()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->paynotice()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 07:53:57 --> Invalid Notify.
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 102.
+ 1 APPPATH/Controllers/Api/Weixin.php(98): WeChat\Contracts\BasicWePay->getNotify()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->paynotice()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 07:53:59 --> Invalid Notify.
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 102.
+ 1 APPPATH/Controllers/Api/Weixin.php(98): WeChat\Contracts\BasicWePay->getNotify()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->paynotice()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 07:54:45 --> Invalid Notify.
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 102.
+ 1 APPPATH/Controllers/Api/Weixin.php(96): WeChat\Contracts\BasicWePay->getNotify()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->paynotice()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 07:56:12 --> Invalid Notify.
+in APPPATH/ThirdParty/wechatdeveloper/WeChat/Contracts/BasicWePay.php on line 102.
+ 1 APPPATH/Controllers/Api/Weixin.php(95): WeChat\Contracts\BasicWePay->getNotify()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->paynotice()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-21 08:03:45 --> mysqli_sql_exception: Unknown column 'trade' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `po...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PocketLogCashModel.php(50): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Weixin.php(110): App\Models\PocketLogCashModel->setLog('recharge', '96', 0.1, '1668988814', 1, '420000162120221...')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Weixin->test()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-21 08:03:45 --> Unknown column 'trade' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pocket_log_cash` (`tag`, `uid`, `numb`, `trade`, `status`, `memo`, `relid`, `adduid`) VALUES (\'recharge\', \'96\', 0.1, \'1668988814\', 1, \'4200001621202211216674897892\', \'96\', \'96\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pocket_log_cash` (`tag`, `uid`, `numb`, `trade`, `status`, `memo`, `relid`, `adduid`) VALUES (\'recharge\', \'96\', 0.1, \'1668988814\', 1, \'4200001621202211216674897892\', \'96\', \'96\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pocket_log_cash` (`tag`, `uid`, `numb`, `trade`, `status`, `memo`, `relid`, `adduid`) VALUES (\'recharge\', \'96\', 0.1, \'1668988814\', 1, \'4200001621202211216674897892\', \'96\', \'96\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pocket_log_cash` (`tag`, `uid`, `numb`, `trade`, `status`, `memo`, `relid`, `adduid`) VALUES (:tag:, :uid:, :numb:, :trade:, :status:, :memo:, :relid:, :adduid:)', [...], false)
+ 5 APPPATH/Models/PocketLogCashModel.php(50): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Api/Weixin.php(110): App\Models\PocketLogCashModel->setLog('recharge', '96', 0.1, '1668988814', 1, '4200001621202211216674897892')
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->test()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:01:20 --> syntax error, unexpected '$cashLog' (T_VARIABLE)
+in APPPATH/Controllers/Api/Weixin.php on line 100.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/weixin/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/weixin/test')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/weixin/test')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:33:27 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 280.
+ 1 APPPATH/Controllers/Api/Member.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 280, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:33:51 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 280.
+ 1 APPPATH/Controllers/Api/Member.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 280, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:35:45 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 280.
+ 1 APPPATH/Controllers/Api/Member.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 280, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:35:48 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 280.
+ 1 APPPATH/Controllers/Api/Member.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 280, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:37:22 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 280.
+ 1 APPPATH/Controllers/Api/Member.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 280, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:38:58 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 280.
+ 1 APPPATH/Controllers/Api/Member.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 280, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:39:08 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 280.
+ 1 APPPATH/Controllers/Api/Member.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 280, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:39:15 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 280.
+ 1 APPPATH/Controllers/Api/Member.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 280, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:39:17 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 280.
+ 1 APPPATH/Controllers/Api/Member.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 280, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:07:24 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Weixin.php on line 121.
+ 1 APPPATH/Controllers/Api/Weixin.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Weixin.php', 121, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:08:19 --> syntax error, unexpected '$pocket' (T_VARIABLE)
+in APPPATH/Controllers/Api/Weixin.php on line 137.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/weixin/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/weixin/test')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/weixin/test')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:09:21 --> syntax error, unexpected '$pocket' (T_VARIABLE)
+in APPPATH/Controllers/Api/Weixin.php on line 137.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/weixin/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/weixin/test')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/weixin/test')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 13:59:18 --> syntax error, unexpected '；' (T_STRING)
+in APPPATH/Controllers/Api/Weixin.php on line 98.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/weixin/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/weixin/test')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/weixin/test')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 13:59:40 --> Using $this when not in object context
+in APPPATH/Entities/Pocket.php on line 38.
+ 1 APPPATH/Controllers/Api/Weixin.php(130): App\Entities\Pocket::setWxPay([...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 13:59:55 --> Access to undeclared static property: App\Entities\Pocket::$mModel
+in APPPATH/Entities/Pocket.php on line 47.
+ 1 APPPATH/Entities/Pocket.php(38): App\Entities\Pocket::setLevelupByCoin('60', '1', 2256)
+ 2 APPPATH/Controllers/Api/Weixin.php(130): App\Entities\Pocket::setWxPay([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:00:58 --> Using $this when not in object context
+in APPPATH/Entities/Pocket.php on line 51.
+ 1 APPPATH/Entities/Pocket.php(38): App\Entities\Pocket::setLevelupByCoin('60', '1', 2266)
+ 2 APPPATH/Controllers/Api/Weixin.php(130): App\Entities\Pocket::setWxPay([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:01:21 --> Using $this when not in object context
+in APPPATH/Entities/Pocket.php on line 38.
+ 1 APPPATH/Controllers/Api/Weixin.php(130): App\Entities\Pocket::setWxPay([...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:01:43 --> Non-static method App\Entities\Pocket::setLevelupByCoin() should not be called statically
+in APPPATH/Entities/Pocket.php on line 38.
+ 1 APPPATH/Entities/Pocket.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Entities\\Pocket::setLevelupByCoin() should not be called statically', 'APPPATH/Entities/Pocket.php', 38, [...])
+ 2 APPPATH/Controllers/Api/Weixin.php(130): App\Entities\Pocket::setWxPay([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:02:38 --> Using $this when not in object context
+in APPPATH/Entities/Pocket.php on line 51.
+ 1 APPPATH/Entities/Pocket.php(38): App\Entities\Pocket::setLevelupByCoin('60', '1', 2316)
+ 2 APPPATH/Controllers/Api/Weixin.php(130): App\Entities\Pocket::setWxPay([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:36:33 --> Undefined index: lvl
+in APPPATH/Controllers/Api/Weixin.php on line 72.
+ 1 APPPATH/Controllers/Api/Weixin.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: lvl', 'APPPATH/Controllers/Api/Weixin.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Weixin->pay()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Weixin))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:44:52 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 72.
+ 1 APPPATH/Controllers/ApiController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 72, [...])
+ 2 APPPATH/Controllers/Api/Pocket.php(41): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setInitPocket()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:44:52 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 72.
+ 1 APPPATH/Controllers/ApiController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 72, [...])
+ 2 APPPATH/Controllers/Api/Pocket.php(41): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setInitPocket()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:45:00 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 72.
+ 1 APPPATH/Controllers/ApiController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 72, [...])
+ 2 APPPATH/Controllers/Api/Member.php(266): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:45:01 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 72.
+ 1 APPPATH/Controllers/ApiController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 72, [...])
+ 2 APPPATH/Controllers/Api/Message.php(52): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Message->getnew()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Message))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:46:39 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 72.
+ 1 APPPATH/Controllers/ApiController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 72, [...])
+ 2 APPPATH/Controllers/Api/Member.php(266): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 14:46:40 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 72.
+ 1 APPPATH/Controllers/ApiController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 72, [...])
+ 2 APPPATH/Controllers/Api/Message.php(52): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Message->getnew()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Message))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

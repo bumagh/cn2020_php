@@ -1,0 +1,70 @@
+CRITICAL - 2022-11-09 08:36:32 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 57.
+ 1 APPPATH/Controllers/WebController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 08:41:07 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 57.
+ 1 APPPATH/Controllers/WebController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:04:17 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 57.
+ 1 APPPATH/Controllers/WebController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:19:59 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\H5/Home::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\H5/Home::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('/')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('/')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:28:53 --> Object of class CodeIgniter\HTTP\RedirectResponse could not be converted to string
+in APPPATH/Controllers/Home.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:45:33 --> Class 'App\Controllers\H5Controller' not found
+in APPPATH/Controllers/H5/Home.php on line 6.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('h5')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('h5')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('h5')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:46:37 --> syntax error, unexpected ';', expecting identifier (T_STRING)
+in APPPATH/Controllers/H5/Home.php on line 3.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('h5/home')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('h5/home')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('h5/home')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:50:58 --> Invalid file: index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FCPATH/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH/Controllers/H5/Home.php(11): view('index', [])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:51:43 --> Invalid file: index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FCPATH/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH/Controllers/H5/Home.php(11): view('index', [])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

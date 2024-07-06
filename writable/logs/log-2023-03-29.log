@@ -1,0 +1,221 @@
+CRITICAL - 2023-03-29 08:22:24 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 67.
+ 1 APPPATH/Controllers/Api/Game.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 67, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->upgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:22:35 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 67.
+ 1 APPPATH/Controllers/Api/Game.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 67, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->upgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 13:54:49 --> Undefined index: uid
+in APPPATH/Entities/Game.php on line 17.
+ 1 APPPATH/Entities/Game.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Entities/Game.php', 17, [...])
+ 2 APPPATH/Controllers/Api/Game.php(21): App\Entities\Game::moduleUpgrade([], [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 14:04:28 --> Undefined index: lvl
+in APPPATH/Entities/Game.php on line 22.
+ 1 APPPATH/Entities/Game.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: lvl', 'APPPATH/Entities/Game.php', 22, [...])
+ 2 APPPATH/Controllers/Api/Game.php(21): App\Entities\Game::moduleUpgrade([...], [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 14:18:26 --> syntax error, unexpected ')'
+in APPPATH/Controllers/Api/Game.php on line 84.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/test')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/test')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 14:53:08 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 14:53:10 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 14:53:13 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:06:10 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:09:32 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:15:02 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:15:08 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:15:11 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:19:38 --> Call to undefined method App\Entities\Game::moduleClone()
+in APPPATH/Controllers/Api/Game.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:23:09 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:25:56 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 104.
+ 1 APPPATH/Controllers/Api/Game.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 104, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:25:57 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 104.
+ 1 APPPATH/Controllers/Api/Game.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 104, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:26:00 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 104.
+ 1 APPPATH/Controllers/Api/Game.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 104, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:26:17 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 104.
+ 1 APPPATH/Controllers/Api/Game.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 104, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:26:28 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 104.
+ 1 APPPATH/Controllers/Api/Game.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 104, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:26:55 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 104.
+ 1 APPPATH/Controllers/Api/Game.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 104, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:28:54 --> Illegal string offset 'uid'
+in APPPATH/Entities/Game.php on line 74.
+ 1 APPPATH/Entities/Game.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Entities/Game.php', 74, [...])
+ 2 APPPATH/Controllers/Api/Game.php(110): App\Entities\Game::setModuleMake('60', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 15:40:13 --> mysqli_sql_exception: Unknown column 'status' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `id`, `m...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `m...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `m...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `m...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(113): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 15:40:13 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `mid`, `lvl`
+FROM `game_user_modules`
+WHERE `uid` = :uid:
+AND `status` = :status:', [...], false)
+ 2 SYSTEMPATH/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Api/Game.php(113): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 15:40:34 --> mysqli_sql_exception: Unknown column 'status' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `id`, `m...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `m...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `m...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `m...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(113): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 15:40:34 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `mid`, `lvl`
+FROM `game_user_modules`
+WHERE `uid` = :uid:
+AND `status` = :status:', [...], false)
+ 2 SYSTEMPATH/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Api/Game.php(113): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:42:09 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 15:42:29 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 77.
+ 1 APPPATH/Controllers/Api/Game.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleUpgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

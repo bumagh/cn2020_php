@@ -1,0 +1,299 @@
+CRITICAL - 2022-11-26 14:39:27 --> syntax error, unexpected '$_ext' (T_VARIABLE)
+in APPPATH/Controllers/Api/Vote.php on line 136.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/vote/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/vote/test')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/vote/test')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 14:50:50 --> Undefined offset: 9
+in APPPATH/Controllers/Api/Vote.php on line 143.
+ 1 APPPATH/Controllers/Api/Vote.php(143): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 9', 'APPPATH/Controllers/Api/Vote.php', 143, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 14:50:52 --> Undefined offset: 9
+in APPPATH/Controllers/Api/Vote.php on line 143.
+ 1 APPPATH/Controllers/Api/Vote.php(143): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 9', 'APPPATH/Controllers/Api/Vote.php', 143, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 14:55:18 --> Undefined variable: a
+in APPPATH/Controllers/Api/Vote.php on line 94.
+ 1 APPPATH/Controllers/Api/Vote.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: a', 'APPPATH/Controllers/Api/Vote.php', 94, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-26 16:44:37 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(171): mysqli->real_connect(NULL, 'root', 'root', 'project_ey56_xu', NULL, '/Applications/M...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/VoteModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(131): App\Models\VoteModel->count(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/VoteModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(131): App\Models\VoteModel->count(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-26 16:44:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_vote`
+WHERE `deleted_at` IS NULL
+AND `tag` = :tag:
+AND `status` = :status:', [...], false)
+ 3 APPPATH/Models/VoteModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/Vote.php(131): App\Models\VoteModel->count([...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 19:57:38 --> Undefined variable: fields
+in APPPATH/Controllers/Api/Vote.php on line 24.
+ 1 APPPATH/Controllers/Api/Vote.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: fields', 'APPPATH/Controllers/Api/Vote.php', 24, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(95): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:03:52 --> Undefined index: id
+in APPPATH/Controllers/Api/Vote.php on line 27.
+ 1 APPPATH/Controllers/Api/Vote.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH/Controllers/Api/Vote.php', 27, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(100): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:05:47 --> Undefined index: id
+in APPPATH/Controllers/Api/Vote.php on line 29.
+ 1 APPPATH/Controllers/Api/Vote.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH/Controllers/Api/Vote.php', 29, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(102): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:27:20 --> Undefined offset: 8
+in APPPATH/Controllers/Api/Vote.php on line 34.
+ 1 APPPATH/Controllers/Api/Vote.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 8', 'APPPATH/Controllers/Api/Vote.php', 34, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(106): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:29:18 --> Undefined index: total
+in APPPATH/Controllers/Api/Vote.php on line 36.
+ 1 APPPATH/Controllers/Api/Vote.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: total', 'APPPATH/Controllers/Api/Vote.php', 36, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(111): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:36:20 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 61.
+ 1 APPPATH/Controllers/Api/Vote.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 61, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:44:57 --> Trying to access array offset on value of type int
+in APPPATH/Controllers/Api/Vote.php on line 28.
+ 1 APPPATH/Controllers/Api/Vote.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type int', 'APPPATH/Controllers/Api/Vote.php', 28, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(107): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:44:59 --> Trying to access array offset on value of type int
+in APPPATH/Controllers/Api/Vote.php on line 28.
+ 1 APPPATH/Controllers/Api/Vote.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type int', 'APPPATH/Controllers/Api/Vote.php', 28, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(107): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:45:18 --> Undefined offset: 8
+in APPPATH/Controllers/Api/Vote.php on line 28.
+ 1 APPPATH/Controllers/Api/Vote.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 8', 'APPPATH/Controllers/Api/Vote.php', 28, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(107): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:48:24 --> Undefined index: vid
+in APPPATH/Controllers/Api/Vote.php on line 34.
+ 1 APPPATH/Controllers/Api/Vote.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: vid', 'APPPATH/Controllers/Api/Vote.php', 34, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(111): App\Controllers\Api\Vote->getJoin(null)
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:50:11 --> Undefined index: vid
+in APPPATH/Controllers/Api/Vote.php on line 34.
+ 1 APPPATH/Controllers/Api/Vote.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: vid', 'APPPATH/Controllers/Api/Vote.php', 34, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(111): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:59:47 --> syntax error, unexpected '$result' (T_VARIABLE)
+in APPPATH/Controllers/Api/Vote.php on line 38.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/vote/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/vote/test')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/vote/test')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 20:59:49 --> syntax error, unexpected '$result' (T_VARIABLE)
+in APPPATH/Controllers/Api/Vote.php on line 38.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/vote/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/vote/test')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/vote/test')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:13:14 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:13:20 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:16:08 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:16:38 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:18:04 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:19:35 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:21:08 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:21:17 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:22:11 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:22:15 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:22:16 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:22:17 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:22:48 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:23:29 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:23:40 --> Undefined index: tag
+in APPPATH/Controllers/Api/Vote.php on line 52.
+ 1 APPPATH/Controllers/Api/Vote.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/Api/Vote.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:24:31 --> Undefined variable: pid
+in APPPATH/Controllers/Api/Vote.php on line 55.
+ 1 APPPATH/Controllers/Api/Vote.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pid', 'APPPATH/Controllers/Api/Vote.php', 55, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:24:56 --> Undefined variable: pid
+in APPPATH/Controllers/Api/Vote.php on line 55.
+ 1 APPPATH/Controllers/Api/Vote.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pid', 'APPPATH/Controllers/Api/Vote.php', 55, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 21:27:19 --> Undefined variable: pid
+in APPPATH/Controllers/Api/Vote.php on line 55.
+ 1 APPPATH/Controllers/Api/Vote.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pid', 'APPPATH/Controllers/Api/Vote.php', 55, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

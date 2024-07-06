@@ -1,0 +1,255 @@
+CRITICAL - 2023-01-05 14:35:08 --> syntax error, unexpected '$limit' (T_VARIABLE), expecting ')'
+in APPPATH/Models/ChatGroupModel.php on line 25.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/ChatGroupModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ChatGroupModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ChatGroupModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\ChatGroupModel')
+ 5 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\ChatGroupModel')
+ 6 SYSTEMPATH/Config/Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\ChatGroupModel')
+ 7 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH/Common.php(817): CodeIgniter\Config\Factories::models('App\\Models\\ChatGroupModel', [...], null)
+ 9 APPPATH/Controllers/Api/Chat.php(29): model('App\\Models\\ChatGroupModel')
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 14:35:10 --> syntax error, unexpected '$limit' (T_VARIABLE), expecting ')'
+in APPPATH/Models/ChatGroupModel.php on line 25.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/ChatGroupModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ChatGroupModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ChatGroupModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\ChatGroupModel')
+ 5 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\ChatGroupModel')
+ 6 SYSTEMPATH/Config/Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\ChatGroupModel')
+ 7 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH/Common.php(817): CodeIgniter\Config\Factories::models('App\\Models\\ChatGroupModel', [...], null)
+ 9 APPPATH/Controllers/Api/Chat.php(86): model('App\\Models\\ChatGroupModel')
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 15:01:57 --> mysqli_sql_exception: Unknown column 'rid' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `u...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatFriendModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(96): App\Models\ChatFriendModel->getData(Array, 'id,uid,fid,tag,...', 15, 0)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 15:01:57 --> Unknown column 'rid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `uid`, `fid`, `tag`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 74
+ORDER BY `id` DESC
+ LIMIT 15', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `uid`, `fid`, `tag`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 74
+ORDER BY `id` DESC
+ LIMIT 15')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `uid`, `fid`, `tag`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 74
+ORDER BY `id` DESC
+ LIMIT 15')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `uid`, `fid`, `tag`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = :rid:
+ORDER BY `id` DESC
+ LIMIT 15', [...], false)
+ 5 APPPATH/Models/ChatFriendModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Chat.php(96): App\Models\ChatFriendModel->getData([...], 'id,uid,fid,tag,content,created_at as time', 15, 0)
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 15:29:34 --> mysqli_sql_exception: Unknown column 'rid' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `u...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatFriendModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(96): App\Models\ChatFriendModel->getData(Array, 'id,uid,fid,tag ...', 15, 0, '', '', 'id', 'asc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 15:29:34 --> Unknown column 'rid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 60
+ORDER BY `id` ASC
+ LIMIT 15', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 60
+ORDER BY `id` ASC
+ LIMIT 15')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 60
+ORDER BY `id` ASC
+ LIMIT 15')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = :rid:
+ORDER BY `id` ASC
+ LIMIT 15', [...], false)
+ 5 APPPATH/Models/ChatFriendModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Chat.php(96): App\Models\ChatFriendModel->getData([...], 'id,uid,fid,tag as type,content,created_at as time', 15, 0, 'ROOTPATH/public', 'ROOTPATH/public', 'id', 'asc')
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 15:34:37 --> mysqli_sql_exception: Unknown column 'rid' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `u...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatFriendModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(96): App\Models\ChatFriendModel->getData(Array, 'id,uid,fid,tag ...', 15, 0, '', '', 'id', 'asc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 15:34:37 --> Unknown column 'rid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 74
+ORDER BY `id` ASC
+ LIMIT 15', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 74
+ORDER BY `id` ASC
+ LIMIT 15')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 74
+ORDER BY `id` ASC
+ LIMIT 15')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = :rid:
+ORDER BY `id` ASC
+ LIMIT 15', [...], false)
+ 5 APPPATH/Models/ChatFriendModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Chat.php(96): App\Models\ChatFriendModel->getData([...], 'id,uid,fid,tag as type,content,created_at as time', 15, 0, 'ROOTPATH/public', 'ROOTPATH/public', 'id', 'asc')
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 15:35:42 --> mysqli_sql_exception: Unknown column 'rid' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `u...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatFriendModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(96): App\Models\ChatFriendModel->getData(Array, 'id,uid,fid,tag ...', 15, 0, '', '', 'id', 'asc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 15:35:42 --> Unknown column 'rid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 60
+ORDER BY `id` ASC
+ LIMIT 15', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 60
+ORDER BY `id` ASC
+ LIMIT 15')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 60
+ORDER BY `id` ASC
+ LIMIT 15')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at` as `time`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = :rid:
+ORDER BY `id` ASC
+ LIMIT 15', [...], false)
+ 5 APPPATH/Models/ChatFriendModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Chat.php(96): App\Models\ChatFriendModel->getData([...], 'id,uid,fid,tag as type,content,created_at as time', 15, 0, 'ROOTPATH/public', 'ROOTPATH/public', 'id', 'asc')
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 21:00:33 --> mysqli_sql_exception: Unknown column 'rid' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `u...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatFriendModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(96): App\Models\ChatFriendModel->getData(Array, 'id,uid,fid,tag ...', 15, 0, '', '', 'id', 'asc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 21:00:33 --> Unknown column 'rid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 60
+ORDER BY `id` ASC
+ LIMIT 15', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 60
+ORDER BY `id` ASC
+ LIMIT 15')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = 60
+ORDER BY `id` ASC
+ LIMIT 15')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `uid`, `fid`, `tag` as `type`, `content`, `created_at`
+FROM `chat_friend_content`
+WHERE `deleted_at` IS NULL
+AND `rid` = :rid:
+ORDER BY `id` ASC
+ LIMIT 15', [...], false)
+ 5 APPPATH/Models/ChatFriendModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Chat.php(96): App\Models\ChatFriendModel->getData([...], 'id,uid,fid,tag as type,content,created_at', 15, 0, 'ROOTPATH/public', 'ROOTPATH/public', 'id', 'asc')
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,186 @@
+CRITICAL - 2023-01-09 11:12:45 --> Invalid file: webadmin/chatroom/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/chatroom/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/chatroom/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Chatroom.php(32): view('webadmin/chatroom/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatroom->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatroom))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:12:58 --> Invalid file: webadmin/chatroom/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/chatroom/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/chatroom/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Chatroom.php(32): view('webadmin/chatroom/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatroom->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatroom))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:16:19 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::limit() must be of the type int or null, string given, called in /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatModel.php on line 33
+in SYSTEMPATH/Database/BaseBuilder.php on line 1460.
+ 1 APPPATH/Models/ChatModel.php(33): CodeIgniter\Database\BaseBuilder->limit(0, 'ROOTPATH/public')
+ 2 APPPATH/Controllers/AdminController.php(334): App\Models\ChatModel->getData([], '10', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 3 APPPATH/Controllers/Webadmin/Chatroom.php(18): App\Controllers\AdminController->getSearchData(Object(App\Models\ChatModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatroom->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatroom))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:16:31 --> Invalid file: webadmin/chatroom/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/chatroom/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/chatroom/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Chatroom.php(52): view('webadmin/chatroom/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatroom->add()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatroom))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:17:04 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::limit() must be of the type int or null, string given, called in /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatModel.php on line 33
+in SYSTEMPATH/Database/BaseBuilder.php on line 1460.
+ 1 APPPATH/Models/ChatModel.php(33): CodeIgniter\Database\BaseBuilder->limit(0, 'ROOTPATH/public')
+ 2 APPPATH/Controllers/AdminController.php(334): App\Models\ChatModel->getData([], '10', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 3 APPPATH/Controllers/Webadmin/Chatroom.php(18): App\Controllers\AdminController->getSearchData(Object(App\Models\ChatModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatroom->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatroom))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:04:23 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::limit() must be of the type int or null, string given, called in /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatModel.php on line 33
+in SYSTEMPATH/Database/BaseBuilder.php on line 1460.
+ 1 APPPATH/Models/ChatModel.php(33): CodeIgniter\Database\BaseBuilder->limit('id as rid, title,avatar', 100)
+ 2 APPPATH/Controllers/Api/Chat.php(105): App\Models\ChatModel->getData([...], 'id as rid, title,avatar', 100)
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:04:25 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::limit() must be of the type int or null, string given, called in /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatModel.php on line 33
+in SYSTEMPATH/Database/BaseBuilder.php on line 1460.
+ 1 APPPATH/Models/ChatModel.php(33): CodeIgniter\Database\BaseBuilder->limit('id as rid, title,avatar', 100)
+ 2 APPPATH/Controllers/Api/Chat.php(105): App\Models\ChatModel->getData([...], 'id as rid, title,avatar', 100)
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:05:52 --> Invalid file: webadmin/chatroom/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/chatroom/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/chatroom/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Chatroom.php(74): view('webadmin/chatroom/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatroom->edit(5)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatroom))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:23:46 --> Invalid file: webadmin/chatroom/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/chatroom/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/chatroom/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Chatroom.php(52): view('webadmin/chatroom/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatroom->add()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatroom))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:38:45 --> Invalid file: webadmin/chatroom/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/chatroom/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/chatroom/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Chatroom.php(74): view('webadmin/chatroom/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatroom->edit(2)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatroom))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:57:17 --> Call to undefined method App\Controllers\Webadmin\Chatroom::setFilterData()
+in APPPATH/Controllers/Webadmin/Chatroom.php on line 60.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatroom->edit(5)
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatroom))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:58:11 --> Call to undefined method App\Controllers\Webadmin\Chatroom::setFilterData()
+in APPPATH/Controllers/Webadmin/Chatroom.php on line 60.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatroom->edit(5)
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatroom))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 13:09:11 --> Invalid file: webadmin/chatcontent/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/chatcontent/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/chatcontent/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Chatcontent.php(21): view('webadmin/chatcontent/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatcontent->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatcontent))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 13:11:34 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::limit() must be of the type int or null, string given, called in /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatGroupModel.php on line 34
+in SYSTEMPATH/Database/BaseBuilder.php on line 1460.
+ 1 APPPATH/Models/ChatGroupModel.php(34): CodeIgniter\Database\BaseBuilder->limit(0, 'ROOTPATH/public')
+ 2 APPPATH/Controllers/AdminController.php(334): App\Models\ChatGroupModel->getData([], '10', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 3 APPPATH/Controllers/Webadmin/Chatcontent.php(17): App\Controllers\AdminController->getSearchData(Object(App\Models\ChatGroupModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatcontent->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatcontent))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 13:27:45 --> Undefined index: chatroom
+in APPPATH/Controllers/AdminController.php on line 209.
+ 1 APPPATH/Controllers/AdminController.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: chatroom', 'APPPATH/Controllers/AdminController.php', 209, [...])
+ 2 APPPATH/Controllers/Webadmin/Chatcontent.php(30): App\Controllers\AdminController->setIndexInitData(Object(App\Models\ChatGroupModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatcontent->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatcontent))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 13:29:53 --> Undefined index: chatroom
+in APPPATH/Controllers/AdminController.php on line 209.
+ 1 APPPATH/Controllers/AdminController.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: chatroom', 'APPPATH/Controllers/AdminController.php', 209, [...])
+ 2 APPPATH/Controllers/Webadmin/Chatcontent.php(30): App\Controllers\AdminController->setIndexInitData(Object(App\Models\ChatGroupModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatcontent->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatcontent))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-09 13:32:03 --> mysqli_sql_exception: Unknown column 'chatroom' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatGroupModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(334): App\Models\ChatGroupModel->getData(Array, '10', 0, '', '', 'chatroom', 'asc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Chatcontent.php(17): App\Controllers\AdminController->getSearchData(Object(App\Models\ChatGroupModel))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Chatcontent->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatcontent))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-09 13:32:03 --> Unknown column 'chatroom' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `chat_group_content`
+WHERE `deleted_at` IS NULL
+ORDER BY `chatroom` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `chat_group_content`
+WHERE `deleted_at` IS NULL
+ORDER BY `chatroom` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `chat_group_content`
+WHERE `deleted_at` IS NULL
+ORDER BY `chatroom` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `chat_group_content`
+WHERE `deleted_at` IS NULL
+ORDER BY `chatroom` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH/Models/ChatGroupModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(334): App\Models\ChatGroupModel->getData([], '10', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'chatroom', 'asc')
+ 7 APPPATH/Controllers/Webadmin/Chatcontent.php(17): App\Controllers\AdminController->getSearchData(Object(App\Models\ChatGroupModel))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Chatcontent->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Chatcontent))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 14:05:51 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::limit() must be of the type int or null, string given, called in /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatGroupModel.php on line 36
+in SYSTEMPATH/Database/BaseBuilder.php on line 1460.
+ 1 APPPATH/Models/ChatGroupModel.php(36): CodeIgniter\Database\BaseBuilder->limit('id,uid,rid,tag,content,created_at', 15)
+ 2 APPPATH/Controllers/Api/Chat.php(55): App\Models\ChatGroupModel->getData([...], 'id,uid,rid,tag,content,created_at', 15, 0, 'ROOTPATH/public', 'ROOTPATH/public', 'id', 'desc')
+ 3 APPPATH/Controllers/Api/Chat.php(212): App\Controllers\Api\Chat->getGroupChat([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

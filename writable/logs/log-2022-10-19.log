@@ -1,0 +1,498 @@
+ERROR - 2022-10-19 08:07:16 --> mysqli_sql_exception: Unknown column 'alias' in 'where clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, le...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, le...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, le...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, le...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookData()
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-19 08:07:16 --> Unknown column 'alias' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE \'%包子%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE \'%包子%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE \'%包子%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE :alias: ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18', [...], false)
+ 5 APPPATH/Controllers/Api/Calorie.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookData()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 08:08:39 --> mysqli_sql_exception: Unknown column 'alias' in 'where clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, le...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, le...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, le...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, le...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookData()
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-19 08:08:39 --> Unknown column 'alias' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE \'%红烧%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE \'%红烧%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE \'%红烧%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE :alias: ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18', [...], false)
+ 5 APPPATH/Controllers/Api/Calorie.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookData()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 08:08:54 --> mysqli_sql_exception: Unknown column 'alias' in 'where clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, le...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, le...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, le...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, le...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookData()
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-19 08:08:54 --> Unknown column 'alias' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE \'%鱼%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE \'%鱼%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE \'%鱼%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, left(title, 6) as title, `thumb`
+FROM `calorie_cook_url`
+WHERE `alias` LIKE :alias: ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 18', [...], false)
+ 5 APPPATH/Controllers/Api/Calorie.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookData()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 08:33:11 --> mysqli_sql_exception: Unknown column 'detailid' in 'where clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `cid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `cid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(48): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-19 08:33:11 --> Unknown column 'detailid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2886', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2886')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2886')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = :detailid:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Calorie.php(48): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 08:33:39 --> mysqli_sql_exception: Unknown column 'detailid' in 'where clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `cid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `cid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(48): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-19 08:33:39 --> Unknown column 'detailid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2887', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2887')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2887')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = :detailid:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Calorie.php(48): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 08:33:47 --> mysqli_sql_exception: Unknown column 'detailid' in 'where clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `cid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `cid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(48): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-19 08:33:47 --> Unknown column 'detailid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2889', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2889')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2889')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = :detailid:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Calorie.php(48): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 08:34:42 --> mysqli_sql_exception: Unknown column 'detailid' in 'where clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `cid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `cid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(48): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-19 08:34:42 --> Unknown column 'detailid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2889', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2889')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2889')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = :detailid:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Calorie.php(48): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 08:34:42 --> mysqli_sql_exception: Unknown column 'detailid' in 'where clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `cid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `cid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(48): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-19 08:34:42 --> Unknown column 'detailid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2889', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2889')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = 2889')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `cid`, `fid`, `name`, `num`, `unit`
+FROM `calorie_cook_data`
+WHERE `detailid` = :detailid:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Calorie.php(48): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 09:27:14 --> mysqli_sql_exception: Unknown column 'title' in 'field list' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `title`,...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `title`,...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `title`,...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `title`,...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(51): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-19 09:27:14 --> Unknown column 'title' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `title`, `desc`
+FROM `calorie_cook_data`
+WHERE `detailid` = 7', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `title`, `desc`
+FROM `calorie_cook_data`
+WHERE `detailid` = 7')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `title`, `desc`
+FROM `calorie_cook_data`
+WHERE `detailid` = 7')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `title`, `desc`
+FROM `calorie_cook_data`
+WHERE `detailid` = :detailid:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Calorie.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 09:28:39 --> mysqli_sql_exception: Unknown column 'title' in 'field list' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `title`,...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `title`,...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `title`,...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `title`,...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(52): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-19 09:28:39 --> Unknown column 'title' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `title`, `desc`
+FROM `calorie_cook_data`
+WHERE `id` = 7', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `title`, `desc`
+FROM `calorie_cook_data`
+WHERE `id` = 7')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `title`, `desc`
+FROM `calorie_cook_data`
+WHERE `id` = 7')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `title`, `desc`
+FROM `calorie_cook_data`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Calorie.php(52): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 09:28:53 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 846.
+ 1 SYSTEMPATH/BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Api/Calorie.php(54): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 09:29:37 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 846.
+ 1 SYSTEMPATH/BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Api/Calorie.php(54): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 09:29:38 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 846.
+ 1 SYSTEMPATH/BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Api/Calorie.php(54): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 09:29:55 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 846.
+ 1 SYSTEMPATH/BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Api/Calorie.php(54): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 09:29:58 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 846.
+ 1 SYSTEMPATH/BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Api/Calorie.php(54): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 09:30:37 --> mysqli_sql_exception: Unknown column 'views' in 'field list' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `calorie...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `calorie...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `calorie...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `calorie...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(54): CodeIgniter\Model->update()
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#10 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-19 09:30:37 --> Unknown column 'views' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `calorie_cook_url` SET `views` = views+1, `updated_at` = \'2022-10-19 09:30:37\'
+WHERE `id` = 7', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `calorie_cook_url` SET `views` = views+1, `updated_at` = \'2022-10-19 09:30:37\'
+WHERE `id` = 7')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `calorie_cook_url` SET `views` = views+1, `updated_at` = \'2022-10-19 09:30:37\'
+WHERE `id` = 7')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `calorie_cook_url` SET `views` = views+1, `updated_at` = :updated_at:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH/Controllers/Api/Calorie.php(54): CodeIgniter\Model->update()
+ 9 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+10 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 09:30:59 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH/Database/BaseBuilder.php on line 907.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('cid', 7, false, 'AND ', null)
+ 2 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->whereIn('cid', 7)
+ 3 APPPATH/Controllers/Api/Calorie.php(56): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 09:31:31 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `fid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `fid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(56): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-19 09:31:31 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `fid`, `name`, `num`, `unit`
+FROM `calorie_food_units`
+WHERE `cid` = 7', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fid`, `name`, `num`, `unit`
+FROM `calorie_food_units`
+WHERE `cid` = 7')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fid`, `name`, `num`, `unit`
+FROM `calorie_food_units`
+WHERE `cid` = 7')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `fid`, `name`, `num`, `unit`
+FROM `calorie_food_units`
+WHERE `cid` = :cid:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Calorie.php(56): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 09:32:40 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH/Database/BaseBuilder.php on line 907.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('cid', 7, false, 'AND ', null)
+ 2 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->whereIn('cid', 7)
+ 3 APPPATH/Controllers/Api/Calorie.php(56): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 09:36:20 --> Call to undefined method App\Models\FoodDataModel::getResultArray
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Api/Calorie.php(58): CodeIgniter\Model->__call('getResultArray', [])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 09:49:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::select()
+in APPPATH/Controllers/Api/Calorie.php on line 61.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 14:36:52 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php on line 772
+in SYSTEMPATH/Database/BaseBuilder.php on line 1577.
+ 1 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get('id,url,title')
+ 2 APPPATH/Controllers/Admin/Caiji.php(712): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->fixFoodData()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,754 @@
+ERROR - 2023-03-27 10:55:04 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(154): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 10:55:04 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Paimai.php(154): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 10:55:04 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 666.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(666): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(372): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(134): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://local.project.ey56:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(60): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://local.project.ey56:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 11:02:02 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(154): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 11:02:02 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Paimai.php(154): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 11:02:02 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 666.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(666): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(372): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(134): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://local.project.ey56:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(60): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://local.project.ey56:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:02:30 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 25.
+ 1 APPPATH/Controllers/Api/Game.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 25, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:02:54 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 25.
+ 1 APPPATH/Controllers/Api/Game.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 25, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:03:08 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 25.
+ 1 APPPATH/Controllers/Api/Game.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 25, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:03:16 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 25.
+ 1 APPPATH/Controllers/Api/Game.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 25, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:03:44 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 25.
+ 1 APPPATH/Controllers/Api/Game.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 25, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:04:18 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 25.
+ 1 APPPATH/Controllers/Api/Game.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 25, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:04:24 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 25.
+ 1 APPPATH/Controllers/Api/Game.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 25, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:04:34 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 25.
+ 1 APPPATH/Controllers/Api/Game.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 25, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:07:19 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 18.
+ 1 APPPATH/Controllers/Api/Game.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 18, [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:07:35 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 18.
+ 1 APPPATH/Controllers/Api/Game.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 18, [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:40:37 --> Undefined variable: builder
+in APPPATH/Controllers/Api/Game.php on line 18.
+ 1 APPPATH/Controllers/Api/Game.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH/Controllers/Api/Game.php', 18, [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:13:52 --> mysqli_sql_exception: Table 'project_ey56_xu.game_modules_attr' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(23): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:13:52 --> Table 'project_ey56_xu.game_modules_attr' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(23): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar from game_modules_attr as a left join game_modules_conf as b on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:13:54 --> mysqli_sql_exception: Table 'project_ey56_xu.game_modules_attr' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(23): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:13:54 --> Table 'project_ey56_xu.game_modules_attr' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(23): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar from game_modules_attr as a left join game_modules_conf as b on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:18:12 --> mysqli_sql_exception: Every derived table must have its own alias in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select game_mod...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select game_mod...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select game_mod...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(25): CodeIgniter\Database\BaseConnection->query('select game_mod...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:18:12 --> Every derived table must have its own alias
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(25): CodeIgniter\Database\BaseConnection->query('select game_module_attr.name,game_module_attr.avatar,game_module_conf.uid,game_module_conf.mid,game_module_conf.lvl from game_module_attr
+				left join (select * from game_module_conf where uid=111)
+				on game_module_attr.id=game_module_conf.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:18:14 --> mysqli_sql_exception: Every derived table must have its own alias in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select game_mod...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select game_mod...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select game_mod...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(25): CodeIgniter\Database\BaseConnection->query('select game_mod...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:18:14 --> Every derived table must have its own alias
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(25): CodeIgniter\Database\BaseConnection->query('select game_module_attr.name,game_module_attr.avatar,game_module_conf.uid,game_module_conf.mid,game_module_conf.lvl from game_module_attr
+				left join (select * from game_module_conf where uid=111)
+				on game_module_attr.id=game_module_conf.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:25:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:25:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:26:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:26:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:27:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:27:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:27:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:27:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:32:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:32:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:33:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:33:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:33:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:33:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:34:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:34:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:34:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:34:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:34:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:34:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:34:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:34:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:34:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:34:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:43:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:43:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:44:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:44:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:44:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:44:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:44:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:44:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:45:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:45:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:46:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:46:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:46:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:46:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:47:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:47:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:47:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:47:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:47:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:47:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 15:48:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('select a.name,a...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select a.name,a...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select a.name,a...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-27 15:48:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid=60) as b 
+				on a.id=b.mid' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/Api/Game.php(51): CodeIgniter\Database\BaseConnection->query('select a.name,a.avatar,b.uid,b.mid,b.lvl from game_module_attr as a 
+				left join (select * from game_module_conf) as a 
+				where uid=60) as b 
+				on a.id=b.mid')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

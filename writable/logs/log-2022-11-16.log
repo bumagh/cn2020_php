@@ -1,0 +1,800 @@
+CRITICAL - 2022-11-16 07:55:15 --> Undefined index: lvl
+in APPPATH/Controllers/Api/Pocket.php on line 25.
+ 1 APPPATH/Controllers/Api/Pocket.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: lvl', 'APPPATH/Controllers/Api/Pocket.php', 25, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setQiandao()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 08:05:05 --> syntax error, unexpected 'yQeB' (T_STRING)
+in APPPATH/Controllers/Api/Pocket.php on line 25.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/pocket/setQiandao')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/pocket/setQiandao')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/pocket/setQiandao')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 08:07:14 --> syntax error, unexpected 'yQeB' (T_STRING)
+in APPPATH/Controllers/Api/Pocket.php on line 25.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/pocket/setQiandao')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/pocket/setQiandao')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/pocket/setQiandao')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 08:07:23 --> syntax error, unexpected 'yQeB' (T_STRING)
+in APPPATH/Controllers/Api/Pocket.php on line 25.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/pocket/setQiandao')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/pocket/setQiandao')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/pocket/setQiandao')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 09:14:40 --> Cannot redeclare App\Controllers\Api\Member::t()
+in APPPATH/Controllers/Api/Member.php on line 174.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-16 09:14:43 --> Cannot redeclare App\Controllers\Api\Member::t()
+in APPPATH/Controllers/Api/Member.php on line 174.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-16 09:14:53 --> Cannot redeclare App\Controllers\Api\Member::t()
+in APPPATH/Controllers/Api/Member.php on line 174.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-16 09:17:13 --> call_user_func() expects parameter 1 to be a valid callback, array must have exactly two members
+in APPPATH/Controllers/ApiController.php on line 107.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'call_user_func() expects parameter 1 to be a valid callback, array must have exactly two members', 'APPPATH/Controllers/ApiController.php', 107, [...])
+ 2 APPPATH/Controllers/ApiController.php(107): call_user_func([...])
+ 3 APPPATH/Controllers/Api/Member.php(17): App\Controllers\ApiController->sendMessage(11, 'levelup')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->test()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 09:20:21 --> call_user_func() expects parameter 1 to be a valid callback, array must have exactly two members
+in APPPATH/Controllers/ApiController.php on line 107.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'call_user_func() expects parameter 1 to be a valid callback, array must have exactly two members', 'APPPATH/Controllers/ApiController.php', 107, [...])
+ 2 APPPATH/Controllers/ApiController.php(107): call_user_func([...])
+ 3 APPPATH/Controllers/Api/Member.php(17): App\Controllers\ApiController->sendMessage(11, 'levelup')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->test()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 09:24:27 --> call_user_func() expects parameter 1 to be a valid callback, no array or string given
+in APPPATH/Controllers/ApiController.php on line 108.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'call_user_func() expects parameter 1 to be a valid callback, no array or string given', 'APPPATH/Controllers/ApiController.php', 108, [...])
+ 2 APPPATH/Controllers/ApiController.php(108): call_user_func(Object(App\Models\MessageModel), 'setLevelup')
+ 3 APPPATH/Controllers/Api/Member.php(17): App\Controllers\ApiController->sendMessage(11, 'levelup')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->test()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 09:24:38 --> call_user_func() expects parameter 1 to be a valid callback, no array or string given
+in APPPATH/Controllers/ApiController.php on line 108.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'call_user_func() expects parameter 1 to be a valid callback, no array or string given', 'APPPATH/Controllers/ApiController.php', 108, [...])
+ 2 APPPATH/Controllers/ApiController.php(108): call_user_func(Object(App\Models\MessageModel), 'setLevelup', 11)
+ 3 APPPATH/Controllers/Api/Member.php(17): App\Controllers\ApiController->sendMessage(11, 'levelup')
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->test()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 09:30:51 --> Too few arguments to function App\Controllers\Api\Member::setTt(), 0 passed and exactly 1 expected
+in APPPATH/Controllers/Api/Member.php on line 181.
+ 1 [internal function]: App\Controllers\Api\Member->setTt()
+ 2 APPPATH/Controllers/Api/Member.php(176): call_user_func([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->t()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 09:43:08 --> Undefined variable: curcoin
+in APPPATH/Controllers/Api/Pocket.php on line 87.
+ 1 APPPATH/Controllers/Api/Pocket.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: curcoin', 'APPPATH/Controllers/Api/Pocket.php', 87, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 09:57:30 --> Undefined variable: curcoin
+in APPPATH/Controllers/Api/Pocket.php on line 84.
+ 1 APPPATH/Controllers/Api/Pocket.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: curcoin', 'APPPATH/Controllers/Api/Pocket.php', 84, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 09:59:39 --> Undefined variable: curcoin
+in APPPATH/Controllers/Api/Pocket.php on line 87.
+ 1 APPPATH/Controllers/Api/Pocket.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: curcoin', 'APPPATH/Controllers/Api/Pocket.php', 87, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 09:59:54 --> Undefined variable: minfo
+in APPPATH/Controllers/Api/Pocket.php on line 20.
+ 1 APPPATH/Controllers/Api/Pocket.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: minfo', 'APPPATH/Controllers/Api/Pocket.php', 20, [...])
+ 2 APPPATH/Controllers/Api/Pocket.php(87): App\Controllers\Api\Pocket->checkLevelup(300)
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 10:02:01 --> Undefined index: lvl
+in APPPATH/Controllers/Api/Pocket.php on line 20.
+ 1 APPPATH/Controllers/Api/Pocket.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: lvl', 'APPPATH/Controllers/Api/Pocket.php', 20, [...])
+ 2 APPPATH/Controllers/Api/Pocket.php(87): App\Controllers\Api\Pocket->checkLevelup('1', 320)
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-16 10:28:42 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `member`...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `member`...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `member`...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `member`...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Pocket.php(23): CodeIgniter\Model->update()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Pocket.php(91): App\Controllers\Api\Pocket->checkLevelup('1', 540)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-16 10:28:42 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `member` SET `lvl` = \'3\', `updated_at` = \'2022-11-16 10:28:42\'
+WHERE `uid` = \'60\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `member` SET `lvl` = \'3\', `updated_at` = \'2022-11-16 10:28:42\'
+WHERE `uid` = \'60\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `member` SET `lvl` = \'3\', `updated_at` = \'2022-11-16 10:28:42\'
+WHERE `uid` = \'60\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `member` SET `lvl` = :lvl:, `updated_at` = :updated_at:
+WHERE `uid` = :uid:', [...], false)
+ 5 SYSTEMPATH/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH/Controllers/Api/Pocket.php(23): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/Api/Pocket.php(91): App\Controllers\Api\Pocket->checkLevelup('1', 540)
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-16 10:29:46 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `member`...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `member`...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `member`...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `member`...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Pocket.php(23): CodeIgniter\Model->update()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Pocket.php(91): App\Controllers\Api\Pocket->checkLevelup('1', 560)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-16 10:29:46 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `member` SET `lvl` = \'3\', `updated_at` = \'2022-11-16 10:29:46\'
+WHERE `uid` = \'60\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `member` SET `lvl` = \'3\', `updated_at` = \'2022-11-16 10:29:46\'
+WHERE `uid` = \'60\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `member` SET `lvl` = \'3\', `updated_at` = \'2022-11-16 10:29:46\'
+WHERE `uid` = \'60\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `member` SET `lvl` = :lvl:, `updated_at` = :updated_at:
+WHERE `uid` = :uid:', [...], false)
+ 5 SYSTEMPATH/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH/Controllers/Api/Pocket.php(23): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/Api/Pocket.php(91): App\Controllers\Api\Pocket->checkLevelup('1', 560)
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-16 13:05:39 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(171): mysqli->real_connect(NULL, 'root', 'root', 'project_ey56_xu', NULL, '/Applications/M...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Member.php(126): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Member.php(126): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-16 13:05:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `username`, `name`, `lvl`, `avatar`
+FROM `member`
+WHERE `invitcode` = :invitcode:', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/Member.php(126): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 13:29:41 --> Undefined variable: ext
+in APPPATH/Controllers/Api/Member.php on line 47.
+ 1 APPPATH/Controllers/Api/Member.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ext', 'APPPATH/Controllers/Api/Member.php', 47, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-16 13:31:56 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/MemberModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(323): App\Models\MemberModel->getData(Array, '5', 0, '', '', 'created_at', 'desc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-16 13:31:56 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH/Models/MemberModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(323): App\Models\MemberModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-16 13:32:28 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/MemberModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(323): App\Models\MemberModel->getData(Array, '5', 0, '', '', 'created_at', 'desc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-16 13:32:28 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH/Models/MemberModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(323): App\Models\MemberModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-16 13:33:16 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/MemberModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(323): App\Models\MemberModel->getData(Array, '5', 0, '', '', 'created_at', 'desc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-16 13:33:16 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH/Models/MemberModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(323): App\Models\MemberModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-16 13:33:44 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/MemberModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(323): App\Models\MemberModel->getData(Array, '5', 0, '', '', 'created_at', 'desc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-16 13:33:44 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `username`, `name`, `lvl`, `invitcode`, `status`, `avatar`, `adduid`, `created_at`, `updated_at`
+FROM `member`
+WHERE `deleted_at` IS NULL
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH/Models/MemberModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(323): App\Models\MemberModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 7 APPPATH/Controllers/Webadmin/Member.php(20): App\Controllers\AdminController->getSearchData(Object(App\Models\MemberModel), Object(App\Entities\Extbase))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:13:16 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:13:19 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:13:48 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:17:53 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:19:02 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:22:47 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:22:58 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:23:25 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:23:31 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:23:39 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:24:58 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:25:39 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:27:30 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:29:05 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:38:24 --> syntax error, unexpected 'self' (T_STRING)
+in APPPATH/Controllers/Api/Member.php on line 88.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getProfile')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getProfile')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getProfile')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:38:29 --> syntax error, unexpected 'self' (T_STRING)
+in APPPATH/Controllers/Api/Member.php on line 88.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/setProfile')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/setProfile')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/setProfile')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:40:54 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 72.
+ 1 APPPATH/Controllers/Api/Member.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 14:59:50 --> Undefined variable: extdata
+in APPPATH/Controllers/Api/Member.php on line 87.
+ 1 APPPATH/Controllers/Api/Member.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: extdata', 'APPPATH/Controllers/Api/Member.php', 87, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 15:02:47 --> syntax error, unexpected ','
+in APPPATH/Controllers/Api/Member.php on line 87.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/setProfile')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/setProfile')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/setProfile')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 15:27:26 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 89.
+ 1 APPPATH/Controllers/Api/Member.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 89, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 15:29:48 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 79.
+ 1 APPPATH/Controllers/Api/Member.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 79, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 15:30:07 --> Undefined index: ext
+in APPPATH/Controllers/Api/Member.php on line 79.
+ 1 APPPATH/Controllers/Api/Member.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ext', 'APPPATH/Controllers/Api/Member.php', 79, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 15:30:51 --> syntax error, unexpected 'Ad' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Api/Member.php on line 190.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/setProfile')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/setProfile')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/setProfile')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 15:58:51 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH/Controllers/Api/Member.php on line 109.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/setProfile')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/setProfile')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/setProfile')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 16:02:32 --> Undefined index: value
+in APPPATH/Controllers/Api/Member.php on line 51.
+ 1 APPPATH/Controllers/Api/Member.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: value', 'APPPATH/Controllers/Api/Member.php', 51, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 16:02:40 --> Undefined index: contact
+in APPPATH/Controllers/Api/Member.php on line 86.
+ 1 APPPATH/Controllers/Api/Member.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: contact', 'APPPATH/Controllers/Api/Member.php', 86, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-16 18:12:23 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(171): mysqli->real_connect(NULL, 'root', 'root', 'project_ey56_xu', NULL, '/Applications/M...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Member.php(46): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Member.php(46): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-16 18:12:23 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `name`, `avatar`
+FROM `member`
+WHERE `uid` = :uid:', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/Member.php(46): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 18:12:31 --> Undefined index: contact
+in APPPATH/Controllers/Api/Member.php on line 86.
+ 1 APPPATH/Controllers/Api/Member.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: contact', 'APPPATH/Controllers/Api/Member.php', 86, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:19:29 --> Cannot access protected property CodeIgniter\Validation\Validation::$errors
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:19:41 --> Cannot access protected property App\Models\MemberModel::$validation
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:19:50 --> Cannot access protected property App\Models\MemberModel::$validation
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:20:02 --> Cannot access protected property CodeIgniter\Validation\Validation::$errors
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:20:59 --> Call to undefined method CodeIgniter\Validation\Validation::__get()
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:21:19 --> Cannot access protected property CodeIgniter\Validation\Validation::$errors
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:21:36 --> Cannot access protected property CodeIgniter\Validation\Validation::$errors
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:28:23 --> Undefined property: App\Controllers\Api\Member::$errors
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 APPPATH/Controllers/Api/Member.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Api\\Member::$errors', 'APPPATH/Controllers/Api/Member.php', 95, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:29:03 --> Undefined property: App\Controllers\Api\Member::$validate
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 APPPATH/Controllers/Api/Member.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Api\\Member::$validate', 'APPPATH/Controllers/Api/Member.php', 95, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:31:19 --> Undefined property: App\Controllers\Api\Member::$validate
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 APPPATH/Controllers/Api/Member.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Api\\Member::$validate', 'APPPATH/Controllers/Api/Member.php', 95, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:33:28 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$validator
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 APPPATH/Controllers/Api/Member.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$validator', 'APPPATH/Controllers/Api/Member.php', 95, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:35:03 --> Cannot access protected property CodeIgniter\Validation\Validation::$errors
+in APPPATH/Controllers/Api/Member.php on line 96.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:35:09 --> Undefined property: CodeIgniter\Validation\Validation::$error
+in APPPATH/Controllers/Api/Member.php on line 96.
+ 1 APPPATH/Controllers/Api/Member.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Validation\\Validation::$error', 'APPPATH/Controllers/Api/Member.php', 96, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 19:35:35 --> Call to undefined method CodeIgniter\Validation\Validation::__get()
+in APPPATH/Controllers/Api/Member.php on line 96.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-16 20:05:37 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(171): mysqli->real_connect(NULL, 'root', 'root', 'project_ey56_xu', NULL, '/Applications/M...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Member.php(46): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Member.php(46): CodeIgniter\Model->__call('get', Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-16 20:05:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `name`, `avatar`
+FROM `member`
+WHERE `uid` = :uid:', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/Member.php(46): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getProfile()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 20:06:29 --> Undefined index: contact
+in APPPATH/Controllers/Api/Member.php on line 87.
+ 1 APPPATH/Controllers/Api/Member.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: contact', 'APPPATH/Controllers/Api/Member.php', 87, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 20:06:49 --> Undefined index: intro
+in APPPATH/Controllers/Api/Member.php on line 87.
+ 1 APPPATH/Controllers/Api/Member.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: intro', 'APPPATH/Controllers/Api/Member.php', 87, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 20:24:14 --> syntax error, unexpected '.'
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getProfile')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getProfile')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getProfile')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 20:24:19 --> syntax error, unexpected '.'
+in APPPATH/Controllers/Api/Member.php on line 95.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/setProfile')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/setProfile')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/setProfile')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

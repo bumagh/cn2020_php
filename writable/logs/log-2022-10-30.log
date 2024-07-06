@@ -1,0 +1,7 @@
+CRITICAL - 2022-10-30 20:58:54 --> Undefined variable: keys
+in APPPATH/Controllers/Admin/Credit.php on line 22.
+ 1 APPPATH/Controllers/Admin/Credit.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: keys', 'APPPATH/Controllers/Admin/Credit.php', 22, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Credit->getListByCode('台州市速普机电有限公司')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Credit))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

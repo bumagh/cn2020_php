@@ -1,0 +1,248 @@
+CRITICAL - 2022-11-11 07:59:08 --> syntax error, unexpected '$ret' (T_VARIABLE)
+in APPPATH/Controllers/Webadmin/Attach.php on line 65.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/attach/upimage')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/attach/upimage')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/attach/upimage')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 07:59:27 --> Object of class CodeIgniter\Images\Handlers\GDHandler could not be converted to int
+in APPPATH/Controllers/Webadmin/Attach.php on line 58.
+ 1 APPPATH/Controllers/Webadmin/Attach.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class CodeIgniter\\Images\\Handlers\\GDHandler could not be converted to int', 'APPPATH/Controllers/Webadmin/Attach.php', 58, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->upimage()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-11 08:25:09 --> mysqli_sql_exception: Unknown column 'size' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/AttachModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(318): App\Models\AttachModel->getData(Array, '5', 0, '', '', 'size', 'asc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Attach.php(18): App\Controllers\AdminController->getSearchData(Object(App\Models\AttachModel))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-11 08:25:09 --> Unknown column 'size' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `attach`
+WHERE `deleted_at` IS NULL
+AND `type` = \'视频\'
+ORDER BY `size` ASC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `attach`
+WHERE `deleted_at` IS NULL
+AND `type` = \'视频\'
+ORDER BY `size` ASC
+ LIMIT 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `attach`
+WHERE `deleted_at` IS NULL
+AND `type` = \'视频\'
+ORDER BY `size` ASC
+ LIMIT 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `attach`
+WHERE `deleted_at` IS NULL
+AND `type` = :type:
+ORDER BY `size` ASC
+ LIMIT 5', [...], false)
+ 5 APPPATH/Models/AttachModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(318): App\Models\AttachModel->getData([...], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'size', 'asc')
+ 7 APPPATH/Controllers/Webadmin/Attach.php(18): App\Controllers\AdminController->getSearchData(Object(App\Models\AttachModel))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 10:09:42 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getRowsArray()
+in APPPATH/Controllers/Webadmin/Attach.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->del()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 10:13:31 --> syntax error, unexpected 'delete_files' (T_STRING)
+in APPPATH/Controllers/Webadmin/Attach.php on line 34.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/attach/del')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/attach/del')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/attach/del')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 10:14:54 --> syntax error, unexpected 'unlink' (T_STRING)
+in APPPATH/Controllers/Webadmin/Attach.php on line 33.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/attach/del')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/attach/del')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/attach/del')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 10:15:17 --> syntax error, unexpected '@'
+in APPPATH/Controllers/Webadmin/Attach.php on line 33.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/attach/del')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/attach/del')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/attach/del')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 10:16:09 --> syntax error, unexpected 'unlink' (T_STRING)
+in APPPATH/Controllers/Webadmin/Attach.php on line 35.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/attach/del')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/attach/del')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/attach/del')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 10:18:37 --> syntax error, unexpected 'unlink' (T_STRING)
+in APPPATH/Controllers/Webadmin/Attach.php on line 36.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/attach/del')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/attach/del')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/attach/del')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 10:24:40 --> unlink(/Users/mac/Desktop/Jobs/web/project/ey56_xu/public/attach/image/1668126140_ae2304563f1b5b36b420.jpeg): No such file or directory
+in APPPATH/Controllers/Webadmin/Attach.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/Users/mac/Desktop/Jobs/web/project/ey56_xu/public/attach/image/1668126140_ae2304563f1b5b36b420.jpeg): No such file or directory', 'APPPATH/Controllers/Webadmin/Attach.php', 33, [...])
+ 2 APPPATH/Controllers/Webadmin/Attach.php(33): unlink('FCPATH/attach/image/1668126140_ae2304563f1b5b36b420.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->del()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 11:06:39 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Webadmin/Attach.php(75): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/attach/avatar/1668135998_2d2f0e32905881653120.jpg')
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->upimage()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 11:41:23 --> Trying to access array offset on value of type null
+in APPPATH/Views/webadmin/sysuser/mine.php on line 45.
+ 1 APPPATH/Views/webadmin/sysuser/mine.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Views/webadmin/sysuser/mine.php', 45, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysuser/mine.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysuser/mine', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysuser.php(157): view('webadmin/sysuser/mine', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->setmine()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 13:29:29 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Webadmin/Attach.php(75): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/attach/avatar/1668144569_a5d0127008060556f53d.jpg')
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Attach->upimage()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Attach))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 14:44:36 --> Trying to access array offset on value of type null
+in APPPATH/Views/webadmin/sysuser/mine.php on line 45.
+ 1 APPPATH/Views/webadmin/sysuser/mine.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Views/webadmin/sysuser/mine.php', 45, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysuser/mine.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysuser/mine', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysuser.php(157): view('webadmin/sysuser/mine', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->setmine()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 14:45:14 --> Trying to access array offset on value of type null
+in APPPATH/Views/webadmin/sysuser/mine.php on line 45.
+ 1 APPPATH/Views/webadmin/sysuser/mine.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Views/webadmin/sysuser/mine.php', 45, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysuser/mine.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysuser/mine', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysuser.php(157): view('webadmin/sysuser/mine', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->setmine()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 14:49:52 --> Trying to access array offset on value of type null
+in APPPATH/Views/webadmin/sysuser/mine.php on line 45.
+ 1 APPPATH/Views/webadmin/sysuser/mine.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Views/webadmin/sysuser/mine.php', 45, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysuser/mine.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysuser/mine', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysuser.php(157): view('webadmin/sysuser/mine', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->setmine()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:21:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+in APPPATH/Controllers/Api/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:21:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+in APPPATH/Controllers/Api/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:23:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+in APPPATH/Controllers/Api/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:23:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+in APPPATH/Controllers/Api/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:24:05 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+in APPPATH/Controllers/Api/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:24:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+in APPPATH/Controllers/Api/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:26:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::orderby()
+in APPPATH/Controllers/Api/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:27:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::orderby()
+in APPPATH/Controllers/Api/Home.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:28:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::orderby()
+in APPPATH/Controllers/Api/Home.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:48:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::findAll()
+in APPPATH/Controllers/Api/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:50:45 --> Non-static method CodeIgniter\Model::__get() cannot be called statically
+in APPPATH/Controllers/Api/Home.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:51:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::orderby()
+in APPPATH/Controllers/Api/Home.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,151 @@
+CRITICAL - 2022-10-21 08:15:05 --> Division by zero
+in APPPATH/Controllers/Api/Calorie.php on line 97.
+ 1 APPPATH/Controllers/Api/Calorie.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH/Controllers/Api/Calorie.php', 97, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 08:16:24 --> Division by zero
+in APPPATH/Controllers/Api/Calorie.php on line 97.
+ 1 APPPATH/Controllers/Api/Calorie.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH/Controllers/Api/Calorie.php', 97, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 08:21:31 --> Undefined variable: _totle
+in APPPATH/Controllers/Api/Calorie.php on line 112.
+ 1 APPPATH/Controllers/Api/Calorie.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: _totle', 'APPPATH/Controllers/Api/Calorie.php', 112, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 09:49:43 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 73.
+ 1 APPPATH/Controllers/Api/Calorie.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 73, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 09:50:59 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 73.
+ 1 APPPATH/Controllers/Api/Calorie.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 73, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 09:51:06 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 73.
+ 1 APPPATH/Controllers/Api/Calorie.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 73, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 09:52:26 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 73.
+ 1 APPPATH/Controllers/Api/Calorie.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 73, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:01:06 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 75.
+ 1 APPPATH/Controllers/Api/Calorie.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 75, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:04:27 --> Unsupported operand types
+in APPPATH/Controllers/Api/Calorie.php on line 74.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:05:25 --> Unsupported operand types
+in APPPATH/Controllers/Api/Calorie.php on line 75.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:06:01 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 73.
+ 1 APPPATH/Controllers/Api/Calorie.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 73, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:06:28 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 73.
+ 1 APPPATH/Controllers/Api/Calorie.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 73, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:10:28 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 74.
+ 1 APPPATH/Controllers/Api/Calorie.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:11:17 --> Unsupported operand types
+in APPPATH/Controllers/Api/Calorie.php on line 75.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:15:49 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 74.
+ 1 APPPATH/Controllers/Api/Calorie.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:16:28 --> Undefined offset: 5216
+in APPPATH/Controllers/Api/Calorie.php on line 105.
+ 1 APPPATH/Controllers/Api/Calorie.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 5216', 'APPPATH/Controllers/Api/Calorie.php', 105, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:16:47 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 74.
+ 1 APPPATH/Controllers/Api/Calorie.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:17:58 --> Undefined offset: 5216
+in APPPATH/Controllers/Api/Calorie.php on line 105.
+ 1 APPPATH/Controllers/Api/Calorie.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 5216', 'APPPATH/Controllers/Api/Calorie.php', 105, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:18:31 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 74.
+ 1 APPPATH/Controllers/Api/Calorie.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:19:46 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 76.
+ 1 APPPATH/Controllers/Api/Calorie.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 76, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:24:39 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 74.
+ 1 APPPATH/Controllers/Api/Calorie.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 11:39:42 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Calorie.php on line 77.
+ 1 APPPATH/Controllers/Api/Calorie.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Calorie.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

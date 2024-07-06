@@ -1,0 +1,574 @@
+CRITICAL - 2022-11-14 09:39:06 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 09:39:09 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 09:39:23 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 09:39:55 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 09:40:02 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 09:40:04 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 09:40:11 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 09:42:35 --> Undefined index: invite
+in APPPATH/Controllers/Api/Member.php on line 19.
+ 1 APPPATH/Controllers/Api/Member.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: invite', 'APPPATH/Controllers/Api/Member.php', 19, [...])
+ 2 APPPATH/Controllers/Api/Member.php(65): App\Controllers\Api\Member->setFilterData([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->login()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 10:14:52 --> Undefined index: avatar
+in APPPATH/Controllers/Api/Member.php on line 20.
+ 1 APPPATH/Controllers/Api/Member.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: avatar', 'APPPATH/Controllers/Api/Member.php', 20, [...])
+ 2 APPPATH/Controllers/Api/Member.php(39): App\Controllers\Api\Member->setFilterData([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->reg()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 13:47:32 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH/Controllers/Api/Member.php on line 125.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/reg')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/reg')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/reg')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:02:30 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:02:33 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:02:38 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:03:29 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:03:29 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:03:36 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:03:41 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:03:52 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:03:55 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:04:00 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:05:33 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:05:41 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:08:46 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:09:42 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:09:42 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:09:55 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:09:59 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:10:25 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:11:02 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:11:35 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:11:52 --> Call to undefined method App\Controllers\Api\Member::checkLogin()
+in APPPATH/Controllers/Api/Member.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:52:12 --> Undefined index: Access-Token
+in APPPATH/Controllers/ApiController.php on line 65.
+ 1 APPPATH/Controllers/ApiController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Access-Token', 'APPPATH/Controllers/ApiController.php', 65, [])
+ 2 APPPATH/Controllers/Api/Member.php(122): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 15:37:46 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(122): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 15:38:06 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 15:38:12 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 15:39:22 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 15:39:46 --> Trying to access array offset on value of type null
+in APPPATH/Filters/AuthAdmin.php on line 55.
+ 1 APPPATH/Filters/AuthAdmin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Filters/AuthAdmin.php', 55, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('api/member/login', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 15:44:10 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 16:03:12 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 16:03:23 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 16:03:25 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 16:43:40 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 16:57:54 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 16:58:52 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 17:02:09 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 20:40:11 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 20:40:14 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 20:40:22 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 20:40:25 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 20:40:29 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 20:41:42 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 68.
+ 1 APPPATH/Controllers/ApiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 68, [...])
+ 2 APPPATH/Controllers/Api/Member.php(123): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 20:56:57 --> Call to a member function insert() on null
+in APPPATH/Controllers/Api/Pocket.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 20:58:24 --> Call to a member function insert() on null
+in APPPATH/Controllers/Api/Pocket.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 20:58:56 --> Call to a member function save() on null
+in APPPATH/Controllers/Api/Pocket.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 21:00:10 --> Call to a member function save() on null
+in APPPATH/Controllers/Api/Pocket.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 21:01:06 --> Call to a member function insert() on null
+in APPPATH/Controllers/Api/Pocket.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 21:17:37 --> syntax error, unexpected 'self' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$'
+in APPPATH/Controllers/Api/Pocket.php on line 32.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/pocket/getCoin')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/pocket/getCoin')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/pocket/getCoin')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 21:17:51 --> syntax error, unexpected 'self' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$'
+in APPPATH/Controllers/Api/Pocket.php on line 32.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/pocket/getCoin')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/pocket/getCoin')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/pocket/getCoin')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 21:20:04 --> mysqli_sql_exception: Unknown column 'coin=coin+1' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `p...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `p...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `p...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `p...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(439): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(1038): CodeIgniter\Model->doReplace(Array, false)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace(Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-14 21:20:04 --> Unknown column 'coin=coin+1' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', 0, 1, \'2022-11-14 21:20:04\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', 0, 1, \'2022-11-14 21:20:04\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', 0, 1, \'2022-11-14 21:20:04\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (:uid:, :coin=coin+1:, :status:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(439): CodeIgniter\Database\BaseBuilder->replace([...])
+ 6 SYSTEMPATH/BaseModel.php(1038): CodeIgniter\Model->doReplace([...], false)
+ 7 APPPATH/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 21:20:15 --> mysqli_sql_exception: Unknown column 'coin=coin+1' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `p...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `p...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `p...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `p...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(439): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(1038): CodeIgniter\Model->doReplace(Array, false)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace(Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-14 21:20:15 --> Unknown column 'coin=coin+1' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', NULL, 1, \'2022-11-14 21:20:15\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', NULL, 1, \'2022-11-14 21:20:15\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', NULL, 1, \'2022-11-14 21:20:15\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (:uid:, :coin=coin+1:, :status:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(439): CodeIgniter\Database\BaseBuilder->replace([...])
+ 6 SYSTEMPATH/BaseModel.php(1038): CodeIgniter\Model->doReplace([...], false)
+ 7 APPPATH/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 21:20:32 --> mysqli_sql_exception: Unknown column 'coin=coin+1' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `p...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `p...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `p...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `p...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(439): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(1038): CodeIgniter\Model->doReplace(Array, false)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace(Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-14 21:20:32 --> Unknown column 'coin=coin+1' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', 1, 1, \'2022-11-14 21:20:32\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', 1, 1, \'2022-11-14 21:20:32\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', 1, 1, \'2022-11-14 21:20:32\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (:uid:, :coin=coin+1:, :status:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(439): CodeIgniter\Database\BaseBuilder->replace([...])
+ 6 SYSTEMPATH/BaseModel.php(1038): CodeIgniter\Model->doReplace([...], false)
+ 7 APPPATH/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 21:20:50 --> mysqli_sql_exception: Unknown column 'coin=coin+1' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `p...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `p...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `p...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `p...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(439): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(1038): CodeIgniter\Model->doReplace(Array, false)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace(Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-14 21:20:50 --> Unknown column 'coin=coin+1' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', \'\', 1, \'2022-11-14 21:20:50\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', \'\', 1, \'2022-11-14 21:20:50\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', \'\', 1, \'2022-11-14 21:20:50\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (:uid:, :coin=coin+1:, :status:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(439): CodeIgniter\Database\BaseBuilder->replace([...])
+ 6 SYSTEMPATH/BaseModel.php(1038): CodeIgniter\Model->doReplace([...], false)
+ 7 APPPATH/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 21:20:56 --> mysqli_sql_exception: Unknown column 'coin=coin+1' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `p...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `p...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `p...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `p...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(439): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(1038): CodeIgniter\Model->doReplace(Array, false)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace(Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-14 21:20:56 --> Unknown column 'coin=coin+1' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', NULL, 1, \'2022-11-14 21:20:56\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', NULL, 1, \'2022-11-14 21:20:56\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (\'60\', NULL, 1, \'2022-11-14 21:20:56\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `pocket` (`uid`, `coin=coin+1`, `status`, `updated_at`) VALUES (:uid:, :coin=coin+1:, :status:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(439): CodeIgniter\Database\BaseBuilder->replace([...])
+ 6 SYSTEMPATH/BaseModel.php(1038): CodeIgniter\Model->doReplace([...], false)
+ 7 APPPATH/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 21:24:25 --> mysqli_sql_exception: Unknown column 'coin`=coin+1' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `p...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `p...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `p...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `p...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(439): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(1038): CodeIgniter\Model->doReplace(Array, false)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace(Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-14 21:24:25 --> Unknown column 'coin`=coin+1' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `pocket` (`uid`, `coin``=coin+1`, `status`, `updated_at`) VALUES (\'60\', 0, 1, \'2022-11-14 21:24:25\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `pocket` (`uid`, `coin``=coin+1`, `status`, `updated_at`) VALUES (\'60\', 0, 1, \'2022-11-14 21:24:25\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `pocket` (`uid`, `coin``=coin+1`, `status`, `updated_at`) VALUES (\'60\', 0, 1, \'2022-11-14 21:24:25\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `pocket` (`uid`, `coin``=coin+1`, `status`, `updated_at`) VALUES (:uid:, :`coin`=coin+1:, :status:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(439): CodeIgniter\Database\BaseBuilder->replace([...])
+ 6 SYSTEMPATH/BaseModel.php(1038): CodeIgniter\Model->doReplace([...], false)
+ 7 APPPATH/Controllers/Api/Pocket.php(35): CodeIgniter\BaseModel->replace([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->getCoin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 21:28:08 --> syntax error, unexpected ')', expecting ']'
+in APPPATH/Controllers/Api/Pocket.php on line 31.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/pocket/getCoin')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/pocket/getCoin')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/pocket/getCoin')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 21:30:12 --> Cannot use empty array elements in arrays
+in APPPATH/Models/PocketModel.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

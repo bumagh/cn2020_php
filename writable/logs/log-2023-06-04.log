@@ -1,0 +1,6 @@
+CRITICAL - 2023-06-04 17:23:33 --> Call to undefined function App\Controllers\Bash\string()
+in APPPATH/Controllers/Bash/Signin.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Bash\Signin->setMonthInit()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bash\Signin))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

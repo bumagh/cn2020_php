@@ -1,0 +1,559 @@
+CRITICAL - 2022-11-23 08:31:33 --> syntax error, unexpected '$query' (T_VARIABLE)
+in APPPATH/Controllers/Api/Paimai.php on line 45.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/paimai/getdata')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/paimai/getdata')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/paimai/getdata')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 08:32:41 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Paimai.php on line 37.
+ 1 APPPATH/Controllers/Api/Paimai.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Paimai.php', 37, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 08:32:49 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 45.
+ 1 APPPATH/Controllers/Api/Paimai.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 45, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 08:32:57 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Paimai.php on line 37.
+ 1 APPPATH/Controllers/Api/Paimai.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Paimai.php', 37, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 08:33:01 --> Undefined property: App\Controllers\Api\Paimai::$db
+in APPPATH/Controllers/Api/Paimai.php on line 48.
+ 1 APPPATH/Controllers/Api/Paimai.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Api\\Paimai::$db', 'APPPATH/Controllers/Api/Paimai.php', 48, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 08:40:42 --> Undefined variable: jModel
+in APPPATH/Controllers/Api/Paimai.php on line 45.
+ 1 APPPATH/Controllers/Api/Paimai.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jModel', 'APPPATH/Controllers/Api/Paimai.php', 45, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-23 08:51:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 4 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`i...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PaimaiJoinModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(44): App\Models\PaimaiJoinModel->count(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-23 08:51:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND 0 = :0:
+AND 1 = :1:', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND 0 = :0:
+AND 1 = :1:')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND 0 = :0:
+AND 1 = :1:')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND 0 = :0:
+AND 1 = :1:', [...], false)
+ 5 APPPATH/Models/PaimaiJoinModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Paimai.php(44): App\Models\PaimaiJoinModel->count([...])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-23 08:51:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 4 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`i...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PaimaiJoinModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(44): App\Models\PaimaiJoinModel->count(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-23 08:51:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND 0 = :0:
+AND 1 = :1:', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND 0 = :0:
+AND 1 = :1:')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND 0 = :0:
+AND 1 = :1:')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND 0 = :0:
+AND 1 = :1:', [...], false)
+ 5 APPPATH/Models/PaimaiJoinModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Paimai.php(44): App\Models\PaimaiJoinModel->count([...])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-23 08:52:51 --> mysqli_sql_exception: Unknown column 'tag' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`i...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PaimaiJoinModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(44): App\Models\PaimaiJoinModel->count(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-23 08:52:51 --> Unknown column 'tag' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND `tag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND `tag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND `tag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_paimai_join`
+WHERE `deleted_at` IS NULL
+AND `tag` = :tag:', [...], false)
+ 5 APPPATH/Models/PaimaiJoinModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Paimai.php(44): App\Models\PaimaiJoinModel->count([...])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 08:57:53 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH/Controllers/Api/Paimai.php on line 52.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 09:23:29 --> Undefined variable: fields
+in APPPATH/Models/PaimaiModel.php on line 40.
+ 1 APPPATH/Models/PaimaiModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: fields', 'APPPATH/Models/PaimaiModel.php', 40, [...])
+ 2 APPPATH/Controllers/AdminController.php(337): App\Models\PaimaiModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 3 APPPATH/Controllers/Webadmin/Paimai.php(29): App\Controllers\AdminController->getSearchData(Object(App\Models\PaimaiModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 09:23:48 --> Undefined variable: fields
+in APPPATH/Models/PaimaiModel.php on line 40.
+ 1 APPPATH/Models/PaimaiModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: fields', 'APPPATH/Models/PaimaiModel.php', 40, [...])
+ 2 APPPATH/Controllers/AdminController.php(337): App\Models\PaimaiModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 3 APPPATH/Controllers/Webadmin/Paimai.php(29): App\Controllers\AdminController->getSearchData(Object(App\Models\PaimaiModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:18:12 --> Undefined index: title
+in APPPATH/Controllers/AdminController.php on line 212.
+ 1 APPPATH/Controllers/AdminController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: title', 'APPPATH/Controllers/AdminController.php', 212, [...])
+ 2 APPPATH/Controllers/Webadmin/Vote.php(30): App\Controllers\AdminController->setIndexInitData(Object(App\Models\VoteModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:18:38 --> Undefined index: title
+in APPPATH/Controllers/AdminController.php on line 212.
+ 1 APPPATH/Controllers/AdminController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: title', 'APPPATH/Controllers/AdminController.php', 212, [...])
+ 2 APPPATH/Controllers/Webadmin/Vote.php(30): App\Controllers\AdminController->setIndexInitData(Object(App\Models\VoteModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:19:37 --> Undefined index: btime
+in APPPATH/Controllers/AdminController.php on line 212.
+ 1 APPPATH/Controllers/AdminController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: btime', 'APPPATH/Controllers/AdminController.php', 212, [...])
+ 2 APPPATH/Controllers/Webadmin/Vote.php(30): App\Controllers\AdminController->setIndexInitData(Object(App\Models\VoteModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:20:30 --> Undefined index: tag
+in APPPATH/Views/webadmin/vote/detail.php on line 22.
+ 1 APPPATH/Views/webadmin/vote/detail.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Views/webadmin/vote/detail.php', 22, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/vote/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/vote/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Vote.php(72): view('webadmin/vote/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->edit(5)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:20:32 --> Undefined index: tag
+in APPPATH/Views/webadmin/vote/detail.php on line 22.
+ 1 APPPATH/Views/webadmin/vote/detail.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Views/webadmin/vote/detail.php', 22, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/vote/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/vote/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Vote.php(72): view('webadmin/vote/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->edit(4)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:20:35 --> Undefined index: tag
+in APPPATH/Views/webadmin/vote/detail.php on line 22.
+ 1 APPPATH/Views/webadmin/vote/detail.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Views/webadmin/vote/detail.php', 22, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/vote/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/vote/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Vote.php(72): view('webadmin/vote/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->edit(1)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:20:39 --> Undefined index: tag
+in APPPATH/Views/webadmin/vote/detail.php on line 22.
+ 1 APPPATH/Views/webadmin/vote/detail.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Views/webadmin/vote/detail.php', 22, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/vote/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/vote/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Vote.php(72): view('webadmin/vote/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->edit(1)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:57:36 --> Cannot redeclare App\Controllers\Webadmin\Vote::index()
+in APPPATH/Controllers/Webadmin/Vote.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-11-23 12:51:41 --> mysqli_sql_exception: Unknown column 'b.numb' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select b.pid,b....', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select b.pid,b....')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select b.pid,b....')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(52): CodeIgniter\Database\BaseConnection->query('select b.pid,b....')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-23 12:51:41 --> Unknown column 'b.numb' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15')
+ 4 APPPATH/Controllers/Api/Paimai.php(52): CodeIgniter\Database\BaseConnection->query('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 12:52:15 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Paimai.php on line 39.
+ 1 APPPATH/Controllers/Api/Paimai.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Paimai.php', 39, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-23 12:52:25 --> mysqli_sql_exception: Unknown column 'b.numb' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select b.pid,b....', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select b.pid,b....')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select b.pid,b....')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(56): CodeIgniter\Database\BaseConnection->query('select b.pid,b....')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-23 12:52:25 --> Unknown column 'b.numb' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15')
+ 4 APPPATH/Controllers/Api/Paimai.php(56): CodeIgniter\Database\BaseConnection->query('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-23 12:53:38 --> mysqli_sql_exception: Unknown column 'b.numb' in 'field list' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select b.pid,b....', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select b.pid,b....')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select b.pid,b....')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(57): CodeIgniter\Database\BaseConnection->query('select b.pid,b....')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-23 12:53:38 --> Unknown column 'b.numb' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15')
+ 4 APPPATH/Controllers/Api/Paimai.php(57): CodeIgniter\Database\BaseConnection->query('select b.pid,b.uid,b.numb,a.tag,a.name as title,a.numbmin,a.numbmax,a.btime,a.etime,a.status,c.name,c.avatar
+				from custom_paimai as a 
+				left join (SELECT MAX(numb),uid,pid FROM custom_paimai_join) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where a.tag=0 limit 0,15')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 12:55:11 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Paimai.php on line 30.
+ 1 APPPATH/Controllers/Api/Paimai.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Paimai.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 12:55:12 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Paimai.php on line 30.
+ 1 APPPATH/Controllers/Api/Paimai.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Paimai.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 12:55:20 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Paimai.php on line 30.
+ 1 APPPATH/Controllers/Api/Paimai.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Paimai.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 12:55:44 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Paimai.php on line 30.
+ 1 APPPATH/Controllers/Api/Paimai.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Paimai.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 12:55:45 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Paimai.php on line 30.
+ 1 APPPATH/Controllers/Api/Paimai.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Paimai.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 12:55:56 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Paimai.php on line 30.
+ 1 APPPATH/Controllers/Api/Paimai.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Paimai.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 12:56:20 --> Undefined variable: pdata
+in APPPATH/Controllers/Api/Paimai.php on line 30.
+ 1 APPPATH/Controllers/Api/Paimai.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pdata', 'APPPATH/Controllers/Api/Paimai.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:00:35 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Paimai.php on line 28.
+ 1 APPPATH/Controllers/Api/Paimai.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Paimai.php', 28, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 20:17:13 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH/Controllers/Api/Paimai.php on line 31.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/paimai/join')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/paimai/join')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/paimai/join')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 20:17:29 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH/Controllers/Api/Paimai.php on line 31.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/paimai/getData')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/paimai/getData')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/paimai/getData')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 20:19:41 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH/Controllers/Api/Paimai.php on line 31.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/paimai/getData')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/paimai/getData')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/paimai/getData')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 20:19:58 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH/Controllers/Api/Paimai.php on line 51.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/paimai/getData')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/paimai/getData')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/paimai/getData')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 20:19:59 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH/Controllers/Api/Paimai.php on line 51.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/paimai/getData')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/paimai/getData')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/paimai/getData')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 20:20:18 --> Call to undefined function App\Controllers\Api\ntval()
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 20:20:29 --> Cannot use object of type App\Models\PocketModel as array
+in APPPATH/Controllers/Api/Paimai.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 20:21:08 --> Call to a member function updatePocket() on array
+in APPPATH/Controllers/Api/Paimai.php on line 47.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:41:04 --> Undefined index: status
+in APPPATH/Controllers/Api/Paimai.php on line 47.
+ 1 APPPATH/Controllers/Api/Paimai.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Paimai.php', 47, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:41:53 --> Undefined index: status
+in APPPATH/Controllers/Api/Paimai.php on line 47.
+ 1 APPPATH/Controllers/Api/Paimai.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Paimai.php', 47, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:42:05 --> Undefined index: status
+in APPPATH/Controllers/Api/Paimai.php on line 47.
+ 1 APPPATH/Controllers/Api/Paimai.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Paimai.php', 47, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:43:32 --> Undefined index: status
+in APPPATH/Controllers/Api/Paimai.php on line 47.
+ 1 APPPATH/Controllers/Api/Paimai.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Paimai.php', 47, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:43:35 --> Undefined index: status
+in APPPATH/Controllers/Api/Paimai.php on line 47.
+ 1 APPPATH/Controllers/Api/Paimai.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Paimai.php', 47, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:43:56 --> Undefined index: status
+in APPPATH/Controllers/Api/Paimai.php on line 47.
+ 1 APPPATH/Controllers/Api/Paimai.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Paimai.php', 47, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

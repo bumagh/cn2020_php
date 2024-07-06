@@ -1,0 +1,81 @@
+CRITICAL - 2022-10-13 21:01:13 --> Undefined variable: urlModel
+in APPPATH/Controllers/Admin/Caiji.php on line 544.
+ 1 APPPATH/Controllers/Admin/Caiji.php(544): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: urlModel', 'APPPATH/Controllers/Admin/Caiji.php', 544, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateCookData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-13 21:03:25 --> mysqli_sql_exception: Unknown column 'c' in 'order clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(544): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateCookData()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-13 21:03:25 --> Unknown column 'c' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `calorie_cook_data`
+GROUP BY `name`
+ORDER BY `c` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `calorie_cook_data`
+GROUP BY `name`
+ORDER BY `c` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `calorie_cook_data`
+GROUP BY `name`
+ORDER BY `c` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `calorie_cook_data`
+GROUP BY `name`
+ORDER BY `c` DESC', [], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Admin/Caiji.php(544): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateCookData()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-13 21:03:27 --> mysqli_sql_exception: Unknown column 'c' in 'order clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(544): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateCookData()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-13 21:03:27 --> Unknown column 'c' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `calorie_cook_data`
+GROUP BY `name`
+ORDER BY `c` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `calorie_cook_data`
+GROUP BY `name`
+ORDER BY `c` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `calorie_cook_data`
+GROUP BY `name`
+ORDER BY `c` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `calorie_cook_data`
+GROUP BY `name`
+ORDER BY `c` DESC', [], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Admin/Caiji.php(544): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateCookData()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

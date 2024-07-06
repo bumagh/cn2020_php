@@ -1,0 +1,185 @@
+CRITICAL - 2023-03-28 08:02:41 --> syntax error, unexpected ')'
+in APPPATH/Controllers/Api/Game.php on line 62.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/upgrade')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/upgrade')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/upgrade')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 08:02:53 --> syntax error, unexpected ')'
+in APPPATH/Controllers/Api/Game.php on line 62.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/getData')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/getData')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/getData')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 08:03:16 --> syntax error, unexpected ')'
+in APPPATH/Controllers/Api/Game.php on line 62.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/getData')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/getData')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/getData')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:31:16 --> Call to a member function getServer() on null
+in APPPATH/Controllers/ApiController.php on line 70.
+ 1 APPPATH/Controllers/Api/Game.php(15): App\Controllers\ApiController->checkLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Api\Game->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:31:38 --> Call to a member function getServer() on null
+in APPPATH/Controllers/ApiController.php on line 70.
+ 1 APPPATH/Controllers/Api/Game.php(15): App\Controllers\ApiController->checkLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Api\Game->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:31:51 --> Call to a member function getServer() on null
+in APPPATH/Controllers/ApiController.php on line 70.
+ 1 APPPATH/Controllers/Api/Game.php(15): App\Controllers\ApiController->checkLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Api\Game->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:34:08 --> Call to a member function getServer() on null
+in APPPATH/Controllers/ApiController.php on line 70.
+ 1 APPPATH/Controllers/Api/Game.php(15): App\Controllers\ApiController->checkLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Api\Game->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:34:40 --> Call to a member function getServer() on null
+in APPPATH/Controllers/ApiController.php on line 70.
+ 1 APPPATH/Controllers/Api/Game.php(15): App\Controllers\ApiController->checkLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Api\Game->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:34:45 --> Call to a member function getServer() on null
+in APPPATH/Controllers/ApiController.php on line 70.
+ 1 APPPATH/Controllers/Api/Game.php(15): App\Controllers\ApiController->checkLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Api\Game->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:34:48 --> Call to a member function getServer() on null
+in APPPATH/Controllers/ApiController.php on line 70.
+ 1 APPPATH/Controllers/Api/Game.php(15): App\Controllers\ApiController->checkLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Api\Game->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:39:13 --> syntax error, unexpected ')'
+in APPPATH/Controllers/Api/Game.php on line 63.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/upgrade')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/upgrade')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/upgrade')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:39:15 --> syntax error, unexpected ')'
+in APPPATH/Controllers/Api/Game.php on line 63.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/upgrade')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/upgrade')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/upgrade')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:39:20 --> syntax error, unexpected ')'
+in APPPATH/Controllers/Api/Game.php on line 62.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/upgrade')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/upgrade')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/upgrade')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:39:26 --> syntax error, unexpected ')'
+in APPPATH/Controllers/Api/Game.php on line 62.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/game/getData')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/game/getData')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/game/getData')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-28 15:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 15:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 16:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 16:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 16:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 16:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 16:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 16:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 16:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-28 19:27:56 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 67.
+ 1 APPPATH/Controllers/Api/Game.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 67, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->upgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-28 19:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 19:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 19:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-28 20:18:10 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 67.
+ 1 APPPATH/Controllers/Api/Game.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 67, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->upgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 20:18:25 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 67.
+ 1 APPPATH/Controllers/Api/Game.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 67, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->upgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-28 20:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 20:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-28 20:37:18 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 67.
+ 1 APPPATH/Controllers/Api/Game.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 67, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->upgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 20:37:22 --> Illegal string offset 'uid'
+in APPPATH/Controllers/Api/Game.php on line 67.
+ 1 APPPATH/Controllers/Api/Game.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'uid\'', 'APPPATH/Controllers/Api/Game.php', 67, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->upgrade()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

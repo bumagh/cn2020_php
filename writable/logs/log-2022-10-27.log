@@ -1,0 +1,25 @@
+CRITICAL - 2022-10-27 18:42:36 --> Undefined variable: client
+in APPPATH/Controllers/Admin/Credit.php on line 42.
+ 1 APPPATH/Controllers/Admin/Credit.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: client', 'APPPATH/Controllers/Admin/Credit.php', 42, [])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Credit->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Credit))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 19:07:19 --> 22 : The requested URL returned error: 504 Gateway Time-out
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 504 Gateway Time-out')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'https://app.gsxt.gov.cn/gsxt/corp-query-app-search-1.html')
+ 4 APPPATH/Controllers/Admin/Credit.php(70): CodeIgniter\HTTP\CURLRequest->request('POST', 'https://app.gsxt.gov.cn/gsxt/corp-query-app-search-1.html', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Credit->getDetail()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Credit))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 19:54:30 --> syntax error, unexpected '5E5' (T_DNUMBER), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Admin/Credit.php on line 117.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/credit/getListByCode')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/credit/getListByCode')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('admin/credit/getListByCode')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

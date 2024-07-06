@@ -1,0 +1,418 @@
+CRITICAL - 2022-10-11 10:55:23 --> Undefined variable $name
+in APPPATH/Controllers/Admin/Caiji.php on line 190.
+ 1 APPPATH/Controllers/Admin/Caiji.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'APPPATH/Controllers/Admin/Caiji.php', 190)
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:59:46 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1577.
+ 1 SYSTEMPATH/BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH/Controllers/Admin/Caiji.php(183): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 11:00:33 --> mysqli_sql_exception: Unknown column 'detailid' in 'where clause' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `calorie...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `calorie...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `calorie...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `calorie...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(183): CodeIgniter\Model->update()
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#10 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-11 11:00:33 --> Unknown column 'detailid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `calorie_food_url` SET `flag` = 99, `updated_at` = \'2022-10-11 11:00:33\'
+WHERE `detailid` IN (256,1024)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `calorie_food_url` SET `flag` = 99, `updated_at` = \'2022-10-11 11:00:33\'
+WHERE `detailid` IN (256,1024)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `calorie_food_url` SET `flag` = 99, `updated_at` = \'2022-10-11 11:00:33\'
+WHERE `detailid` IN (256,1024)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `calorie_food_url` SET `flag` = :flag:, `updated_at` = :updated_at:
+WHERE `detailid` IN :detailid:', [...], false)
+ 5 SYSTEMPATH/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH/Controllers/Admin/Caiji.php(183): CodeIgniter\Model->update()
+ 9 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+10 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:05:16 --> Undefined array key "keNum"
+in APPPATH/Controllers/Admin/Caiji.php on line 198.
+ 1 APPPATH/Controllers/Admin/Caiji.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "keNum"', 'APPPATH/Controllers/Admin/Caiji.php', 198)
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:07:24 --> CodeIgniter\BaseModel::doProtectFields(): Argument #1 ($data) must be of type array, null given, called in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/BaseModel.php on line 799
+in SYSTEMPATH/BaseModel.php on line 1132.
+ 1 SYSTEMPATH/BaseModel.php(799): CodeIgniter\BaseModel->doProtectFields(null)
+ 2 APPPATH/Controllers/Admin/Caiji.php(199): CodeIgniter\BaseModel->insertBatch([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:09:01 --> CodeIgniter\BaseModel::doProtectFields(): Argument #1 ($data) must be of type array, null given, called in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/BaseModel.php on line 799
+in SYSTEMPATH/BaseModel.php on line 1132.
+ 1 SYSTEMPATH/BaseModel.php(799): CodeIgniter\BaseModel->doProtectFields(null)
+ 2 APPPATH/Controllers/Admin/Caiji.php(199): CodeIgniter\BaseModel->insertBatch([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:25:49 --> Undefined array key "fnum"
+in APPPATH/Controllers/Admin/Caiji.php on line 201.
+ 1 APPPATH/Controllers/Admin/Caiji.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fnum"', 'APPPATH/Controllers/Admin/Caiji.php', 201)
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 11:42:07 --> mysqli_sql_exception: Server shutdown in progress in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `calorie...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `calorie...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `calorie...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `calorie...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(192): CodeIgniter\Model->update(Array, Array)
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#10 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-11 11:42:07 --> Server shutdown in progress
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `calorie_food_data` SET `name_cn` = \'西红柿牛肉面汤(罐装，浓缩)\', `updated_at` = \'2022-10-11 11:42:07\'
+WHERE `calorie_food_data`.`id` IN (\'1134\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `calorie_food_data` SET `name_cn` = \'西红柿牛肉面汤(罐装，浓缩)\', `updated_at` = \'2022-10-11 11:42:07\'
+WHERE `calorie_food_data`.`id` IN (\'1134\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `calorie_food_data` SET `name_cn` = \'西红柿牛肉面汤(罐装，浓缩)\', `updated_at` = \'2022-10-11 11:42:07\'
+WHERE `calorie_food_data`.`id` IN (\'1134\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `calorie_food_data` SET `name_cn` = :name_cn:, `updated_at` = :updated_at:
+WHERE `calorie_food_data`.`id` IN :calorie_food_data.id:', [...], false)
+ 5 SYSTEMPATH/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH/Controllers/Admin/Caiji.php(192): CodeIgniter\Model->update([...], [...])
+ 9 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+10 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:21:21 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH/Database/BaseBuilder.php on line 907.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('id', '2684', false, 'AND ', null)
+ 2 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->whereIn('id', '2684')
+ 3 APPPATH/Controllers/Admin/Caiji.php(207): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:51:05 --> Undefined variable: units
+in APPPATH/Controllers/Admin/Caiji.php on line 471.
+ 1 APPPATH/Controllers/Admin/Caiji.php(471): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: units', 'APPPATH/Controllers/Admin/Caiji.php', 471, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:51:26 --> Undefined variable: units
+in APPPATH/Controllers/Admin/Caiji.php on line 471.
+ 1 APPPATH/Controllers/Admin/Caiji.php(471): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: units', 'APPPATH/Controllers/Admin/Caiji.php', 471, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 13:58:19 --> mysqli_sql_exception: Unknown column 'desc' in 'field list' in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ca...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', NULL, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/BaseModel.php(814): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(472): CodeIgniter\BaseModel->insertBatch(Array)
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-11 13:58:19 --> Unknown column 'desc' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'小麦面粉\',\'500\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'猪肉馅\',\'400\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'大葱\',\'200\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'姜\',\'1\',\'块\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'水\',\'250\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'甜面酱\',\'20\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'胡椒粉\',\'3\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'花生油\',\'2\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'葡萄糖\',\'2.4\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'酱油\',\'1\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'酵母粉\',\'3\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'食盐\',\'1\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'香油\',\'1\',\'勺\',\'2022-10-11 13:58:19\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'小麦面粉\',\'500\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'猪肉馅\',\'400\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'大葱\',\'200\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'姜\',\'1\',\'块\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'水\',\'250\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'甜面酱\',\'20\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'胡椒粉\',\'3\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'花生油\',\'2\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'葡萄糖\',\'2.4\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'酱油\',\'1\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'酵母粉\',\'3\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'食盐\',\'1\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'香油\',\'1\',\'勺\',\'2022-10-11 13:58:19\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'小麦面粉\',\'500\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'猪肉馅\',\'400\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'大葱\',\'200\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'姜\',\'1\',\'块\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'水\',\'250\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'甜面酱\',\'20\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'胡椒粉\',\'3\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'花生油\',\'2\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'葡萄糖\',\'2.4\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'酱油\',\'1\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'酵母粉\',\'3\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'食盐\',\'1\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'香油\',\'1\',\'勺\',\'2022-10-11 13:58:19\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'小麦面粉\',\'500\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'猪肉馅\',\'400\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'大葱\',\'200\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'姜\',\'1\',\'块\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'水\',\'250\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'甜面酱\',\'20\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'胡椒粉\',\'3\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'花生油\',\'2\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'葡萄糖\',\'2.4\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'酱油\',\'1\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'酵母粉\',\'3\',\'克\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'食盐\',\'1\',\'勺\',\'2022-10-11 13:58:19\'), (\'1\',\'2022-10-11 13:58:19\',\'3人份\',\'香油\',\'1\',\'勺\',\'2022-10-11 13:58:19\')', null, false)
+ 5 SYSTEMPATH/Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH/BaseModel.php(814): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH/Controllers/Admin/Caiji.php(472): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:01:20 --> Undefined array key 0
+in APPPATH/Controllers/Admin/Caiji.php on line 462.
+ 1 APPPATH/Controllers/Admin/Caiji.php(462): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Admin/Caiji.php', 462)
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:08:39 --> 28 : Operation timed out after 3000 milliseconds with 0 bytes received
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Operation timed out after 3000 milliseconds with 0 bytes received')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'http://fitness.39.net/cook/254.html')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'http://fitness.39.net/cook/254.html', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(468): CodeIgniter\HTTP\CURLRequest->get('254.html')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:12:56 --> 28 : Operation timed out after 3006 milliseconds with 0 bytes received
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Operation timed out after 3006 milliseconds with 0 bytes received')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'http://fitness.39.net/cook/299.html')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'http://fitness.39.net/cook/299.html', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(469): CodeIgniter\HTTP\CURLRequest->get('299.html')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:33:01 --> 28 : Operation timed out after 3003 milliseconds with 0 bytes received
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Operation timed out after 3003 milliseconds with 0 bytes received')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'http://fitness.39.net/cook/499.html')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'http://fitness.39.net/cook/499.html', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(469): CodeIgniter\HTTP\CURLRequest->get('499.html')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:34:13 --> 28 : Operation timed out after 3000 milliseconds with 0 bytes received
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Operation timed out after 3000 milliseconds with 0 bytes received')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'http://fitness.39.net/cook/687.html')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'http://fitness.39.net/cook/687.html', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(469): CodeIgniter\HTTP\CURLRequest->get('687.html')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:34:48 --> 28 : Operation timed out after 3004 milliseconds with 0 bytes received
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Operation timed out after 3004 milliseconds with 0 bytes received')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'http://fitness.39.net/cook/813.html')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'http://fitness.39.net/cook/813.html', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(469): CodeIgniter\HTTP\CURLRequest->get('813.html')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:40:04 --> 28 : Operation timed out after 3004 milliseconds with 0 bytes received
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Operation timed out after 3004 milliseconds with 0 bytes received')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'http://fitness.39.net/cook/1459.html')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'http://fitness.39.net/cook/1459.html', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(470): CodeIgniter\HTTP\CURLRequest->get('1459.html')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:42:30 --> 28 : Operation timed out after 3005 milliseconds with 0 bytes received
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Operation timed out after 3005 milliseconds with 0 bytes received')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'http://fitness.39.net/cook/1980.html')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'http://fitness.39.net/cook/1980.html', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(470): CodeIgniter\HTTP\CURLRequest->get('1980.html')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:45:17 --> 28 : Operation timed out after 3004 milliseconds with 0 bytes received
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Operation timed out after 3004 milliseconds with 0 bytes received')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('get', 'http://fitness.39.net/cook/2245.html')
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(169): CodeIgniter\HTTP\CURLRequest->request('get', 'http://fitness.39.net/cook/2245.html', [])
+ 5 APPPATH/Controllers/Admin/Caiji.php(470): CodeIgniter\HTTP\CURLRequest->get('2245.html')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:58:59 --> fopen(calorie/cook/1_1.jpg): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Admin/Caiji.php on line 509.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(calorie/cook/1_1.jpg): Failed to open stream: No such file or directory', 'APPPATH/Controllers/Admin/Caiji.php', 509)
+ 2 APPPATH/Controllers/Admin/Caiji.php(509): fopen('calorie/cook/1_1.jpg', 'a')
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookImages()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:00:50 --> Undefined array key 0
+in APPPATH/Controllers/Admin/Caiji.php on line 477.
+ 1 APPPATH/Controllers/Admin/Caiji.php(477): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Admin/Caiji.php', 477)
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:02:40 --> fopen(/Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app//calorie/cook/1_1.jpg): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Admin/Caiji.php on line 509.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(/Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app//calorie/cook/1_1.jpg): Failed to open stream: No such file or directory', 'APPPATH/Controllers/Admin/Caiji.php', 509)
+ 2 APPPATH/Controllers/Admin/Caiji.php(509): fopen('APPPATH//calorie/cook/1_1.jpg', 'a')
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookImages()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:04:48 --> fopen(/Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/writable/calorie/cook/1_1.jpg): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Admin/Caiji.php on line 509.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(/Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/writable/calorie/cook/1_1.jpg): Failed to open stream: No such file or directory', 'APPPATH/Controllers/Admin/Caiji.php', 509)
+ 2 APPPATH/Controllers/Admin/Caiji.php(509): fopen('ROOTPATH/writable/calorie/cook/1_1.jpg', 'a')
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookImages()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 16:00:58 --> Undefined array key 0
+in APPPATH/Controllers/Admin/Caiji.php on line 477.
+ 1 APPPATH/Controllers/Admin/Caiji.php(477): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Admin/Caiji.php', 477)
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 17:01:10 --> Undefined array key 0
+in APPPATH/Controllers/Admin/Caiji.php on line 477.
+ 1 APPPATH/Controllers/Admin/Caiji.php(477): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Admin/Caiji.php', 477)
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 17:17:10 --> mysqli_sql_exception: MySQL server has gone away in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ca...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', NULL, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/BaseModel.php(814): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(487): CodeIgniter\BaseModel->insertBatch(Array)
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-11 17:17:10 --> MySQL server has gone away
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'低筋面粉\',\'200\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'杏仁粉\',\'90\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'果酱\',\'20\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'糖粉\',\'60\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'肉桂粉\',\'2\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'鸡蛋\',\'80\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'黄油\',\'10\',\'克\',\'2022-10-11 17:17:10\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'低筋面粉\',\'200\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'杏仁粉\',\'90\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'果酱\',\'20\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'糖粉\',\'60\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'肉桂粉\',\'2\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'鸡蛋\',\'80\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'黄油\',\'10\',\'克\',\'2022-10-11 17:17:10\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'低筋面粉\',\'200\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'杏仁粉\',\'90\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'果酱\',\'20\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'糖粉\',\'60\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'肉桂粉\',\'2\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'鸡蛋\',\'80\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'黄油\',\'10\',\'克\',\'2022-10-11 17:17:10\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'低筋面粉\',\'200\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'杏仁粉\',\'90\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'果酱\',\'20\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'糖粉\',\'60\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'肉桂粉\',\'2\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'鸡蛋\',\'80\',\'克\',\'2022-10-11 17:17:10\'), (\'2547\',\'2022-10-11 17:17:10\',\'3人份\',\'黄油\',\'10\',\'克\',\'2022-10-11 17:17:10\')', null, false)
+ 5 SYSTEMPATH/Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH/BaseModel.php(814): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH/Controllers/Admin/Caiji.php(487): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 17:53:39 --> mysqli_sql_exception: Server shutdown in progress in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ca...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', NULL, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/BaseModel.php(814): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(487): CodeIgniter\BaseModel->insertBatch(Array)
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-11 17:53:39 --> Server shutdown in progress
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'虾\',\'500\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'姜\',\'10\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'生抽\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'葱\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'食盐\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'香油\',\'10\',\'克\',\'2022-10-11 17:53:39\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'虾\',\'500\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'姜\',\'10\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'生抽\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'葱\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'食盐\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'香油\',\'10\',\'克\',\'2022-10-11 17:53:39\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'虾\',\'500\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'姜\',\'10\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'生抽\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'葱\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'食盐\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'香油\',\'10\',\'克\',\'2022-10-11 17:53:39\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'虾\',\'500\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'姜\',\'10\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'生抽\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'葱\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'食盐\',\'5\',\'克\',\'2022-10-11 17:53:39\'), (\'2898\',\'2022-10-11 17:53:39\',\'2人份\',\'香油\',\'10\',\'克\',\'2022-10-11 17:53:39\')', null, false)
+ 5 SYSTEMPATH/Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH/BaseModel.php(814): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH/Controllers/Admin/Caiji.php(487): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 17:53:39 --> mysqli_sql_exception: Server shutdown in progress in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ca...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', NULL, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/BaseModel.php(814): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(487): CodeIgniter\BaseModel->insertBatch(Array)
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-11 17:53:39 --> Server shutdown in progress
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2921\',\'2022-10-11 17:53:39\',\'2人份\',\'银耳\',\'20\',\'克\',\'2022-10-11 17:53:39\'), (\'2921\',\'2022-10-11 17:53:39\',\'2人份\',\'百合\',\'40\',\'克\',\'2022-10-11 17:53:39\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2921\',\'2022-10-11 17:53:39\',\'2人份\',\'银耳\',\'20\',\'克\',\'2022-10-11 17:53:39\'), (\'2921\',\'2022-10-11 17:53:39\',\'2人份\',\'百合\',\'40\',\'克\',\'2022-10-11 17:53:39\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2921\',\'2022-10-11 17:53:39\',\'2人份\',\'银耳\',\'20\',\'克\',\'2022-10-11 17:53:39\'), (\'2921\',\'2022-10-11 17:53:39\',\'2人份\',\'百合\',\'40\',\'克\',\'2022-10-11 17:53:39\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2921\',\'2022-10-11 17:53:39\',\'2人份\',\'银耳\',\'20\',\'克\',\'2022-10-11 17:53:39\'), (\'2921\',\'2022-10-11 17:53:39\',\'2人份\',\'百合\',\'40\',\'克\',\'2022-10-11 17:53:39\')', null, false)
+ 5 SYSTEMPATH/Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH/BaseModel.php(814): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH/Controllers/Admin/Caiji.php(487): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 17:53:41 --> mysqli_sql_exception: MySQL server has gone away in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ca...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', NULL, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/BaseModel.php(814): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Admin/Caiji.php(487): CodeIgniter\BaseModel->insertBatch(Array)
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-11 17:53:41 --> MySQL server has gone away
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'薏米\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'大米\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'红腰豆\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'水\',\'600\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'百合\',\'15\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'蜂蜜\',\'4\',\'茶匙\',\'2022-10-11 17:53:41\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'薏米\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'大米\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'红腰豆\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'水\',\'600\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'百合\',\'15\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'蜂蜜\',\'4\',\'茶匙\',\'2022-10-11 17:53:41\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'薏米\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'大米\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'红腰豆\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'水\',\'600\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'百合\',\'15\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'蜂蜜\',\'4\',\'茶匙\',\'2022-10-11 17:53:41\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `calorie_cook_data` (`cid`, `created_at`, `desc`, `name`, `num`, `unit`, `updated_at`) VALUES (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'薏米\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'大米\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'红腰豆\',\'50\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'水\',\'600\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'百合\',\'15\',\'克\',\'2022-10-11 17:53:41\'), (\'2918\',\'2022-10-11 17:53:41\',\'2人份\',\'蜂蜜\',\'4\',\'茶匙\',\'2022-10-11 17:53:41\')', null, false)
+ 5 SYSTEMPATH/Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH/BaseModel.php(814): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH/Controllers/Admin/Caiji.php(487): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 19:00:42 --> Undefined array key 0
+in APPPATH/Controllers/Admin/Caiji.php on line 477.
+ 1 APPPATH/Controllers/Admin/Caiji.php(477): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Admin/Caiji.php', 477)
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

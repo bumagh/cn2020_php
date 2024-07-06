@@ -1,0 +1,953 @@
+CRITICAL - 2022-11-22 13:01:55 --> Access to undeclared static property: App\Controllers\Api\Member::$mModel
+in APPPATH/Controllers/Api/Member.php on line 234.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setLevelup()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 13:02:15 --> Access to undeclared static property: App\Controllers\Api\Member::$mModel
+in APPPATH/Controllers/Api/Member.php on line 234.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setLevelup()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:02:41 --> Cannot use empty array elements in arrays
+in APPPATH/Models/PaimaiModel.php on line 26.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-22 14:02:53 --> Cannot use empty array elements in arrays
+in APPPATH/Models/PaimaiModel.php on line 26.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-22 14:37:11 --> syntax error, unexpected '$str' (T_VARIABLE)
+in APPPATH/Controllers/AdminController.php on line 165.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/AdminController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 APPPATH/Controllers/Webadmin/Pocket.php(5): spl_autoload_call('App\\Controllers\\AdminController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Webadmin/Pocket.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/pocket')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/pocket')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/pocket')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:45:55 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(7)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:46:00 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:46:02 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:46:06 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:47:39 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:47:42 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:13 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:15 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:20 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:22 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:24 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:28 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:30 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:33 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:35 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:37 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:38 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 14:48:41 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(7)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:07:36 --> Use of undefined constant self - assumed 'self' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/Webadmin/Paimai.php on line 28.
+ 1 APPPATH/Controllers/Webadmin/Paimai.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant self - assumed \'self\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/Webadmin/Paimai.php', 28, [])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:16:50 --> Undefined index: actions
+in APPPATH/Controllers/AdminController.php on line 223.
+ 1 APPPATH/Controllers/AdminController.php(223): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: actions', 'APPPATH/Controllers/AdminController.php', 223, [...])
+ 2 APPPATH/Controllers/Webadmin/Paimai.php(32): App\Controllers\AdminController->setIndexInitData(Object(App\Models\PaimaiModel))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:21:20 --> in_array() expects parameter 2 to be array, string given
+in APPPATH/Controllers/AdminController.php on line 227.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expects parameter 2 to be array, string given', 'APPPATH/Controllers/AdminController.php', 227, [...])
+ 2 APPPATH/Controllers/AdminController.php(227): in_array([...], '索引')
+ 3 APPPATH/Controllers/Webadmin/Paimai.php(32): App\Controllers\AdminController->setIndexInitData(Object(App\Models\PaimaiModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:24:48 --> Class 'App\Entities\Report' not found
+in APPPATH/Controllers/Webadmin/Member.php on line 144.
+ 1 APPPATH/Controllers/Webadmin/Member.php(140): App\Controllers\Webadmin\Member::getStat(85, 'member_view_85')
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->view(85)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:25:12 --> Class 'App\Entities\Report' not found
+in APPPATH/Controllers/Webadmin/Member.php on line 144.
+ 1 APPPATH/Controllers/Webadmin/Member.php(140): App\Controllers\Webadmin\Member::getStat(84, 'member_view_84')
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->view(84)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:25:13 --> Class 'App\Entities\Report' not found
+in APPPATH/Controllers/Webadmin/Member.php on line 144.
+ 1 APPPATH/Controllers/Webadmin/Member.php(140): App\Controllers\Webadmin\Member::getStat(84, 'member_view_84')
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->view(84)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:26:00 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:26:09 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:26:10 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:26:11 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:26:16 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(6)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:51:15 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:55:19 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:55:19 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:55:21 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:55:22 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:55:29 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:55:56 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:55:56 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:55:58 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:55:59 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:56:21 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:56:21 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:56:24 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:56:51 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:56:53 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:57:17 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:57:19 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:57:56 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:57:57 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:00 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:10 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:10 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:12 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:17 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:24 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:24 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:27 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:28 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:32 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:52 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:55 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:58:56 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:59:02 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:59:04 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:59:04 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 15:59:05 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:15:31 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:15:40 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:15:50 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:15:51 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:16:08 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:17:12 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:17:19 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:17:19 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:17:22 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:17:31 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:17:38 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:17:43 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:17:47 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:17:49 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:18:12 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:18:12 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:18:16 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:18:17 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:18:19 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:18:52 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:18:52 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:18:56 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:18:57 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:18:59 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:19:01 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:19:02 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:19:04 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:19:05 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:19:47 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:19:47 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:19:48 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:19:51 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:19:59 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:20:01 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:20:02 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:20:25 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:20:25 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:20:27 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:20:28 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:20:30 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:20:33 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:20:35 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:20:37 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:21:22 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:22:12 --> Undefined variable: tag
+in APPPATH/Controllers/Api/Paimai.php on line 33.
+ 1 APPPATH/Controllers/Api/Paimai.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Controllers/Api/Paimai.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:37:05 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::limit() must be of the type int or null, string given, called in /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PaimaiModel.php on line 40
+in SYSTEMPATH/Database/BaseBuilder.php on line 1460.
+ 1 APPPATH/Models/PaimaiModel.php(40): CodeIgniter\Database\BaseBuilder->limit(0, 'ROOTPATH/public')
+ 2 APPPATH/Controllers/AdminController.php(337): App\Models\PaimaiModel->getData([], '5', 0, 'ROOTPATH/public', 'ROOTPATH/public', 'created_at', 'desc')
+ 3 APPPATH/Controllers/Webadmin/Paimai.php(29): App\Controllers\AdminController->getSearchData(Object(App\Models\PaimaiModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:41:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::select()
+in APPPATH/Controllers/Api/Paimai.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:42:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH/Controllers/Api/Paimai.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:42:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH/Controllers/Api/Paimai.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:43:23 --> Call to a member function getWhere() on null
+in APPPATH/Controllers/Api/Paimai.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:44:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH/Controllers/Api/Paimai.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:44:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::select()
+in APPPATH/Controllers/Api/Paimai.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:45:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+in APPPATH/Controllers/Api/Paimai.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:46:05 --> syntax error, unexpected '$t' (T_VARIABLE)
+in APPPATH/Controllers/Api/Paimai.php on line 19.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/paimai/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/paimai/test')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/paimai/test')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:46:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::select()
+in APPPATH/Controllers/Api/Paimai.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,51 @@
+CRITICAL - 2022-12-06 14:08:57 --> Undefined variable: v
+in APPPATH/Controllers/Api/Paimai.php on line 103.
+ 1 APPPATH/Controllers/Api/Paimai.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: v', 'APPPATH/Controllers/Api/Paimai.php', 103, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 14:24:27 --> syntax error, unexpected '?>'
+in APPPATH/Views/webadmin/section/detail.php on line 80.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/section/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Section.php(97): view('webadmin/section/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Section->edit(13)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Section))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 14:42:09 --> Undefined variable: pid
+in APPPATH/Controllers/Api/Paimai.php on line 18.
+ 1 APPPATH/Controllers/Api/Paimai.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pid', 'APPPATH/Controllers/Api/Paimai.php', 18, [])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 14:42:40 --> Undefined variable: numb
+in APPPATH/Controllers/Api/Paimai.php on line 18.
+ 1 APPPATH/Controllers/Api/Paimai.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: numb', 'APPPATH/Controllers/Api/Paimai.php', 18, [])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 14:43:29 --> Undefined variable: pocketModel
+in APPPATH/Controllers/Api/Paimai.php on line 24.
+ 1 APPPATH/Controllers/Api/Paimai.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pocketModel', 'APPPATH/Controllers/Api/Paimai.php', 24, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 14:43:47 --> Undefined variable: v
+in APPPATH/Controllers/Api/Paimai.php on line 29.
+ 1 APPPATH/Controllers/Api/Paimai.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: v', 'APPPATH/Controllers/Api/Paimai.php', 29, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 14:44:32 --> Undefined variable: v
+in APPPATH/Controllers/Api/Paimai.php on line 100.
+ 1 APPPATH/Controllers/Api/Paimai.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: v', 'APPPATH/Controllers/Api/Paimai.php', 100, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

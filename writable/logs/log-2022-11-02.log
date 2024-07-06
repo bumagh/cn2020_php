@@ -1,0 +1,658 @@
+ERROR - 2022-11-02 08:18:27 --> mysqli_sql_exception: Table 'project_ey56_xu.group_base' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('group_base')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Fields.php(51): CodeIgniter\Database\BaseConnection->fieldExists('begin', 'group_base')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Fields.php(133): App\Controllers\Webadmin\Fields->checkHasFields('group_base', 'begin')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->edit(16)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 08:18:27 --> Table 'project_ey56_xu.group_base' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM `group_base`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM `group_base`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM `group_base`')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM `group_base`')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('group_base')
+ 6 APPPATH/Controllers/Webadmin/Fields.php(51): CodeIgniter\Database\BaseConnection->fieldExists('begin', 'group_base')
+ 7 APPPATH/Controllers/Webadmin/Fields.php(133): App\Controllers\Webadmin\Fields->checkHasFields('group_base', 'begin')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->edit(16)
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 08:27:18 --> mysqli_sql_exception: Table 'project_ey56_xu.group_base' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('group_base')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Fields.php(51): CodeIgniter\Database\BaseConnection->fieldExists('begin', 'group_base')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Fields.php(133): App\Controllers\Webadmin\Fields->checkHasFields('group_base', 'begin')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->edit(16)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 08:27:18 --> Table 'project_ey56_xu.group_base' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM `group_base`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM `group_base`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM `group_base`')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM `group_base`')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('group_base')
+ 6 APPPATH/Controllers/Webadmin/Fields.php(51): CodeIgniter\Database\BaseConnection->fieldExists('begin', 'group_base')
+ 7 APPPATH/Controllers/Webadmin/Fields.php(133): App\Controllers\Webadmin\Fields->checkHasFields('group_base', 'begin')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->edit(16)
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 08:27:48 --> mysqli_sql_exception: Table 'project_ey56_xu.extfields_key' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Validation/Validation.php(315): CodeIgniter\Validation\Rules->is_unique('test', 'code', Array, NULL)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('code', 'code', 'test', Array, Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(1350): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(835): CodeIgniter\BaseModel->validate(Array)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Fields.php(146): CodeIgniter\Model->update(17, Array)
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->edit(17)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+#13 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2022-11-02 08:27:48 --> Table 'project_ey56_xu.extfields_key' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT 1
+FROM `extfields_key`
+WHERE `code` = \'test\'
+AND `code` != \'test\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `extfields_key`
+WHERE `code` = \'test\'
+AND `code` != \'test\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `extfields_key`
+WHERE `code` = \'test\'
+AND `code` != \'test\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `extfields_key`
+WHERE `code` = :code:
+AND `code` != :code.1:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/Validation/Validation.php(315): CodeIgniter\Validation\Rules->is_unique('test', 'code', [...], null)
+ 7 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('code', 'code', 'test', [...], [...])
+ 8 SYSTEMPATH/BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH/BaseModel.php(835): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+11 APPPATH/Controllers/Webadmin/Fields.php(146): CodeIgniter\Model->update(17, [...])
+12 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->edit(17)
+13 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+14 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 08:31:04 --> mysqli_sql_exception: Table 'project_ey56_xu.extfields_key' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Validation/Validation.php(315): CodeIgniter\Validation\Rules->is_unique('test', 'code', Array, NULL)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('code', 'code', 'test', Array, Array)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(1350): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(835): CodeIgniter\BaseModel->validate(Array)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Fields.php(146): CodeIgniter\Model->update(17, Array)
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->edit(17)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+#13 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2022-11-02 08:31:04 --> Table 'project_ey56_xu.extfields_key' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT 1
+FROM `extfields_key`
+WHERE `code` = \'test\'
+AND `code` != \'test\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `extfields_key`
+WHERE `code` = \'test\'
+AND `code` != \'test\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `extfields_key`
+WHERE `code` = \'test\'
+AND `code` != \'test\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `extfields_key`
+WHERE `code` = :code:
+AND `code` != :code.1:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/Validation/Validation.php(315): CodeIgniter\Validation\Rules->is_unique('test', 'code', [...], null)
+ 7 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('code', 'code', 'test', [...], [...])
+ 8 SYSTEMPATH/BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH/BaseModel.php(835): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+11 APPPATH/Controllers/Webadmin/Fields.php(146): CodeIgniter\Model->update(17, [...])
+12 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->edit(17)
+13 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+14 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:41:08 --> Invalid file: webadmin/sysdict/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/sysdict/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysdict/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Sysdict.php(33): view('webadmin/sysdict/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:11:55 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Webadmin/Home.php on line 5.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:11:58 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Webadmin/Home.php on line 5.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/')
+ 4 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:12:24 --> mysqli_sql_exception: Table 'project_ey56_xu.base_customer' doesn't exist in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('base_customer')
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(51): CodeIgniter\Database\BaseConnection->fieldExists('ccc', 'base_customer')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysdict.php(94): App\Controllers\Webadmin\Sysdict->checkHasFields('base_customer', 'ccc')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->add()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 09:12:24 --> Table 'project_ey56_xu.base_customer' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SHOW COLUMNS FROM `base_customer`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM `base_customer`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM `base_customer`')
+ 4 SYSTEMPATH/Database/BaseConnection.php(1476): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM `base_customer`')
+ 5 SYSTEMPATH/Database/BaseConnection.php(1504): CodeIgniter\Database\BaseConnection->getFieldNames('base_customer')
+ 6 APPPATH/Controllers/Webadmin/Sysdict.php(51): CodeIgniter\Database\BaseConnection->fieldExists('ccc', 'base_customer')
+ 7 APPPATH/Controllers/Webadmin/Sysdict.php(94): App\Controllers\Webadmin\Sysdict->checkHasFields('base_customer', 'ccc')
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->add()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:22:49 --> Undefined variable: request
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 16.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: request', 'APPPATH/Controllers/Webadmin/Sysdict.php', 16, [])
+ 2 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Webadmin\Sysdict->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:23:20 --> Trying to get property 'uri' of non-object
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 16.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'uri\' of non-object', 'APPPATH/Controllers/Webadmin/Sysdict.php', 16, [])
+ 2 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Webadmin\Sysdict->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:26:38 --> Cannot redeclare non static App\Controllers\AdminController::$view as static App\Controllers\Webadmin\Sysdict::$view
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-02 09:28:02 --> Undefined offset: 1
+in APPPATH/Controllers/AdminController.php on line 57.
+ 1 APPPATH/Controllers/AdminController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH/Controllers/AdminController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\AdminController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:28:19 --> Undefined offset: 1
+in APPPATH/Controllers/AdminController.php on line 57.
+ 1 APPPATH/Controllers/AdminController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH/Controllers/AdminController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\AdminController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:28:46 --> Undefined offset: 1
+in APPPATH/Controllers/AdminController.php on line 57.
+ 1 APPPATH/Controllers/AdminController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH/Controllers/AdminController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\AdminController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:30:54 --> Invalid file: frame.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frame.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('frame', [], true)
+ 3 APPPATH/Controllers/Webadmin/Home.php(82): view('frame', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:31:05 --> Invalid file: frame.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frame.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('frame', [], true)
+ 3 APPPATH/Controllers/Webadmin/Home.php(82): view('frame', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:31:06 --> Invalid file: frame.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frame.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('frame', [], true)
+ 3 APPPATH/Controllers/Webadmin/Home.php(82): view('frame', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:32:22 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 7 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:32:27 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 7 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:23:16 --> Invalid file: user/roleindex.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/roleindex.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('user/roleindex', [], true)
+ 3 APPPATH/Controllers/Webadmin/Sysrole.php(65): view('user/roleindex', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:24:48 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 APPPATH/Views/webadmin/sysrole/roleindex.php(4): spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/roleindex.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/roleindex', [], true)
+ 9 APPPATH/Controllers/Webadmin/Sysrole.php(65): view('webadmin/sysrole/roleindex', [...])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:28:27 --> Call to a member function __get() on null
+in APPPATH/Controllers/AdminController.php on line 140.
+ 1 APPPATH/Controllers/Webadmin/Sysrole.php(51): App\Controllers\AdminController->setIndexInitData(null)
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:28:51 --> Undefined variable: tag
+in APPPATH/Views/webadmin/sysrole/roleindex.php on line 1.
+ 1 APPPATH/Views/webadmin/sysrole/roleindex.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/sysrole/roleindex.php', 1, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/roleindex.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/roleindex', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(59): view('webadmin/sysrole/roleindex', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 13:19:39 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/detail.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/detail.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(108): view('webadmin/sysrole/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->add()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 13:22:11 --> Undefined variable: mModel
+in APPPATH/Controllers/Webadmin/Sysrole.php on line 105.
+ 1 APPPATH/Controllers/Webadmin/Sysrole.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mModel', 'APPPATH/Controllers/Webadmin/Sysrole.php', 105, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 13:27:24 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/detail.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/detail.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(140): view('webadmin/sysrole/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->edit('4')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 13:43:14 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/detail.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/detail.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(138): view('webadmin/sysrole/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->edit('5')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 13:47:13 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/detail.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/detail.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(138): view('webadmin/sysrole/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->edit('4')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 13:51:12 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/detail.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/detail.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(138): view('webadmin/sysrole/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->edit('5')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 14:02:24 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/detail.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/detail.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(138): view('webadmin/sysrole/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->edit('5')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 14:02:38 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/detail.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/detail.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(138): view('webadmin/sysrole/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->edit('2')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 14:02:42 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/detail.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/detail.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(138): view('webadmin/sysrole/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->edit('4')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 14:02:45 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/detail.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/detail.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/detail', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(138): view('webadmin/sysrole/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->edit('5')
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:31:23 --> Call to a member function __get() on null
+in APPPATH/Controllers/AdminController.php on line 137.
+ 1 APPPATH/Controllers/Webadmin/Sysuser.php(90): App\Controllers\AdminController->setIndexInitData(null, Object(App\Entities\Extbase))
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:35:34 --> Too few arguments to function App\Models\SysRoleModel::getData(), 1 passed in /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Sysuser.php on line 94 and at least 3 expected
+in APPPATH/Models/SysRoleModel.php on line 25.
+ 1 APPPATH/Controllers/Webadmin/Sysuser.php(94): App\Models\SysRoleModel->getData([])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:37:29 --> Invalid file: webadmin/sysuser/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/sysuser/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysuser/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Sysuser.php(98): view('webadmin/sysuser/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:38:19 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 APPPATH/Views/webadmin/sysuser/index.php(6): spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysuser/index.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysuser/index', [], true)
+ 9 APPPATH/Controllers/Webadmin/Sysuser.php(98): view('webadmin/sysuser/index', [...])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:51:07 --> Invalid file: webadmin\test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin\\test.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('webadmin\\test', [], true)
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/index', [], true)
+ 4 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:52:09 --> Invalid file: Views\webadmin\test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views\\webadmin\\test.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Views\\webadmin\\test', [], true)
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/index', [], true)
+ 4 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:52:52 --> Invalid file: \Views\webadmin\test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('\\Views\\webadmin\\test.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('\\Views\\webadmin\\test', [], true)
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/index', [], true)
+ 4 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:53:09 --> Invalid file: \webadmin\test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('\\webadmin\\test.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('\\webadmin\\test', [], true)
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/index', [], true)
+ 4 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:53:32 --> Invalid file: Views\test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views\\test.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Views\\test', [], true)
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/index', [], true)
+ 4 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:55:28 --> Invalid file: webadmin\test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin\\test.php')
+ 2 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('webadmin\\test', null, true)
+ 3 APPPATH/Views/webadmin/sysrole/index.php(1): CodeIgniter\View\View->include('webadmin\\test')
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/index.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/index', [], true)
+ 7 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/index', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:55:39 --> Invalid file: Views\webadmin\test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views\\webadmin\\test.php')
+ 2 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('Views\\webadmin\\test', null, true)
+ 3 APPPATH/Views/webadmin/sysrole/index.php(1): CodeIgniter\View\View->include('Views\\webadmin\\test')
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/index.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/index', [], true)
+ 7 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/index', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:55:58 --> Invalid file: \Views\webadmin\test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('\\Views\\webadmin\\test.php')
+ 2 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('\\Views\\webadmin\\test', null, true)
+ 3 APPPATH/Views/webadmin/sysrole/index.php(1): CodeIgniter\View\View->include('\\Views\\webadmin\\test')
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/index.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/index', [], true)
+ 7 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/index', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:57:50 --> Array to string conversion
+in APPPATH/Views/webadmin/test.php on line 2.
+ 1 APPPATH/Views/webadmin/test.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH/Views/webadmin/test.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/test.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('\\App\\Views\\webadmin\\test', null, true)
+ 5 APPPATH/Views/webadmin/sysrole/index.php(1): CodeIgniter\View\View->include('\\App\\Views\\webadmin\\test')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/index.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/index', [], true)
+ 9 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/index', [...])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:04:24 --> Invalid file: ../test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../test.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('../test', [], true)
+ 3 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('../test', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:05:00 --> Invalid file: test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('test.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('test', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:05:13 --> Invalid file: \App\Views\webadmin\test.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('\\App\\Views\\webadmin\\test.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('\\App\\Views\\webadmin\\test', [], true)
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/index', [], true)
+ 4 APPPATH/Controllers/Webadmin/Sysrole.php(57): view('webadmin/sysrole/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:05:44 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/test.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/test.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/test.php', 2, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/test.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/test', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/test')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:05:54 --> Undefined variable: init
+in APPPATH/Views/webadmin/sysrole/test.php on line 2.
+ 1 APPPATH/Views/webadmin/sysrole/test.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: init', 'APPPATH/Views/webadmin/sysrole/test.php', 2, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysrole/test.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysrole/test', [], true)
+ 5 APPPATH/Controllers/Webadmin/Sysrole.php(56): view('webadmin/sysrole/test')
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:51:36 --> Undefined variable: actions
+in APPPATH/Views/webadmin/comm/indextable.php on line 5.
+ 1 APPPATH/Views/webadmin/comm/indextable.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: actions', 'APPPATH/Views/webadmin/comm/indextable.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/comm/indextable.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('\\App\\Views\\webadmin\\comm\\indextable', null, true)
+ 5 APPPATH/Views/webadmin/sysdict/index.php(1): CodeIgniter\View\View->include('\\App\\Views\\webadmin\\comm\\indextable')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/sysdict/index.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/sysdict/index', [], true)
+ 9 APPPATH/Controllers/Webadmin/Sysdict.php(33): view('webadmin/sysdict/index', [...])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:55:14 --> Call to undefined function App\Controllers\Webadmin\retRenderAdd()
+in APPPATH/Controllers/Webadmin/Sysrole.php on line 52.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysrole->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysrole))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

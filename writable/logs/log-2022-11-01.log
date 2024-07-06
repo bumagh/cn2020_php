@@ -1,0 +1,168 @@
+CRITICAL - 2022-11-01 13:50:07 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/Webadmin/Home.php on line 30.
+ 1 APPPATH/Controllers/Webadmin/Home.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/Webadmin/Home.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 14:09:27 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/Webadmin/Home.php on line 34.
+ 1 APPPATH/Controllers/Webadmin/Home.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/Webadmin/Home.php', 34, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 14:14:54 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/Webadmin/Home.php on line 34.
+ 1 APPPATH/Controllers/Webadmin/Home.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/Webadmin/Home.php', 34, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 14:15:24 --> Call to a member function getNewTips() on null
+in APPPATH/Controllers/Webadmin/Home.php on line 81.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 14:15:46 --> Invalid file: home/frame.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/frame.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('home/frame', [], true)
+ 3 APPPATH/Controllers/Webadmin/Home.php(83): view('home/frame', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 14:16:44 --> Undefined variable: tipsnumb
+in APPPATH/Views/webadmin/home/frame.php on line 55.
+ 1 APPPATH/Views/webadmin/home/frame.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tipsnumb', 'APPPATH/Views/webadmin/home/frame.php', 55, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/home/frame.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/home/frame', [], true)
+ 5 APPPATH/Controllers/Webadmin/Home.php(83): view('webadmin/home/frame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 14:18:33 --> Undefined index: avatar
+in APPPATH/Views/webadmin/home/frame.php on line 59.
+ 1 APPPATH/Views/webadmin/home/frame.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: avatar', 'APPPATH/Views/webadmin/home/frame.php', 59, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/home/frame.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/home/frame', [], true)
+ 5 APPPATH/Controllers/Webadmin/Home.php(83): view('webadmin/home/frame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 14:21:21 --> syntax error, unexpected '；' (T_STRING), expecting ';'
+in APPPATH/Controllers/BaseController.php on line 57.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/BaseController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BaseController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BaseController')
+ 4 APPPATH/Controllers/Webadmin/Home.php(5): spl_autoload_call('App\\Controllers\\BaseController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Webadmin/Home.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 14:21:32 --> Undefined index: uid
+in APPPATH/Views/webadmin/home/frame.php on line 59.
+ 1 APPPATH/Views/webadmin/home/frame.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Views/webadmin/home/frame.php', 59, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/home/frame.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/home/frame', [], true)
+ 5 APPPATH/Controllers/Webadmin/Home.php(83): view('webadmin/home/frame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 14:21:40 --> Undefined index: rolename
+in APPPATH/Views/webadmin/home/frame.php on line 60.
+ 1 APPPATH/Views/webadmin/home/frame.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: rolename', 'APPPATH/Views/webadmin/home/frame.php', 60, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/home/frame.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/home/frame', [], true)
+ 5 APPPATH/Controllers/Webadmin/Home.php(83): view('webadmin/home/frame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 14:31:24 --> syntax error, unexpected '/'
+in APPPATH/Views/webadmin/home/frame.php on line 156.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/home/frame', [], true)
+ 3 APPPATH/Controllers/Webadmin/Home.php(82): view('webadmin/home/frame', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 15:16:36 --> Invalid file: fields/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fields/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('fields/index', [], true)
+ 3 APPPATH/Controllers/Webadmin/Fields.php(33): view('fields/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 15:17:12 --> Call to undefined method App\Controllers\Home::getRenderAdd()
+in APPPATH/Views/webadmin/fields/index.php on line 6.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/fields/index', [], true)
+ 4 APPPATH/Controllers/Webadmin/Fields.php(33): view('webadmin/fields/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 15:17:14 --> Call to undefined method App\Controllers\Home::getRenderAdd()
+in APPPATH/Views/webadmin/fields/index.php on line 6.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/fields/index', [], true)
+ 4 APPPATH/Controllers/Webadmin/Fields.php(33): view('webadmin/fields/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 15:18:09 --> Call to undefined method App\Controllers\Home::getRenderTableAct()
+in APPPATH/Views/webadmin/fields/index.php on line 15.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/fields/index', [], true)
+ 4 APPPATH/Controllers/Webadmin/Fields.php(33): view('webadmin/fields/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 20:37:50 --> Only variables should be passed by reference
+in APPPATH/Controllers/BaseController.php on line 83.
+ 1 APPPATH/Controllers/BaseController.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Only variables should be passed by reference', 'APPPATH/Controllers/BaseController.php', 83, [...])
+ 2 APPPATH/Controllers/BaseController.php(125): App\Controllers\BaseController->getTag('webadmin/fields')
+ 3 APPPATH/Controllers/Webadmin/Fields.php(24): App\Controllers\BaseController->setIndexInitData(Object(App\Models\FieldskeyModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 20:37:52 --> Only variables should be passed by reference
+in APPPATH/Controllers/BaseController.php on line 83.
+ 1 APPPATH/Controllers/BaseController.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Only variables should be passed by reference', 'APPPATH/Controllers/BaseController.php', 83, [...])
+ 2 APPPATH/Controllers/BaseController.php(125): App\Controllers\BaseController->getTag('webadmin/fields')
+ 3 APPPATH/Controllers/Webadmin/Fields.php(24): App\Controllers\BaseController->setIndexInitData(Object(App\Models\FieldskeyModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-01 20:48:59 --> Invalid file: fields/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fields/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('fields/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Fields.php(122): view('fields/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Fields->add()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Fields))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

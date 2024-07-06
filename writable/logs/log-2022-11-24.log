@@ -1,0 +1,849 @@
+CRITICAL - 2022-11-24 13:02:52 --> Undefined offset: 0
+in APPPATH/Filters/AuthAdmin.php on line 52.
+ 1 APPPATH/Filters/AuthAdmin.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Filters/AuthAdmin.php', 52, [...])
+ 2 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 3 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('/', 'after')
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 13:09:45 --> Undefined index: status
+in APPPATH/Controllers/Api/Paimai.php on line 47.
+ 1 APPPATH/Controllers/Api/Paimai.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Paimai.php', 47, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 13:11:17 --> Undefined index: status
+in APPPATH/Controllers/Api/Paimai.php on line 47.
+ 1 APPPATH/Controllers/Api/Paimai.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Paimai.php', 47, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->join()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 13:30:43 --> Call to undefined method CodeIgniter\HTTP\CLIRequest::isAjax()
+in APPPATH/Filters/AuthAdmin.php on line 20.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\AuthAdmin->before(Object(CodeIgniter\HTTP\CLIRequest), null)
+ 2 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('webadmin/paimai/test', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 13:32:57 --> Cannot access protected property CodeIgniter\HTTP\CLIRequest::$uri
+in APPPATH/Controllers/AdminController.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\AdminController->initController(Object(CodeIgniter\HTTP\CLIRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 13:36:10 --> Call to undefined method CodeIgniter\HTTP\CLIRequest::isAjax()
+in APPPATH/Filters/AuthAdmin.php on line 20.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\AuthAdmin->before(Object(CodeIgniter\HTTP\CLIRequest), null)
+ 2 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('bash/paimai/test', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 13:37:30 --> Cannot access protected property CodeIgniter\HTTP\CLIRequest::$uri
+in APPPATH/Filters/AuthAdmin.php on line 51.
+ 1 SYSTEMPATH/Filters/Filters.php(196): App\Filters\AuthAdmin->after(Object(CodeIgniter\HTTP\CLIRequest), Object(CodeIgniter\HTTP\Response), null)
+ 2 SYSTEMPATH/CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('bash/paimai/test', 'after')
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 14:17:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+in APPPATH/Controllers/Bash/Paimai.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Bash\Paimai->procOver()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bash\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 14:35:09 --> Access to undeclared static property App\Controllers\Bash\Paimai::$pockModel
+in APPPATH/Controllers/Bash/Paimai.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Bash\Paimai->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 14:53:45 --> Access to undeclared static property App\Controllers\Bash\Paimai::$msgModel
+in APPPATH/Controllers/Bash/Paimai.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Bash\Paimai->procOver()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bash\Paimai))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 14:54:27 --> Required parameter $limit follows optional parameter $sdata
+in APPPATH/Models/MessageModel.php on line 45.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Required parameter $limit follows optional parameter $sdata', 'APPPATH/Models/MessageModel.php', 45)
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/MessageModel.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MessageModel')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MessageModel')
+ 6 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\MessageModel')
+ 7 SYSTEMPATH/Config/Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\MessageModel')
+ 8 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 SYSTEMPATH/Common.php(817): CodeIgniter\Config\Factories::models('App\\Models\\MessageModel', [...], null)
+10 APPPATH/Controllers/Bash/Paimai.php(16): model('App\\Models\\MessageModel')
+11 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Bash\Paimai->__construct()
+12 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 14:59:58 --> Required parameter $limit follows optional parameter $sdata
+in APPPATH/Models/MessageModel.php on line 45.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Required parameter $limit follows optional parameter $sdata', 'APPPATH/Models/MessageModel.php', 45)
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/MessageModel.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MessageModel')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MessageModel')
+ 6 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\MessageModel')
+ 7 SYSTEMPATH/Config/Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\MessageModel')
+ 8 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 SYSTEMPATH/Common.php(817): CodeIgniter\Config\Factories::models('App\\Models\\MessageModel', [...], null)
+10 APPPATH/Controllers/Bash/Paimai.php(16): model('App\\Models\\MessageModel')
+11 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Bash\Paimai->__construct()
+12 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:03:45 --> Required parameter $limit follows optional parameter $sdata
+in APPPATH/Models/MessageModel.php on line 45.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Required parameter $limit follows optional parameter $sdata', 'APPPATH/Models/MessageModel.php', 45)
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/MessageModel.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MessageModel')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MessageModel')
+ 6 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\MessageModel')
+ 7 SYSTEMPATH/Config/Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\MessageModel')
+ 8 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 SYSTEMPATH/Common.php(817): CodeIgniter\Config\Factories::models('App\\Models\\MessageModel', [...], null)
+10 APPPATH/Controllers/Bash/Paimai.php(16): model('App\\Models\\MessageModel')
+11 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Bash\Paimai->__construct()
+12 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:03:57 --> Too few arguments to function App\Models\MessageModel::getData(), 1 passed in /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Bash/Paimai.php on line 22 and at least 3 expected
+in APPPATH/Models/MessageModel.php on line 45.
+ 1 APPPATH/Controllers/Bash/Paimai.php(22): App\Models\MessageModel->getData([...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Bash\Paimai->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bash\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:19:07 --> Required parameter $limit follows optional parameter $sdata
+in APPPATH/Models/MessageModel.php on line 50.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Required parameter $limit follows optional parameter $sdata', 'APPPATH/Models/MessageModel.php', 50)
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/MessageModel.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MessageModel')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MessageModel')
+ 6 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\MessageModel')
+ 7 SYSTEMPATH/Config/Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\MessageModel')
+ 8 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 SYSTEMPATH/Common.php(817): CodeIgniter\Config\Factories::models('App\\Models\\MessageModel', [...], null)
+10 APPPATH/Controllers/Bash/Paimai.php(16): model('App\\Models\\MessageModel')
+11 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Bash\Paimai->__construct()
+12 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:23:55 --> Trying to access array offset on value of type null
+in APPPATH/Models/PocketModel.php on line 153.
+ 1 APPPATH/Models/PocketModel.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Models/PocketModel.php', 153)
+ 2 APPPATH/Controllers/Bash/Paimai.php(52): App\Models\PocketModel->cancelCoinFix('73', '99999')
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Bash\Paimai->procOver()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bash\Paimai))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:00 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:01 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Home.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Home.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/home/getSections')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/home/getSections')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/home/getSections')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:01 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getnew')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getnew')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getnew')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:03 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:04 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Home.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Home.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/home/getSections')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/home/getSections')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/home/getSections')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:05 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getnew')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getnew')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getnew')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:08 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Paimai.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Paimai.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/paimai/getData')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/paimai/getData')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/paimai/getData')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:13 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:14 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getnew')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getnew')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getnew')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:15 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getProfile')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getProfile')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getProfile')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:17 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:18 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getProfile')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getProfile')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getProfile')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:18 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getnew')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getnew')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getnew')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:23 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:24 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getnew')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getnew')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getnew')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:26 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Pocket.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Pocket.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/pocket/setInitPocket')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/pocket/setInitPocket')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/pocket/setInitPocket')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:28 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:29 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getmine')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getmine')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getmine')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:29 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getnew')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getnew')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getnew')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:31 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:32 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getnew')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getnew')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getnew')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:45 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:47 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getnew')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getnew')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getnew')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:47 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/login')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/login')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/login')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:49 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/login')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/login')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/login')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:52 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/login')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/login')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/login')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:56 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:57 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:41:58 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getnew')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getnew')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getnew')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:42:00 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Member.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Member.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/member/getinvited')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/member/getinvited')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/member/getinvited')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:42:02 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/ApiController.php on line 129.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ApiController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 APPPATH/Controllers/Api/Message.php(6): spl_autoload_call('App\\Controllers\\ApiController')
+ 5 SYSTEMPATH/Router/AutoRouter.php(147): include_once('APPPATH/Controllers/Api/Message.php')
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/message/getnew')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/message/getnew')
+ 8 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/message/getnew')
+ 9 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:43:03 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 310.
+ 1 APPPATH/Controllers/Api/Member.php(310): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 310, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:44:15 --> Undefined index: cashjoin
+in APPPATH/Controllers/Api/Message.php on line 75.
+ 1 APPPATH/Controllers/Api/Message.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: cashjoin', 'APPPATH/Controllers/Api/Message.php', 75, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Message->getmine()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Message))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 15:44:28 --> Undefined index: cashjoin
+in APPPATH/Controllers/Api/Message.php on line 75.
+ 1 APPPATH/Controllers/Api/Message.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: cashjoin', 'APPPATH/Controllers/Api/Message.php', 75, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Message->getmine()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Message))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 17:06:11 --> Access to undeclared static property App\Controllers\Bash\Paimai::$coinModel
+in APPPATH/Controllers/Bash/Paimai.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Bash\Paimai->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 17:16:03 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(26)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 17:21:35 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(26)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 17:21:36 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(26)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 17:21:47 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(26)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 17:21:52 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(26)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 17:21:53 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(26)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 19:20:17 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(28)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 19:21:20 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(22)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 19:21:26 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(22)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 19:30:17 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(22)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 19:30:22 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(22)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 19:35:14 --> Undefined variable: tag
+in APPPATH/Views/webadmin/pocket/view.php on line 2.
+ 1 APPPATH/Views/webadmin/pocket/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH/Views/webadmin/pocket/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(21)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 19:41:42 --> Undefined index: extfields
+in APPPATH/Views/webadmin/pocket/view.php on line 55.
+ 1 APPPATH/Views/webadmin/pocket/view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: extfields', 'APPPATH/Views/webadmin/pocket/view.php', 55, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/pocket/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/view', [], true)
+ 5 APPPATH/Controllers/Webadmin/Pocket.php(61): view('webadmin/pocket/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(22)
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:41:45 --> Too few arguments to function App\Controllers\Webadmin\Pocket::view(), 1 passed in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php on line 907 and exactly 2 expected
+in APPPATH/Controllers/Webadmin/Pocket.php on line 42.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view('22')
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 20:49:44 --> mysqli_sql_exception: Unknown column 'deleted_at' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`i...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PocketLogCoinModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(336): App\Models\PocketLogCoinModel->count(Array, '', '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Pocket.php(50): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketLogCoinModel))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(22, 'coin')
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-24 20:49:44 --> Unknown column 'deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`id`) AS `id`
+FROM `pocket_log_coin`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`id`) AS `id`
+FROM `pocket_log_coin`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`id`) AS `id`
+FROM `pocket_log_coin`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `pocket_log_coin`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH/Models/PocketLogCoinModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(336): App\Models\PocketLogCoinModel->count([], 'ROOTPATH/public', 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Pocket.php(50): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketLogCoinModel))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(22, 'coin')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 21:29:51 --> mysqli_sql_exception: Unknown column 'coin' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PocketLogCoinModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(337): App\Models\PocketLogCoinModel->getData(Array, '10', 0, 'uid', '60', 'coin', 'asc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Pocket.php(50): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketLogCoinModel))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(60, 'coin')
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-24 21:29:51 --> Unknown column 'coin' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pocket_log_coin`
+WHERE `uid` LIKE \'%60%\' ESCAPE \'!\'
+ORDER BY `coin` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pocket_log_coin`
+WHERE `uid` LIKE \'%60%\' ESCAPE \'!\'
+ORDER BY `coin` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pocket_log_coin`
+WHERE `uid` LIKE \'%60%\' ESCAPE \'!\'
+ORDER BY `coin` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pocket_log_coin`
+WHERE `uid` LIKE :uid: ESCAPE \'!\'
+ORDER BY `coin` ASC
+ LIMIT 10', [...], false)
+ 5 APPPATH/Models/PocketLogCoinModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(337): App\Models\PocketLogCoinModel->getData([], '10', 0, 'uid', '60', 'coin', 'asc')
+ 7 APPPATH/Controllers/Webadmin/Pocket.php(50): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketLogCoinModel))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(60, 'coin')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 21:29:55 --> mysqli_sql_exception: Unknown column 'coin' in 'order clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PocketLogCoinModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(337): App\Models\PocketLogCoinModel->getData(Array, '10', 0, 'uid', '60', 'coin', 'asc')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Pocket.php(50): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketLogCoinModel))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(60, 'coin')
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-24 21:29:55 --> Unknown column 'coin' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pocket_log_coin`
+WHERE `uid` LIKE \'%60%\' ESCAPE \'!\'
+ORDER BY `coin` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pocket_log_coin`
+WHERE `uid` LIKE \'%60%\' ESCAPE \'!\'
+ORDER BY `coin` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pocket_log_coin`
+WHERE `uid` LIKE \'%60%\' ESCAPE \'!\'
+ORDER BY `coin` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pocket_log_coin`
+WHERE `uid` LIKE :uid: ESCAPE \'!\'
+ORDER BY `coin` ASC
+ LIMIT 10', [...], false)
+ 5 APPPATH/Models/PocketLogCoinModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(337): App\Models\PocketLogCoinModel->getData([], '10', 0, 'uid', '60', 'coin', 'asc')
+ 7 APPPATH/Controllers/Webadmin/Pocket.php(50): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketLogCoinModel))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(60, 'coin')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:36:35 --> Undefined variable: data
+in APPPATH/Controllers/Webadmin/Pocket.php on line 78.
+ 1 APPPATH/Controllers/Webadmin/Pocket.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH/Controllers/Webadmin/Pocket.php', 78, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(60)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,477 @@
+CRITICAL - 2022-11-25 08:05:29 --> Undefined index: qiandao
+in APPPATH/Controllers/Webadmin/Pocket.php on line 66.
+ 1 APPPATH/Controllers/Webadmin/Pocket.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: qiandao', 'APPPATH/Controllers/Webadmin/Pocket.php', 66, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(60, 'coin')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 08:05:38 --> Undefined index: qiandao
+in APPPATH/Controllers/Webadmin/Pocket.php on line 66.
+ 1 APPPATH/Controllers/Webadmin/Pocket.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: qiandao', 'APPPATH/Controllers/Webadmin/Pocket.php', 66, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(60, 'coin')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 09:11:12 --> Undefined index: recharge
+in APPPATH/Controllers/Webadmin/Pocket.php on line 66.
+ 1 APPPATH/Controllers/Webadmin/Pocket.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: recharge', 'APPPATH/Controllers/Webadmin/Pocket.php', 66, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(60, 'point')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 10:07:35 --> Undefined variable: fields
+in APPPATH/Models/PaimaiJoinModel.php on line 32.
+ 1 APPPATH/Models/PaimaiJoinModel.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: fields', 'APPPATH/Models/PaimaiJoinModel.php', 32, [...])
+ 2 APPPATH/Controllers/Webadmin/Paimai.php(92): App\Models\PaimaiJoinModel->getData([...], 10, 0)
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->view(13, 'join')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 10:07:38 --> Undefined variable: fields
+in APPPATH/Models/PaimaiJoinModel.php on line 32.
+ 1 APPPATH/Models/PaimaiJoinModel.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: fields', 'APPPATH/Models/PaimaiJoinModel.php', 32, [...])
+ 2 APPPATH/Controllers/Webadmin/Paimai.php(92): App\Models\PaimaiJoinModel->getData([...], 10, 0)
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->view(12, 'join')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 10:07:47 --> Undefined variable: fields
+in APPPATH/Models/PaimaiJoinModel.php on line 32.
+ 1 APPPATH/Models/PaimaiJoinModel.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: fields', 'APPPATH/Models/PaimaiJoinModel.php', 32, [...])
+ 2 APPPATH/Controllers/Webadmin/Paimai.php(92): App\Models\PaimaiJoinModel->getData([...], 10, 0)
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->view(11, 'join')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 10:07:55 --> Undefined variable: fields
+in APPPATH/Models/PaimaiJoinModel.php on line 32.
+ 1 APPPATH/Models/PaimaiJoinModel.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: fields', 'APPPATH/Models/PaimaiJoinModel.php', 32, [...])
+ 2 APPPATH/Controllers/Webadmin/Paimai.php(92): App\Models\PaimaiJoinModel->getData([...], 10, 0)
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->view(6, 'join')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 10:10:55 --> Undefined variable: fields
+in APPPATH/Models/PaimaiJoinModel.php on line 32.
+ 1 APPPATH/Models/PaimaiJoinModel.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: fields', 'APPPATH/Models/PaimaiJoinModel.php', 32, [...])
+ 2 APPPATH/Controllers/Webadmin/Paimai.php(92): App\Models\PaimaiJoinModel->getData([...], 10, 0)
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Paimai->view(4, 'join')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Paimai))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 11:08:23 --> Class 'App\Entities\Report' not found
+in APPPATH/Controllers/Webadmin/Sysuser.php on line 257.
+ 1 APPPATH/Controllers/Webadmin/Sysuser.php(253): App\Controllers\Webadmin\Sysuser::getStat(26, 'sysuser_view_26')
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->view(26)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 11:08:25 --> Class 'App\Entities\Report' not found
+in APPPATH/Controllers/Webadmin/Sysuser.php on line 257.
+ 1 APPPATH/Controllers/Webadmin/Sysuser.php(253): App\Controllers\Webadmin\Sysuser::getStat(24, 'sysuser_view_24')
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->view(24)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 11:08:32 --> Class 'App\Entities\Report' not found
+in APPPATH/Controllers/Webadmin/Sysuser.php on line 257.
+ 1 APPPATH/Controllers/Webadmin/Sysuser.php(253): App\Controllers\Webadmin\Sysuser::getStat(24, 'sysuser_view_24')
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysuser->view(24)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysuser))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 14:55:35 --> syntax error, unexpected ''v6'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH/Models/VoteJoinModel.php on line 9.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/VoteJoinModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\VoteJoinModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\VoteJoinModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\VoteJoinModel')
+ 5 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\VoteJoinModel')
+ 6 SYSTEMPATH/Config/Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\VoteJoinModel')
+ 7 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH/Common.php(817): CodeIgniter\Config\Factories::models('App\\Models\\VoteJoinModel', [...], null)
+ 9 APPPATH/Controllers/Api/Vote.php(15): model('App\\Models\\VoteJoinModel')
+10 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Api\Vote->__construct()
+11 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 14:56:08 --> Undefined variable: limit
+in APPPATH/Controllers/Api/Vote.php on line 88.
+ 1 APPPATH/Controllers/Api/Vote.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: limit', 'APPPATH/Controllers/Api/Vote.php', 88, [])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 15:24:27 --> Call to undefined method App\Controllers\Api\Pocket::getExtInfo()
+in APPPATH/Controllers/Api/Pocket.php on line 42.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setInitPocket()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 15:24:31 --> Call to undefined method App\Controllers\Api\Pocket::getExtInfo()
+in APPPATH/Controllers/Api/Pocket.php on line 42.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setInitPocket()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 15:24:33 --> Call to undefined method App\Controllers\Api\Pocket::getExtInfo()
+in APPPATH/Controllers/Api/Pocket.php on line 42.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setInitPocket()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 15:24:41 --> Call to undefined method App\Controllers\Api\Pocket::getExtInfo()
+in APPPATH/Controllers/Api/Pocket.php on line 42.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setInitPocket()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 15:24:46 --> Call to undefined method App\Controllers\Api\Pocket::getExtInfo()
+in APPPATH/Controllers/Api/Pocket.php on line 42.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setInitPocket()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 15:25:12 --> Call to undefined method App\Controllers\Api\Pocket::getExtInfo()
+in APPPATH/Controllers/Api/Pocket.php on line 42.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Pocket->setInitPocket()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-25 15:55:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(164): CodeIgniter\BaseModel->findAll()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/ApiController.php(90): App\Entities\Extbase::getExtValue('custom_vote', Array)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(121): App\Controllers\ApiController->getExtData(Object(App\Models\VoteModel), Array)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-25 15:55:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN :fid:
+AND `relid` IN :relid:', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Entities/Extbase.php(164): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/ApiController.php(90): App\Entities\Extbase::getExtValue('custom_vote', [])
+ 9 APPPATH/Controllers/Api/Vote.php(121): App\Controllers\ApiController->getExtData(Object(App\Models\VoteModel), [])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-25 15:57:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(164): CodeIgniter\BaseModel->findAll()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/ApiController.php(90): App\Entities\Extbase::getExtValue('custom_vote', Array)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(121): App\Controllers\ApiController->getExtData(Object(App\Models\VoteModel), Array)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-25 15:57:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN :fid:
+AND `relid` IN :relid:', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Entities/Extbase.php(164): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/ApiController.php(90): App\Entities\Extbase::getExtValue('custom_vote', [])
+ 9 APPPATH/Controllers/Api/Vote.php(121): App\Controllers\ApiController->getExtData(Object(App\Models\VoteModel), [])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-25 15:57:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(164): CodeIgniter\BaseModel->findAll()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/ApiController.php(90): App\Entities\Extbase::getExtValue('custom_vote', Array)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(121): App\Controllers\ApiController->getExtData(Object(App\Models\VoteModel), Array)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-25 15:57:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN :fid:
+AND `relid` IN :relid:', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Entities/Extbase.php(164): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/ApiController.php(90): App\Entities\Extbase::getExtValue('custom_vote', [])
+ 9 APPPATH/Controllers/Api/Vote.php(121): App\Controllers\ApiController->getExtData(Object(App\Models\VoteModel), [])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-25 15:57:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(164): CodeIgniter\BaseModel->findAll()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/ApiController.php(90): App\Entities\Extbase::getExtValue('custom_vote', Array)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(121): App\Controllers\ApiController->getExtData(Object(App\Models\VoteModel), Array)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-25 15:57:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN :fid:
+AND `relid` IN :relid:', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Entities/Extbase.php(164): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/ApiController.php(90): App\Entities\Extbase::getExtValue('custom_vote', [])
+ 9 APPPATH/Controllers/Api/Vote.php(121): App\Controllers\ApiController->getExtData(Object(App\Models\VoteModel), [])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-25 15:57:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4 in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Extbase.php(164): CodeIgniter\BaseModel->findAll()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/ApiController.php(90): App\Entities\Extbase::getExtValue('custom_vote', Array)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(121): App\Controllers\ApiController->getExtData(Object(App\Models\VoteModel), Array)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#11 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-25 15:57:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN (\'33\')
+AND `relid` IN ()')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `custom_vote_ext`
+WHERE `fid` IN :fid:
+AND `relid` IN :relid:', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Entities/Extbase.php(164): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/ApiController.php(90): App\Entities\Extbase::getExtValue('custom_vote', [])
+ 9 APPPATH/Controllers/Api/Vote.php(121): App\Controllers\ApiController->getExtData(Object(App\Models\VoteModel), [])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-25 17:13:25 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(171): mysqli->real_connect(NULL, 'root', 'root', 'project_ey56_xu', NULL, '/Applications/M...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/VoteModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(117): App\Models\VoteModel->count(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/VoteModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(117): App\Models\VoteModel->count(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-25 17:13:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_vote`
+WHERE `deleted_at` IS NULL
+AND `tag` = :tag:
+AND `status` = :status:', [...], false)
+ 3 APPPATH/Models/VoteModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/Vote.php(117): App\Models\VoteModel->count([...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-25 19:11:48 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(171): mysqli->real_connect(NULL, 'root', 'root', 'project_ey56_xu', NULL, '/Applications/M...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/VoteModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(117): App\Models\VoteModel->count(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/VoteModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(117): App\Models\VoteModel->count(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-25 19:11:48 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_vote`
+WHERE `deleted_at` IS NULL
+AND `tag` = :tag:
+AND `status` = :status:', [...], false)
+ 3 APPPATH/Models/VoteModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/Vote.php(117): App\Models\VoteModel->count([...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 20:46:11 --> Undefined index: tag
+in APPPATH/Controllers/AdminController.php on line 212.
+ 1 APPPATH/Controllers/AdminController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/AdminController.php', 212, [...])
+ 2 APPPATH/Controllers/Webadmin/Vote.php(23): App\Controllers\AdminController->setIndexInitData(Object(App\Models\VoteModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 20:46:13 --> Undefined index: tag
+in APPPATH/Controllers/AdminController.php on line 212.
+ 1 APPPATH/Controllers/AdminController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/AdminController.php', 212, [...])
+ 2 APPPATH/Controllers/Webadmin/Vote.php(23): App\Controllers\AdminController->setIndexInitData(Object(App\Models\VoteModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 20:46:14 --> Undefined index: tag
+in APPPATH/Controllers/AdminController.php on line 212.
+ 1 APPPATH/Controllers/AdminController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/AdminController.php', 212, [...])
+ 2 APPPATH/Controllers/Webadmin/Vote.php(23): App\Controllers\AdminController->setIndexInitData(Object(App\Models\VoteModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 20:46:15 --> Undefined index: tag
+in APPPATH/Controllers/AdminController.php on line 212.
+ 1 APPPATH/Controllers/AdminController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/AdminController.php', 212, [...])
+ 2 APPPATH/Controllers/Webadmin/Vote.php(23): App\Controllers\AdminController->setIndexInitData(Object(App\Models\VoteModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 20:46:29 --> Undefined index: tag
+in APPPATH/Controllers/AdminController.php on line 212.
+ 1 APPPATH/Controllers/AdminController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tag', 'APPPATH/Controllers/AdminController.php', 212, [...])
+ 2 APPPATH/Controllers/Webadmin/Vote.php(23): App\Controllers\AdminController->setIndexInitData(Object(App\Models\VoteModel), Object(App\Entities\Extbase))
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

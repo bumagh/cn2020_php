@@ -1,0 +1,72 @@
+ERROR - 2022-10-20 08:45:12 --> mysqli_sql_exception: Operand should contain 1 column(s) in /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `funit`,...', 0)
+#1 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funit`,...')
+#2 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funit`,...')
+#3 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `funit`,...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/app/Controllers/Api/Calorie.php(62): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+#7 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+#8 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/eysystem/mini_service/miniservice.yuyaoit.cn/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 08:45:12 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `funit`, `knum`
+FROM `calorie_food_units`
+WHERE `fid` = (\'4683\',\'1358\',\'4704\',\'171\',\'1375\',\'3516\',\'1330\',\'2543\',\'5292\',\'2477\',\'29\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funit`, `knum`
+FROM `calorie_food_units`
+WHERE `fid` = (\'4683\',\'1358\',\'4704\',\'171\',\'1375\',\'3516\',\'1330\',\'2543\',\'5292\',\'2477\',\'29\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funit`, `knum`
+FROM `calorie_food_units`
+WHERE `fid` = (\'4683\',\'1358\',\'4704\',\'171\',\'1375\',\'3516\',\'1330\',\'2543\',\'5292\',\'2477\',\'29\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `funit`, `knum`
+FROM `calorie_food_units`
+WHERE `fid` = :fid:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Api/Calorie.php(62): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 10:53:33 --> Undefined index: calorie
+in APPPATH/Controllers/Api/Calorie.php on line 87.
+ 1 APPPATH/Controllers/Api/Calorie.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: calorie', 'APPPATH/Controllers/Api/Calorie.php', 87, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 13:09:24 --> in_array() expects parameter 2 to be array, int given
+in APPPATH/Models/FoodDataModel.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expects parameter 2 to be array, int given', 'APPPATH/Models/FoodDataModel.php', 41, [...])
+ 2 APPPATH/Models/FoodDataModel.php(41): in_array('detailid', 0)
+ 3 APPPATH/Controllers/Api/Calorie.php(94): App\Models\FoodDataModel->setUnits([...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 14:39:45 --> Undefined variable: K2
+in APPPATH/Models/FoodDataModel.php on line 44.
+ 1 APPPATH/Models/FoodDataModel.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: K2', 'APPPATH/Models/FoodDataModel.php', 44, [...])
+ 2 APPPATH/Controllers/Api/Calorie.php(94): App\Models\FoodDataModel->setUnits([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 15:13:42 --> Array to string conversion
+in APPPATH/Models/FoodDataModel.php on line 57.
+ 1 APPPATH/Models/FoodDataModel.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH/Models/FoodDataModel.php', 57, [...])
+ 2 APPPATH/Controllers/Api/Calorie.php(84): App\Models\FoodDataModel->clearUnits([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 21:01:04 --> Undefined offset: 21
+in APPPATH/Controllers/Api/Calorie.php on line 99.
+ 1 APPPATH/Controllers/Api/Calorie.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 21', 'APPPATH/Controllers/Api/Calorie.php', 99, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Calorie->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Calorie))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

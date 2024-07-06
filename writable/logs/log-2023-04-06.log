@@ -1,0 +1,21 @@
+CRITICAL - 2023-04-06 13:32:19 --> Undefined variable: good
+in APPPATH/Controllers/Api/Game.php on line 267.
+ 1 APPPATH/Controllers/Api/Game.php(267): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: good', 'APPPATH/Controllers/Api/Game.php', 267, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->buyBackModule()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 13:32:29 --> Undefined variable: good
+in APPPATH/Controllers/Api/Game.php on line 267.
+ 1 APPPATH/Controllers/Api/Game.php(267): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: good', 'APPPATH/Controllers/Api/Game.php', 267, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->buyBackModule()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 13:32:51 --> Undefined variable: good
+in APPPATH/Controllers/Api/Game.php on line 267.
+ 1 APPPATH/Controllers/Api/Game.php(267): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: good', 'APPPATH/Controllers/Api/Game.php', 267, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->buyBackModule()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

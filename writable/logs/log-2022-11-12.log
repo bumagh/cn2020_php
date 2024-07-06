@@ -1,0 +1,105 @@
+CRITICAL - 2022-11-12 17:04:32 --> Undefined index: name
+in APPPATH/Controllers/Api/Member.php on line 18.
+ 1 APPPATH/Controllers/Api/Member.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: name', 'APPPATH/Controllers/Api/Member.php', 18, [...])
+ 2 APPPATH/Controllers/Api/Member.php(29): App\Controllers\Api\Member->setFilterData([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->reg()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:05:36 --> Undefined index: name
+in APPPATH/Controllers/Api/Member.php on line 18.
+ 1 APPPATH/Controllers/Api/Member.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: name', 'APPPATH/Controllers/Api/Member.php', 18, [...])
+ 2 APPPATH/Controllers/Api/Member.php(29): App\Controllers\Api\Member->setFilterData([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->reg()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:06:29 --> Undefined index: invite
+in APPPATH/Controllers/Api/Member.php on line 19.
+ 1 APPPATH/Controllers/Api/Member.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: invite', 'APPPATH/Controllers/Api/Member.php', 19, [...])
+ 2 APPPATH/Controllers/Api/Member.php(29): App\Controllers\Api\Member->setFilterData([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->reg()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 20:09:13 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/AdminController.php on line 75.
+ 1 APPPATH/Controllers/AdminController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/AdminController.php', 75, [...])
+ 2 APPPATH/Controllers/AdminController.php(247): App\Controllers\AdminController->act2Cond(false)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 20:09:14 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/AdminController.php on line 75.
+ 1 APPPATH/Controllers/AdminController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/AdminController.php', 75, [...])
+ 2 APPPATH/Controllers/AdminController.php(247): App\Controllers\AdminController->act2Cond(false)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 20:09:18 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/AdminController.php on line 75.
+ 1 APPPATH/Controllers/AdminController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/AdminController.php', 75, [...])
+ 2 APPPATH/Controllers/AdminController.php(247): App\Controllers\AdminController->act2Cond(false)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 20:10:03 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/AdminController.php on line 75.
+ 1 APPPATH/Controllers/AdminController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/AdminController.php', 75, [...])
+ 2 APPPATH/Controllers/AdminController.php(247): App\Controllers\AdminController->act2Cond(false)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 20:10:04 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/AdminController.php on line 75.
+ 1 APPPATH/Controllers/AdminController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/AdminController.php', 75, [...])
+ 2 APPPATH/Controllers/AdminController.php(247): App\Controllers\AdminController->act2Cond(false)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 20:10:05 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/AdminController.php on line 75.
+ 1 APPPATH/Controllers/AdminController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/AdminController.php', 75, [...])
+ 2 APPPATH/Controllers/AdminController.php(247): App\Controllers\AdminController->act2Cond(false)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 20:11:49 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/AdminController.php on line 75.
+ 1 APPPATH/Controllers/AdminController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/AdminController.php', 75, [...])
+ 2 APPPATH/Controllers/AdminController.php(247): App\Controllers\AdminController->act2Cond(false)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 20:11:53 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/AdminController.php on line 75.
+ 1 APPPATH/Controllers/AdminController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/AdminController.php', 75, [...])
+ 2 APPPATH/Controllers/AdminController.php(247): App\Controllers\AdminController->act2Cond(false)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 20:14:14 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/AdminController.php on line 75.
+ 1 APPPATH/Controllers/AdminController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/AdminController.php', 75, [...])
+ 2 APPPATH/Controllers/AdminController.php(247): App\Controllers\AdminController->act2Cond(false)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

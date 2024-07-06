@@ -1,0 +1,27 @@
+CRITICAL - 2022-10-12 08:01:42 --> Call to undefined function App\Controllers\Admin\where()
+in APPPATH/Controllers/Admin/Caiji.php on line 194.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 08:02:32 --> Call to undefined function App\Controllers\Admin\where()
+in APPPATH/Controllers/Admin/Caiji.php on line 194.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->updateFoodExt()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 09:06:39 --> Undefined array key 0
+in APPPATH/Controllers/Admin/Caiji.php on line 494.
+ 1 APPPATH/Controllers/Admin/Caiji.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Admin/Caiji.php', 494)
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookDetail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:02:38 --> file_get_contents(http://fitness.39.net/tzgj/static/cookbook/x/0766b457ef4b17d6bcf35f24712f0354.jpg): Failed to open stream: HTTP request failed!
+in APPPATH/Controllers/Admin/Caiji.php on line 526.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(http://fitness.39.net/tzgj/static/cookbook/x/0766b457ef4b17d6bcf35f24712f0354.jpg): Failed to open stream: HTTP request failed!', 'APPPATH/Controllers/Admin/Caiji.php', 526)
+ 2 APPPATH/Controllers/Admin/Caiji.php(526): file_get_contents('http://fitness.39.net/tzgj/static/cookbook/x/0766b457ef4b17d6bcf35f24712f0354.jpg')
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Admin\Caiji->getCookImages()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Caiji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

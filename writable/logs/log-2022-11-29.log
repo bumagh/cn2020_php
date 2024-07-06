@@ -1,0 +1,88 @@
+CRITICAL - 2022-11-29 09:57:34 --> syntax error, unexpected '*'
+in APPPATH/Controllers/Webadmin/Vote.php on line 146.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('webadmin/vote/view/9')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('webadmin/vote/view/9')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('webadmin/vote/view/9')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:52:51 --> 6 : Could not resolve host: getData
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('6', 'Could not resolve host: getData')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://getData')
+ 4 APPPATH/Controllers/Api/Home.php(25): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:53:37 --> 6 : Could not resolve host: api
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('6', 'Could not resolve host: api')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(25): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:58:15 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+in APPPATH/Controllers/Api/Home.php on line 30.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/home')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/home')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/home')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 13:36:33 --> Undefined offset: 86
+in APPPATH/Controllers/Api/Home.php on line 29.
+ 1 APPPATH/Controllers/Api/Home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 86', 'APPPATH/Controllers/Api/Home.php', 29, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 13:51:13 --> Access to undeclared static property: App\Controllers\Api\Home::$client
+in APPPATH/Controllers/Api/Home.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 13:55:20 --> Undefined index: id
+in APPPATH/Controllers/Api/Discuz.php on line 106.
+ 1 APPPATH/Controllers/Api/Discuz.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH/Controllers/Api/Discuz.php', 106, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Discuz->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Discuz))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 13:55:20 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.5:8888/api/discuz/getData')
+ 4 APPPATH/Controllers/Api/Home.php(22): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.5:8888/api/discuz/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->test()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 15:41:42 --> Undefined variable: customertotal
+in APPPATH/Views/webadmin/home/center.php on line 6.
+ 1 APPPATH/Views/webadmin/home/center.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: customertotal', 'APPPATH/Views/webadmin/home/center.php', 6, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/home/center.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/home/center', [], true)
+ 5 APPPATH/Controllers/Webadmin/Home.php(87): view('webadmin/home/center', [])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->center()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 15:41:43 --> Undefined variable: customertotal
+in APPPATH/Views/webadmin/home/center.php on line 6.
+ 1 APPPATH/Views/webadmin/home/center.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: customertotal', 'APPPATH/Views/webadmin/home/center.php', 6, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/home/center.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/home/center', [], true)
+ 5 APPPATH/Controllers/Webadmin/Home.php(87): view('webadmin/home/center', [])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Home->center()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

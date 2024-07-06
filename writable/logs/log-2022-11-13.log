@@ -1,0 +1,32 @@
+CRITICAL - 2022-11-13 09:36:42 --> Access to undeclared static property: App\Models\SysDictkeyModel::$searchFields
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 47.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(138): App\Controllers\Webadmin\Sysdict->setFilterData()
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(28)
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-13 09:37:23 --> Undefined variable: searchFields
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 47.
+ 1 APPPATH/Controllers/Webadmin/Sysdict.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: searchFields', 'APPPATH/Controllers/Webadmin/Sysdict.php', 47, [...])
+ 2 APPPATH/Controllers/Webadmin/Sysdict.php(138): App\Controllers\Webadmin\Sysdict->setFilterData()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->edit(28)
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-13 09:57:20 --> in_array() expects parameter 2 to be array, string given
+in APPPATH/Controllers/Webadmin/Sysdict.php on line 181.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expects parameter 2 to be array, string given', 'APPPATH/Controllers/Webadmin/Sysdict.php', 181, [...])
+ 2 APPPATH/Controllers/Webadmin/Sysdict.php(181): in_array([...], '会员信息模块')
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->del()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-13 10:00:32 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH/Database/BaseBuilder.php on line 907.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('fid', '32', false, 'AND ', null)
+ 2 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->whereIn('fid', '32')
+ 3 APPPATH/Controllers/Webadmin/Sysdict.php(191): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Sysdict->del()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Sysdict))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

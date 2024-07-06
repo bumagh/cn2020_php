@@ -1,0 +1,1752 @@
+ERROR - 2023-01-08 08:22:28 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:22:28 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:22:28 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:27:46 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:27:46 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:27:46 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:28:33 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\tmax.* FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\tmax.* FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\tmax.* FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT\tmax.* FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:28:33 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 4 APPPATH/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:29:23 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:29:23 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:29:23 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:29:24 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:29:24 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:29:24 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:29:25 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:29:25 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:29:25 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:30:03 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:30:03 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:30:03 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:30:04 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:30:04 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:30:04 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:30:07 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:30:07 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:30:07 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:30:11 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:30:11 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:30:11 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:31:10 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:31:10 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:31:10 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:34:08 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:34:08 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:34:08 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(36): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:36:18 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:36:18 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:36:18 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:36:29 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\tmax.* FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\tmax.* FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\tmax.* FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT\tmax.* FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:36:29 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 4 APPPATH/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:36:34 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\tmax.* FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\tmax.* FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\tmax.* FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT\tmax.* FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:36:34 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 4 APPPATH/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:36:50 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:36:50 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:36:50 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:37:46 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\tmax.* FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\tmax.* FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\tmax.* FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT\tmax.* FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:37:46 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 4 APPPATH/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:38:23 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:38:23 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:38:23 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:38:34 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.uid' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select d.*,m.ui...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select d.*,m.ui...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select d.*,m.ui...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Discuz.php(32): CodeIgniter\Database\BaseConnection->query('select d.*,m.ui...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(135): App\Entities\Discuz::getNewoneByModule('vote', Array, 1)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-08 08:38:34 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.uid' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=1 and relid in(10,8,7)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=1 and relid in(10,8,7)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=1 and relid in(10,8,7)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 4 APPPATH/Entities/Discuz.php(32): CodeIgniter\Database\BaseConnection->query('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=1 and relid in(10,8,7)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 5 APPPATH/Controllers/Api/Vote.php(135): App\Entities\Discuz::getNewoneByModule('vote', [...], 1)
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:38:35 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.uid' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select d.*,m.ui...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select d.*,m.ui...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select d.*,m.ui...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Discuz.php(32): CodeIgniter\Database\BaseConnection->query('select d.*,m.ui...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(135): App\Entities\Discuz::getNewoneByModule('vote', Array, 1)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-08 08:38:35 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.uid' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=1 and relid in(5)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=1 and relid in(5)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=1 and relid in(5)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 4 APPPATH/Entities/Discuz.php(32): CodeIgniter\Database\BaseConnection->query('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=1 and relid in(5)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 5 APPPATH/Controllers/Api/Vote.php(135): App\Entities\Discuz::getNewoneByModule('vote', [...], 1)
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:38:36 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.uid' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select d.*,m.ui...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select d.*,m.ui...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select d.*,m.ui...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Discuz.php(32): CodeIgniter\Database\BaseConnection->query('select d.*,m.ui...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(135): App\Entities\Discuz::getNewoneByModule('vote', Array, 2)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-08 08:38:36 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.uid' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=2 and relid in(1)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=2 and relid in(1)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=2 and relid in(1)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 4 APPPATH/Entities/Discuz.php(32): CodeIgniter\Database\BaseConnection->query('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=2 and relid in(1)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 5 APPPATH/Controllers/Api/Vote.php(135): App\Entities\Discuz::getNewoneByModule('vote', [...], 2)
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:38:36 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.uid' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select d.*,m.ui...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select d.*,m.ui...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select d.*,m.ui...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Entities/Discuz.php(32): CodeIgniter\Database\BaseConnection->query('select d.*,m.ui...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Vote.php(135): App\Entities\Discuz::getNewoneByModule('vote', Array, 3)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-08 08:38:36 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.uid' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=3 and relid in(18,17,16)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=3 and relid in(18,17,16)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=3 and relid in(18,17,16)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 4 APPPATH/Entities/Discuz.php(32): CodeIgniter\Database\BaseConnection->query('select d.*,m.uid,m.name,m.avatar 
+				from (SELECT max.* 
+					FROM (SELECT DISTINCT (relid),uid,content,created_at 
+						FROM custom_discuz where module=\'vote\' and status=1 and tag=3 and relid in(18,17,16)
+						ORDER BY created_at DESC
+					) max GROUP BY relid) as d
+				left join member  as m
+				on d.uid = m.uid')
+ 5 APPPATH/Controllers/Api/Vote.php(135): App\Entities\Discuz::getNewoneByModule('vote', [...], 3)
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:39:22 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\tmax.* FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\tmax.* FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\tmax.* FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT\tmax.* FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:39:22 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 4 APPPATH/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:39:37 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:39:37 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:39:37 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://local.project.ey56:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://local.project.ey56:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:39:41 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\tmax.* FR...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\tmax.* FR...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\tmax.* FR...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT\tmax.* FR...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:39:41 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 4 APPPATH/Controllers/Api/Chat.php(44): CodeIgniter\Database\BaseConnection->query('SELECT	max.* FROM (SELECT DISTINCT (a.id),tag,content,uid,rid,created_at FROM chat_group_content a where ( rid=6 or  rid=5 or  rid=4 or  rid=3 or  rid=2 or  rid=1) ORDER BY a.created_at DESC) max GROUP BY rid')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:40:22 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:40:22 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:40:22 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:40:35 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:40:35 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:40:35 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:40:37 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:40:37 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:40:37 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(54): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->getSections()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:41:06 --> Undefined variable: v
+in APPPATH/Controllers/Api/Paimai.php on line 29.
+ 1 APPPATH/Controllers/Api/Paimai.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: v', 'APPPATH/Controllers/Api/Paimai.php', 29, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:41:41 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:41:41 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:41:41 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(36): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:43:24 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:43:24 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 4 APPPATH/Controllers/Api/Paimai.php(146): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,3')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:43:24 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://192.168.1.6:8888/api/paimai/getData')
+ 4 APPPATH/Controllers/Api/Home.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://192.168.1.6:8888/api/paimai/getData', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Home->test()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:48:19 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.t...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.t...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.t...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Paimai.php(38): CodeIgniter\Database\BaseConnection->query('select a.id,a.t...')
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-08 08:48:19 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'max.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,15', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,15')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,15')
+ 4 APPPATH/Controllers/Api/Paimai.php(38): CodeIgniter\Database\BaseConnection->query('select a.id,a.tag,a.name as title,a.numbmin,substring(a.etime,6,10) as etime,a.status,b.pid,b.uid,b.numb,c.name,c.avatar,c.sign
+				from custom_paimai as a 
+				left join (SELECT max.* FROM (SELECT DISTINCT (a.id), a.pid,uid,numb FROM custom_paimai_join a ORDER BY a.numb DESC) max GROUP BY	pid) as b 
+				on a.id = b.pid 
+				left join member as c
+				on b.uid = c.uid
+				where  a.tag=0
+				order by a.status asc,a.id desc
+				limit 0,15')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Paimai->test()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Paimai))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 09:34:49 --> Call to undefined method App\Controllers\Api\Chat::getFriendMember()
+in APPPATH/Controllers/Api/Chat.php on line 155.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 09:52:58 --> Call to undefined method App\Controllers\Api\Chat::getGrouChat()
+in APPPATH/Controllers/Api/Chat.php on line 224.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 09:53:29 --> Call to undefined method App\Controllers\Api\Chat::getGrouChat()
+in APPPATH/Controllers/Api/Chat.php on line 224.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getData()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 15:56:36 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(171): mysqli->real_connect(NULL, 'root', 'root', 'project_ey56_xu', NULL, '/Applications/M...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id` as ...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(105): App\Models\ChatModel->getData(Array, 'id as rid, titl...', 100)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id` as ...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(105): App\Models\ChatModel->getData(Array, 'id as rid, titl...', 100)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-08 15:56:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id` as `rid`, `title`, `avatar`
+FROM `chat`
+WHERE `deleted_at` IS NULL
+AND `status` = :status:
+ORDER BY `id` DESC
+ LIMIT 100', [...], false)
+ 3 APPPATH/Models/ChatModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/Chat.php(105): App\Models\ChatModel->getData([...], 'id as rid, title,avatar', 100)
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 16:33:59 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(171): mysqli->real_connect(NULL, 'root', 'root', 'project_ey56_xu', NULL, '/Applications/M...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id` as ...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(105): App\Models\ChatModel->getData(Array, 'id as rid, titl...', 100)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id` as ...', Array, false)
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/ChatModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Chat.php(105): App\Models\ChatModel->getData(Array, 'id as rid, titl...', 100)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-08 16:33:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id` as `rid`, `title`, `avatar`
+FROM `chat`
+WHERE `deleted_at` IS NULL
+AND `status` = :status:
+ORDER BY `id` DESC
+ LIMIT 100', [...], false)
+ 3 APPPATH/Models/ChatModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/Chat.php(105): App\Models\ChatModel->getData([...], 'id as rid, title,avatar', 100)
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Chat->getRoom()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Chat))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

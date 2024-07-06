@@ -1,0 +1,245 @@
+CRITICAL - 2023-04-12 13:51:52 --> Call to undefined method App\Entities\Game::moduleClone()
+in APPPATH/Controllers/Api/Game.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 13:51:55 --> syntax error, unexpected '}'
+in APPPATH/Controllers/Api/Pocket.php on line 59.
+ 1 SYSTEMPATH/Router/Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('api/pocket/test')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/pocket/test')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('api/pocket/test')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 13:52:05 --> Call to a member function where() on null
+in APPPATH/Controllers/Api/Pocket.php on line 54.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->test()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 14:15:00 --> Undefined variable: siModel
+in APPPATH/Controllers/Api/Signin.php on line 32.
+ 1 APPPATH/Controllers/Api/Signin.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: siModel', 'APPPATH/Controllers/Api/Signin.php', 32, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Signin->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Signin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 14:15:26 --> Undefined variable: uinfo
+in APPPATH/Controllers/Api/Signin.php on line 23.
+ 1 APPPATH/Controllers/Api/Signin.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: uinfo', 'APPPATH/Controllers/Api/Signin.php', 23, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Signin->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Signin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 14:23:08 --> Undefined offset: 0
+in APPPATH/Controllers/Api/Signin.php on line 47.
+ 1 APPPATH/Controllers/Api/Signin.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/Api/Signin.php', 47, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Signin->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Signin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 14:30:11 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 152.
+ 1 APPPATH/Controllers/Api/Pocket.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 152, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 14:30:14 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 152.
+ 1 APPPATH/Controllers/Api/Pocket.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 152, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 14:30:18 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 152.
+ 1 APPPATH/Controllers/Api/Pocket.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 152, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 14:30:32 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 152.
+ 1 APPPATH/Controllers/Api/Pocket.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 152, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 14:31:10 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 152.
+ 1 APPPATH/Controllers/Api/Pocket.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 152, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 14:33:56 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 154.
+ 1 APPPATH/Controllers/Api/Pocket.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 154, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 14:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 14:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:06:18 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 154.
+ 1 APPPATH/Controllers/Api/Pocket.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 154, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 15:06:26 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 154.
+ 1 APPPATH/Controllers/Api/Pocket.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 154, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 15:06:38 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 154.
+ 1 APPPATH/Controllers/Api/Pocket.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 154, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 15:08:10 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 155.
+ 1 APPPATH/Controllers/Api/Pocket.php(155): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 155, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 15:08:27 --> Undefined offset: 63
+in APPPATH/Controllers/Api/Pocket.php on line 155.
+ 1 APPPATH/Controllers/Api/Pocket.php(155): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 63', 'APPPATH/Controllers/Api/Pocket.php', 155, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pocket->getRanking()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 15:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:27:15 --> Undefined offset: 50
+in APPPATH/Controllers/Api/Home.php on line 80.
+ 1 APPPATH/Controllers/Api/Home.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 50', 'APPPATH/Controllers/Api/Home.php', 80, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Home->getSections()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 15:27:33 --> Undefined offset: 50
+in APPPATH/Controllers/Api/Home.php on line 80.
+ 1 APPPATH/Controllers/Api/Home.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 50', 'APPPATH/Controllers/Api/Home.php', 80, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Home->getSections()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 15:29:29 --> Undefined offset: 50
+in APPPATH/Controllers/Api/Home.php on line 80.
+ 1 APPPATH/Controllers/Api/Home.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 50', 'APPPATH/Controllers/Api/Home.php', 80, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Home->getSections()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 15:29:54 --> Undefined offset: 50
+in APPPATH/Controllers/Api/Home.php on line 80.
+ 1 APPPATH/Controllers/Api/Home.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 50', 'APPPATH/Controllers/Api/Home.php', 80, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Home->getSections()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 15:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:40:42 --> Undefined variable: type
+in APPPATH/Controllers/Api/Signin.php on line 77.
+ 1 APPPATH/Controllers/Api/Signin.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: type', 'APPPATH/Controllers/Api/Signin.php', 77, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Signin->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Signin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 15:41:07 --> Access to undeclared static property: App\Controllers\Api\Signin::$mModel
+in APPPATH/Controllers/Api/Signin.php on line 80.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Signin->getData()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Signin))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 15:41:12 --> Access to undeclared static property: App\Controllers\Api\Signin::$mModel
+in APPPATH/Controllers/Api/Signin.php on line 80.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Signin->getData()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Signin))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

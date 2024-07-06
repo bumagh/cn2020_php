@@ -1,0 +1,72 @@
+CRITICAL - 2023-04-10 10:48:20 --> Undefined index: uid
+in APPPATH/Controllers/Api/Game.php on line 260.
+ 1 APPPATH/Controllers/Api/Game.php(260): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Controllers/Api/Game.php', 260, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->buyReturnModule()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-10 10:48:39 --> Undefined index: uid
+in APPPATH/Controllers/Api/Game.php on line 260.
+ 1 APPPATH/Controllers/Api/Game.php(260): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Controllers/Api/Game.php', 260, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->buyReturnModule()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-10 10:54:23 --> mysqli_sql_exception: Unknown column 'status' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(272): CodeIgniter\Model->__call('get', Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->buyReturnModule()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-10 10:54:23 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `game_user_modules`
+WHERE `id` = :id:
+AND `mid` = :mid:
+AND `lvl` = :lvl:
+AND `uid` = :uid:
+AND `status` = :status:', [...], false)
+ 2 SYSTEMPATH/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Api/Game.php(272): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->buyReturnModule()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-10 10:55:16 --> mysqli_sql_exception: Unknown column 'status' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `game_us...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `game_us...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `game_us...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `game_us...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Model.php(452): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/BaseModel.php(1065): CodeIgniter\Model->doDelete(NULL, false)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Api/Game.php(297): CodeIgniter\BaseModel->delete()
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(934): App\Controllers\Api\Game->buyReturnModule()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-10 10:55:16 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `game_user_modules` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` = :id:
+AND `mid` = :mid:
+AND `lvl` = :lvl:
+AND `uid` = :uid:
+AND `status` = :status:
+AND `deleted_at` IS NULL', [...], false)
+ 2 SYSTEMPATH/Model.php(452): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete(null, false)
+ 4 APPPATH/Controllers/Api/Game.php(297): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->buyReturnModule()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,20 @@
+CRITICAL - 2023-04-09 12:01:48 --> Undefined variable: uinfo
+in APPPATH/Controllers/Api/Game.php on line 92.
+ 1 APPPATH/Controllers/Api/Game.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: uinfo', 'APPPATH/Controllers/Api/Game.php', 92, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->getModulesBase()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 13:10:03 --> Illegal string offset 'code'
+in APPPATH/Controllers/Api/Game.php on line 149.
+ 1 APPPATH/Controllers/Api/Game.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'code\'', 'APPPATH/Controllers/Api/Game.php', 149, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->setModuleMake()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 13:49:08 --> Call to undefined method App\Entities\Game::moduleClone()
+in APPPATH/Controllers/Api/Game.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Game->test()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Game))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

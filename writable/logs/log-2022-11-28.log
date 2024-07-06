@@ -1,0 +1,619 @@
+CRITICAL - 2022-11-28 07:55:35 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Api/Member.php on line 314.
+ 1 APPPATH/Controllers/Api/Member.php(314): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Api/Member.php', 314, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->getinvited()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 07:55:50 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 72.
+ 1 APPPATH/Controllers/ApiController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 72, [...])
+ 2 APPPATH/Controllers/Api/Attach.php(15): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Attach->upimage()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Attach))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 07:56:15 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 72.
+ 1 APPPATH/Controllers/ApiController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 72, [...])
+ 2 APPPATH/Controllers/Api/Attach.php(15): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Attach->upimage()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Attach))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 07:56:27 --> Undefined index: avatar
+in APPPATH/Controllers/Api/Member.php on line 134.
+ 1 APPPATH/Controllers/Api/Member.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: avatar', 'APPPATH/Controllers/Api/Member.php', 134, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Member->setProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 07:57:00 --> Undefined offset: 3
+in APPPATH/Controllers/ApiController.php on line 72.
+ 1 APPPATH/Controllers/ApiController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH/Controllers/ApiController.php', 72, [...])
+ 2 APPPATH/Controllers/Api/Attach.php(15): App\Controllers\ApiController->checkLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Attach->upimage()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Attach))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 09:14:39 --> syntax error, unexpected ';'
+in APPPATH/Entities/Discuz.php on line 15.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Entities/Discuz.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Entities\\Discuz')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Entities\\Discuz')
+ 4 APPPATH/Controllers/Api/Discuz.php(92): spl_autoload_call('App\\Entities\\Discuz')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Discuz->test()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Discuz))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 09:15:21 --> syntax error, unexpected '.'
+in APPPATH/Entities/Discuz.php on line 15.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Entities/Discuz.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Entities\\Discuz')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Entities\\Discuz')
+ 4 APPPATH/Controllers/Api/Discuz.php(92): spl_autoload_call('App\\Entities\\Discuz')
+ 5 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Discuz->test()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Discuz))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 09:43:35 --> Undefined index: value
+in APPPATH/Controllers/Api/Vote.php on line 27.
+ 1 APPPATH/Controllers/Api/Vote.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: value', 'APPPATH/Controllers/Api/Vote.php', 27, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(124): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 09:43:57 --> Undefined index: value
+in APPPATH/Controllers/Api/Vote.php on line 27.
+ 1 APPPATH/Controllers/Api/Vote.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: value', 'APPPATH/Controllers/Api/Vote.php', 27, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(124): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 09:44:10 --> Undefined index: value
+in APPPATH/Controllers/Api/Vote.php on line 27.
+ 1 APPPATH/Controllers/Api/Vote.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: value', 'APPPATH/Controllers/Api/Vote.php', 27, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(124): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 09:51:02 --> Undefined index: value
+in APPPATH/Controllers/Api/Vote.php on line 28.
+ 1 APPPATH/Controllers/Api/Vote.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: value', 'APPPATH/Controllers/Api/Vote.php', 28, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(128): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 09:53:03 --> Undefined index: value
+in APPPATH/Controllers/Api/Vote.php on line 32.
+ 1 APPPATH/Controllers/Api/Vote.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: value', 'APPPATH/Controllers/Api/Vote.php', 32, [...])
+ 2 APPPATH/Controllers/Api/Vote.php(132): App\Controllers\Api\Vote->getJoin([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 09:58:29 --> Access to undeclared static property: App\Controllers\Api\Discuz::$model
+in APPPATH/Controllers/Api/Discuz.php on line 150.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Discuz->setData()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Discuz))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 09:59:58 --> Access to undeclared static property: App\Controllers\Api\Discuz::$model
+in APPPATH/Controllers/Api/Discuz.php on line 150.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Discuz->setData()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Discuz))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:06:08 --> Access to undeclared static property: App\Controllers\Api\Discuz::$model
+in APPPATH/Controllers/Api/Discuz.php on line 150.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Discuz->setData()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Discuz))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:07:26 --> Access to undeclared static property: App\Controllers\Api\Discuz::$model
+in APPPATH/Controllers/Api/Discuz.php on line 150.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Discuz->setData()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Discuz))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:08:59 --> Access to undeclared static property: App\Controllers\Api\Discuz::$model
+in APPPATH/Controllers/Api/Discuz.php on line 150.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Discuz->setData()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Discuz))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:13:11 --> Access to undeclared static property: App\Controllers\Api\Discuz::$model
+in APPPATH/Controllers/Api/Discuz.php on line 150.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Discuz->setData()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Discuz))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:51:27 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:51:27 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:51:29 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:51:29 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:52:03 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:52:04 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:53:24 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:53:24 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:53:56 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:53:56 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:54:06 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:54:06 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:56:06 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:56:07 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:56:48 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:56:52 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:56:54 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:56:56 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 10:57:02 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 11:33:33 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 11:55:38 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 12:52:35 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 12:57:34 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(139): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->edit(86)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 12:57:45 --> Invalid file: webadmin/pocket/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('webadmin/pocket/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/pocket/detail', [], true)
+ 3 APPPATH/Controllers/Webadmin/Pocket.php(139): view('webadmin/pocket/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->edit(86)
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-28 13:06:26 --> mysqli_sql_exception: Unknown column 'type' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`i...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/PocketModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/AdminController.php(336): App\Models\PocketModel->count(Array, '', '')
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-28 13:06:26 --> Unknown column 'type' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`id`) AS `id`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+AND `type` = \'coinfix\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`id`) AS `id`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+AND `type` = \'coinfix\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`id`) AS `id`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+AND `type` = \'coinfix\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `pocket`
+WHERE `deleted_at` IS NULL
+AND `type` = :type:', [...], false)
+ 5 APPPATH/Models/PocketModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(336): App\Models\PocketModel->count([...], 'ROOTPATH/public', 'ROOTPATH/public')
+ 7 APPPATH/Controllers/Webadmin/Pocket.php(32): App\Controllers\AdminController->getSearchData(Object(App\Models\PocketModel))
+ 8 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 13:32:53 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 13:38:19 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:02:11 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:07:24 --> Undefined index: manual
+in APPPATH/Controllers/Webadmin/Pocket.php on line 66.
+ 1 APPPATH/Controllers/Webadmin/Pocket.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: manual', 'APPPATH/Controllers/Webadmin/Pocket.php', 66, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Pocket->view(86, 'coin')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Pocket))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:37:26 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:37:31 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:37:31 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:37:36 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:37:46 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:37:49 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:37:50 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:37:51 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:42:51 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:42:52 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:42:53 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:42:58 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:42:59 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:43:02 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:43:03 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:43:05 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:43:11 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:43:12 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:43:14 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:43:42 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:45:03 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:45:04 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:45:04 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:45:10 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:45:11 --> Undefined index: status
+in APPPATH/Controllers/Api/Vote.php on line 115.
+ 1 APPPATH/Controllers/Api/Vote.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH/Controllers/Api/Vote.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Api\Vote->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Vote))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 20:16:19 --> syntax error, unexpected ';'
+in APPPATH/Controllers/Api/Vote.php on line 183.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('api/vote/setTopic')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('api/vote/setTopic')
+ 3 SYSTEMPATH/CodeIgniter.php(782): CodeIgniter\Router\Router->handle('api/vote/setTopic')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 20:34:17 --> Undefined index: actions
+in APPPATH/Views/webadmin/comm/indextable.php on line 5.
+ 1 APPPATH/Views/webadmin/comm/indextable.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: actions', 'APPPATH/Views/webadmin/comm/indextable.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/comm/indextable.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('\\App\\Views\\webadmin\\comm\\indextable', null, true)
+ 5 APPPATH/Views/webadmin/vote/view.php(2): CodeIgniter\View\View->include('\\App\\Views\\webadmin\\comm\\indextable')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/vote/view.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/vote/view', [], true)
+ 9 APPPATH/Controllers/Webadmin/Vote.php(147): view('webadmin/vote/view', [...])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->view(7)
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 20:35:15 --> Undefined index: actions
+in APPPATH/Views/webadmin/comm/indextable.php on line 5.
+ 1 APPPATH/Views/webadmin/comm/indextable.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: actions', 'APPPATH/Views/webadmin/comm/indextable.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/comm/indextable.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('\\App\\Views\\webadmin\\comm\\indextable', null, true)
+ 5 APPPATH/Views/webadmin/vote/view.php(2): CodeIgniter\View\View->include('\\App\\Views\\webadmin\\comm\\indextable')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/webadmin/vote/view.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('webadmin/vote/view', [], true)
+ 9 APPPATH/Controllers/Webadmin/Vote.php(147): view('webadmin/vote/view', [...])
+10 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->view(11)
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-28 20:54:53 --> mysqli_sql_exception: Unknown column 'vid' in 'where clause' in /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`i...', 0)
+#1 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Models/DiscuzModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mac/Desktop/Jobs/web/project/ey56_xu/app/Controllers/Webadmin/Vote.php(130): App\Models\DiscuzModel->count(Array)
+#6 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->view(11, 'join')
+#7 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+#8 /Users/mac/Desktop/Jobs/web/project/ey56_xu/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/mac/Desktop/Jobs/web/project/ey56_xu/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-28 20:54:53 --> Unknown column 'vid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_discuz`
+WHERE `vid` = 11', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`id`) AS `id`
+FROM `custom_discuz`
+WHERE `vid` = 11')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`id`) AS `id`
+FROM `custom_discuz`
+WHERE `vid` = 11')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `id`
+FROM `custom_discuz`
+WHERE `vid` = :vid:', [...], false)
+ 5 APPPATH/Models/DiscuzModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Webadmin/Vote.php(130): App\Models\DiscuzModel->count([...])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Vote->view(11, 'join')
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Vote))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

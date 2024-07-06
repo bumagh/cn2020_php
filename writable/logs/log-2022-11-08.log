@@ -1,0 +1,182 @@
+CRITICAL - 2022-11-08 07:27:22 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 7 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 07:49:27 --> Call to undefined method App\Entities\Extbase::getRulesExt()
+in APPPATH/Controllers/Webadmin/Member.php on line 69.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->add()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 08:39:07 -->  不是有效规则。
+in SYSTEMPATH/Validation/Validation.php on line 323.
+ 1 SYSTEMPATH/Validation/Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('ROOTPATH/public')
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('ext[text][test]', 'ext[text][test]', '321', [...], [...])
+ 3 SYSTEMPATH/BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH/BaseModel.php(835): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 6 APPPATH/Controllers/Webadmin/Member.php(114): CodeIgniter\Model->update(56, [...])
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Webadmin\Member->edit('56')
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webadmin\Member))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 08:47:51 --> syntax error, unexpected ';'
+in APPPATH/Entities/Extbase.php on line 32.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Entities/Extbase.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Entities\\Extbase')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Entities\\Extbase')
+ 4 APPPATH/Controllers/Webadmin/Member.php(13): spl_autoload_call('App\\Entities\\Extbase')
+ 5 SYSTEMPATH/CodeIgniter.php(869): App\Controllers\Webadmin\Member->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:30:46 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 7 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:30:48 --> Class 'App\Controllers\BaseController' not found
+in APPPATH/Controllers/Home.php on line 6.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 6 SYSTEMPATH/CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 7 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:31:20 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 58.
+ 1 APPPATH/Controllers/WebController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 58, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:32:06 --> Invalid file: h5/home/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('h5/home/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('h5/home/index', [], true)
+ 3 APPPATH/Controllers/H5/Home.php(10): view('h5/home/index', [])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:32:06 --> Invalid file: h5/home/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('h5/home/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('h5/home/index', [], true)
+ 3 APPPATH/Controllers/H5/Home.php(10): view('h5/home/index', [])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:33:05 --> Invalid file: h5/home/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('h5/home/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('h5/home/index', [], true)
+ 3 APPPATH/Controllers/H5/Home.php(10): view('h5/home/index', [])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:33:08 --> Invalid file: h5/home/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('h5/home/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('h5/home/index', [], true)
+ 3 APPPATH/Controllers/H5/Home.php(10): view('h5/home/index', [])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:33:12 --> Invalid file: h5/home/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('h5/home/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('h5/home/index', [], true)
+ 3 APPPATH/Controllers/H5/Home.php(10): view('h5/home/index', [])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:33:14 --> Invalid file: h5/home/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('h5/home/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('h5/home/index', [], true)
+ 3 APPPATH/Controllers/H5/Home.php(10): view('h5/home/index', [])
+ 4 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:35:20 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 57.
+ 1 APPPATH/Controllers/WebController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:45:24 --> Undefined variable: lang
+in APPPATH/Views/h5/index.php on line 143.
+ 1 APPPATH/Views/h5/index.php(143): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: lang', 'APPPATH/Views/h5/index.php', 143, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/h5/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('h5/index', [], true)
+ 5 APPPATH/Controllers/H5/Home.php(10): view('h5/index', [])
+ 6 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\H5\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\H5\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 15:24:03 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 57.
+ 1 APPPATH/Controllers/WebController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 15:24:19 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 57.
+ 1 APPPATH/Controllers/WebController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 15:27:54 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 57.
+ 1 APPPATH/Controllers/WebController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 15:27:56 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 57.
+ 1 APPPATH/Controllers/WebController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 15:31:20 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 57.
+ 1 APPPATH/Controllers/WebController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 20:19:19 --> Undefined offset: 0
+in APPPATH/Controllers/WebController.php on line 57.
+ 1 APPPATH/Controllers/WebController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/WebController.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(870): App\Controllers\WebController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
